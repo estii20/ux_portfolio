@@ -87,13 +87,20 @@
         </nav>
 
         <main class="pt-24">
-            <section id="project-hero" class="bg-[#1B4965] py-20">
-                <div class="container mx-auto px-6">
-                    <div class="max-w-4xl mx-auto text-center space-y-6">
-                        <span class="text-[#C3E0E5] uppercase tracking-wider">UX Case Study</span>
-                        <h1 class="text-5xl font-bold text-white">FitTrack: Fitness App Redesign</h1>
-                        <p class="text-xl text-[#C3E0E5]">A comprehensive mobile application for tracking workouts and nutrition</p>
-                    </div>
+            <section id="project-hero" 
+                        class="relative bg-cover bg-center bg-no-repeat py-28 px-6"
+                        style="background-image: url('images/fitness_app_design.png');">
+                
+                <!-- Overlay -->
+                <div class="absolute inset-0 bg-[#1B4965]/80 z-0"></div>
+
+                <!-- Content -->
+                <div class="relative z-10 container mx-auto text-center max-w-4xl space-y-6">
+                    <span class="text-[#C3E0E5] uppercase tracking-wider">UX Case Study</span>
+                    <h1 class="text-5xl font-bold text-white">FitTrack: Fitness App Redesign</h1>
+                    <p class="text-xl text-[#C3E0E5]">
+                    A comprehensive mobile application for tracking workouts and nutrition
+                    </p>
                 </div>
             </section>
         
@@ -131,12 +138,12 @@
                     </p>
               
                     <!-- Responsive Image -->
-                    <div class="rounded-xl overflow-hidden shadow-lg max-h-[400px] md:max-h-[600px]">
-                      <img src="images\fitness_app_homepage.png" 
-                           alt="Fitness App Interface" 
-                           class="w-full h-full object-cover" />
+                    <div class="rounded-xl overflow-hidden shadow-lg mx-auto my-8 max-w-[90%] md:max-w-2xl lg:max-w-xl max-h-[300px] md:max-h-[400px]">
+                    <img src="images/fitness_app_homepage.png" 
+                        alt="Fitness App Interface" 
+                        class="w-full h-full object-contain" />
                     </div>
-              
+                                
                     <!-- Centered Button -->
                     <div class="mt-8 flex justify-center">
                       <a href="https://www.figma.com/proto/SVBntzIYhIs9mH1Wsr6fi0/Fitness-App?node-id=1-5&p=f&t=wlqH9lEaEPjKMhzF-0&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A5" 
@@ -214,7 +221,7 @@
                     <h2 class="text-3xl font-bold text-[#1B4965] mb-8">Next Project</h2>
                     <span class="inline-block cursor-pointer">
                         <div class="bg-[#1B4965] p-8 rounded-xl text-white hover:bg-[#FF6B6B] transition duration-300">
-                            <h3 class="text-2xl font-bold mb-2"><a href="fitness_app.html">E-commerce Platform →</a></h3>
+                            <h3 class="text-2xl font-bold mb-2"><a href="e_commerce.html">E-commerce Platform →</a></h3>
                             <p>Full-scale e-commerce solution with advanced filtering</p>
                         </div>
                     </span>
