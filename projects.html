@@ -67,6 +67,77 @@
         plugins: [],
         };
     </script>
+
+    <!-- ✅ Data Structure -->
+     const projects = [
+  {
+    id: "project-1",
+    title: "Finance Dashboard",
+    image: "images/finance_app_designs.png",
+    alt: "Modern finance dashboard UI with real-time analytics and data visualizations",
+    tags: ["UI Design", "Dashboard"],
+    filter: ["ui-design", "dashboard"],
+    description: "Designed a modern financial dashboard with real-time analytics and intuitive data visualizations, empowering users to make smarter financial decisions.",
+    caseStudyUrl: "finance_hub.html",
+    ariaLabel: "View Finance Dashboard case study"
+  },
+  {
+    id: "project-2",
+    title: "Fitness Tracking App",
+    image: "images/fitness_app_design.png",
+    alt: "Fitness tracking app interface showcasing personalized workout plans and activity insights",
+    tags: ["Mobile App", "UX Research"],
+    filter: ["mobile-app", "ux-research"],
+    description: "Created a user-centered fitness app offering tailored workout plans and activity tracking, based on in-depth UX research to boost user motivation and goal success.",
+    caseStudyUrl: "fitness_app.html",
+    ariaLabel: "View Fitness Tracking App case study"
+  },
+  {
+    id: "project-3",
+    title: "E-commerce Platform",
+    image: "images/kidswap_project_designs.png",
+    alt: "Responsive e-commerce UI displaying advanced filters, product listings, and seamless checkout",
+    tags: ["Web Design", "E-commerce"],
+    filter: ["web-design", "e-commerce"],
+    description: "Built a scalable e-commerce experience with advanced filters and a frictionless checkout, designed to increase conversions and streamline the shopping journey.",
+    caseStudyUrl: "e_commerce.html",
+    ariaLabel: "View E-commerce Platform case study"
+  },
+  {
+    id: "project-4",
+    title: "Healthy Habits Coach App",
+    image: "images/healthy_habit_app_final_designs.png",
+    alt: "Healthy habits mobile app UI with coaching, meal planning, and progress tracking screens",
+    tags: ["Mobile App", "UX Research", "UI Design"],
+    filter: ["mobile-app", "ux-research", "ui-design"],
+    description: "Designed a wellness coaching app to help adults build sustainable healthy habits through personalized guidance, meal plans, and habit tracking.",
+    caseStudyUrl: "healthy_habits.html",
+    ariaLabel: "View Healthy Habits Coach App case study"
+  },
+  {
+    id: "project-5",
+    title: "Casa Artigiana E-commerce",
+    image: "images/casa_artigiana_designs.png",
+    alt: "E-commerce interface for Casa Artigiana highlighting artisanal Italian products and brand storytelling",
+    tags: ["Web Design", "E-commerce"],
+    filter: ["web-design", "e-commerce"],
+    description: "Built an immersive e-commerce platform showcasing Italian craftsmanship, blending visual storytelling with seamless product discovery to boost engagement.",
+    caseStudyUrl: "casa_artigiana.html",
+    ariaLabel: "View Casa Artigiana e-commerce case study"
+  },
+  {
+    id: "project-6",
+    title: "Marinex Consultancy Website",
+    image: "images/am_i_responsive_marinex.png",
+    alt: "Responsive homepage design for Marinex Consultancy with clear navigation and ocean-inspired visuals",
+    tags: ["Web Design", "Frontend Project"],
+    filter: ["web-design", "frontend-project"],
+    description: "Developed a sleek, responsive website for a marine consultancy, focused on clarity, professionalism, and seamless navigation.",
+    caseStudyUrl: "marinex.html",
+    ariaLabel: "View Marinex Consultancy Website case study"
+  }
+];
+
     </head>
 
 <body>
@@ -160,7 +231,7 @@
                 <div id="project-1" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="ui-design dashboard">
                     <img class="w-full h-64 object-cover" src="images/finance_app_designs.png" 
-                    alt="Finance Dashboard UI showing charts and analytics">
+                    alt="Modern finance dashboard UI with real-time analytics and data visualisations">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UI Design</span>
@@ -168,8 +239,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Finance Dashboard</h3>
                     <p class="text-gray-600 mb-6">
-                        Designed a comprehensive financial management platform featuring real-time data 
-                        visualisation and intuitive analytics dashboards, improving user decision-making.
+                        Designed a modern financial dashboard with real-time analytics and intuitive 
+                        data visualisations, empowering users to make smarter financial decisions.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="finance_hub.html" aria-label="View Finance Dashboard case study">Explore Case Study</a>
@@ -182,7 +253,7 @@
                 <div id="project-2" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="mobile-app ux-research">
                     <img class="w-full h-64 object-cover" src="images/fitness_app_design.png" 
-                    alt="Fitness Tracking App UI with workout plans">
+                    alt="Fitness tracking app interface showcasing personalized workout plans and activity insights">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
@@ -190,8 +261,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Fitness Tracking App</h3>
                     <p class="text-gray-600 mb-6">
-                        Developed a user-centered mobile app providing personalized workout plans 
-                        based on detailed UX research, increasing user engagement and goal completion rates.
+                        Created a user-centered fitness app offering tailored workout plans and activity tracking, b
+                        ased on in-depth UX research to boost user motivation and goal success.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="fitness_app.html" aria-label="View Fitness Tracking App case study">
@@ -205,7 +276,7 @@
                 <div id="project-3" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="web-design e-commerce">
                     <img class="w-full h-64 object-cover" src="images/kidswap_project_designs.png" 
-                    alt="E-commerce Platform user interface showing product filters and checkout">
+                    alt="Responsive e-commerce UI displaying advanced filters, product listings, and seamless checkout">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
@@ -213,8 +284,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">E-commerce Platform</h3>
                     <p class="text-gray-600 mb-6">
-                        Crafted a scalable e-commerce solution with advanced product filtering and 
-                        seamless checkout, improving user conversion rates and sales flow.
+                        Built a scalable e-commerce experience with advanced filters and a frictionless 
+                        checkout, designed to increase conversions and streamline the shopping journey.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="e_commerce.html" aria-label="View E-commerce Platform case study">
@@ -228,7 +299,7 @@
                 <div id="project-4" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="mobile-app ux-research ui-design">
                     <img class="w-full h-64 object-cover" src="images/healthy_habit_app_final_designs.png" 
-                    alt="Healthy Habits Coach App UI screens">
+                    alt="Healthy habits mobile app UI with coaching, meal planning, and progress tracking screens">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
@@ -237,8 +308,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Healthy Habits Coach App</h3>
                     <p class="text-gray-600 mb-6">
-                        Designed a mobile coaching app to support adults in developing and sustaining 
-                        healthy lifestyle habits through personalized insights and goal tracking.
+                        Designed a wellness coaching app to help adults build sustainable healthy 
+                        habits through personalised guidance, meal plans, and habit tracking.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="healthy_habits.html" aria-label="View Healthy Habits Coach App case study">
@@ -252,7 +323,7 @@
                 <div id="project-5" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="web-design e-commerce">
                     <img class="w-full h-64 object-cover" src="images/casa_artigiana_designs.png" 
-                    alt="Casa Artigiana e-commerce product showcase UI">
+                    alt="E-commerce interface for Casa Artigiana highlighting artisanal Italian products and brand storytelling">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
@@ -260,8 +331,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Casa Artigiana E-commerce</h3>
                     <p class="text-gray-600 mb-6">
-                        Created an immersive e-commerce platform highlighting the craftsmanship of 
-                        Italian artisans, enhancing brand storytelling and customer engagement.
+                        Built an immersive e-commerce platform showcasing Italian craftsmanship, 
+                        blending visual storytelling with seamless product discovery to boost engagement.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="casa_artigiana.html" aria-label="View Casa Artigiana e-commerce case study">
@@ -275,7 +346,7 @@
                 <div id="project-6" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
                 data-filter="web-design frontend-project">
                     <img class="w-full h-64 object-cover" src="images/am_i_responsive_marinex.png" 
-                    alt="Marinex Consultancy company homepage UI">
+                    alt="Responsive homepage design for Marinex Consultancy with clear navigation and ocean-inspired visuals">
                     <div class="p-8">
                     <div class="flex gap-2 mb-4">
                         <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
@@ -283,8 +354,8 @@
                     </div>
                     <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Marinex Consultancy Website</h3>
                     <p class="text-gray-600 mb-6">
-                        Developed a polished, responsive frontend website for a marine consultancy, 
-                        emphasising clear communication and ease of navigation.
+                        Developed a sleek, responsive website for a marine consultancy, focused on clarity, 
+                        professionalism, and seamless navigation.
                     </p>
                     <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
                         <a href="marinex.html" aria-label="View Marinex Consultancy Website case study">
@@ -293,10 +364,9 @@
                     </span>
                     </div>
                 </div>
-
                 </div>
             </div>
-            </section>
+        </section>
 
 
             <section id="cta" class="py-20 bg-[#FF6B6B]">
