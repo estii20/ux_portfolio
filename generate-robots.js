@@ -1,14 +1,19 @@
 const fs = require('fs');
+const path = require('path');
 
-const BASE_URL = 'https://your-new-domain.com'; // Change to your actual URL
+// ✅ Set to your actual deployed domain
+const BASE_URL = 'https://www.pixelperfect-ux.store';
 
-const content = `
-User-agent: *
+// Format the robots.txt content
+const content = `User-agent: *
 Disallow:
 
 Sitemap: ${BASE_URL}/sitemap.xml
 `;
 
-fs.writeFileSync('robots.txt', content.trim());
+// Output path (can be customized if needed)
+const outputPath = path.join(__dirname, 'robots.txt');
 
-console.log('robots.txt generated successfully.');
+fs.writeFileSync(outputPath, content.trim() + '\n', 'utf8');
+
+console.log('✅ robots.txt generated successfully at', outputPath);

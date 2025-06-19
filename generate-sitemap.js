@@ -1,9 +1,10 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://your-new-domain.com'; // <-- Change this to your live URL
+// ✅ Update this to your live domain
+const BASE_URL = 'https://www.pixelperfect-ux.store';
 const OUTPUT_FILE = 'sitemap.xml';
-const ROOT_DIR = '.'; // Starting folder for your HTML files, adjust if needed
+const ROOT_DIR = '.'; 
 
 function getAllHtmlFiles(dir, files = []) {
   const items = fs.readdirSync(dir);
@@ -25,11 +26,12 @@ function formatDate(date) {
 
 function generateSitemap(files) {
   const urls = files.map(file => {
-    // Convert local file path to URL path
-    let urlPath = file.path.replace(/\\/g, '/').replace(/^\.\//, '');
-    if (urlPath === 'index.html') {
-      urlPath = '';
-    }
+    let urlPath = file.path
+      .replace(/\\/g, '/')       // Handle Windows paths
+      .replace(/^\.\//, '')      // Remove ./ at the beginning
+      .replace(/index\.html$/, '') // Remove index.html
+      .replace(/\.html$/, '');   // Remove .html from URLs
+
     return `
   <url>
     <loc>${BASE_URL}/${urlPath}</loc>
@@ -38,8 +40,7 @@ function generateSitemap(files) {
   });
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${urls.join('')}
 </urlset>`;
 }
@@ -49,4 +50,4 @@ const sitemap = generateSitemap(htmlFiles);
 
 fs.writeFileSync(OUTPUT_FILE, sitemap);
 
-console.log(`Sitemap generated: ${OUTPUT_FILE}`);
+console.log(`✅ Sitemap generated successfully: ${OUTPUT_FILE}`);

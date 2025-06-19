@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://your-new-domain.com/sitemap.xml
