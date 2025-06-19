@@ -1,10 +1,9 @@
 const fs = require('fs');
 const path = require('path');
 
-// ✅ Update this to your live domain
-const BASE_URL = 'https://www.pixelperfect-ux.store';
-const OUTPUT_FILE = 'sitemap.xml';
-const ROOT_DIR = '.'; 
+const BASE_URL = 'https://www.pixelperfect-ux.store'; // ✅ live domain
+const OUTPUT_FILE = './sitemap.xml'; // ✅ explicitly root
+const ROOT_DIR = '.'; // ✅ scan from repo root
 
 function getAllHtmlFiles(dir, files = []) {
   const items = fs.readdirSync(dir);
@@ -49,5 +48,4 @@ const htmlFiles = getAllHtmlFiles(ROOT_DIR);
 const sitemap = generateSitemap(htmlFiles);
 
 fs.writeFileSync(OUTPUT_FILE, sitemap);
-
-console.log(`✅ Sitemap generated successfully: ${OUTPUT_FILE}`);
+console.log(`Sitemap generated: ${OUTPUT_FILE}`);
