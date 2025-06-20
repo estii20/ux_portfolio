@@ -2,20 +2,22 @@ const fs = require('fs');
 const path = require('path');
 
 const BASE_URL = 'https://www.pixelperfect-ux.store';
-const OUTPUT_DIR = 'dist'; // <- match your actual output folder
+const OUTPUT_DIR = 'dist';
+const OUTPUT_FILE = path.join(OUTPUT_DIR, 'sitemap.xml');
+const ROOT_DIR = OUTPUT_DIR; // Start scanning from your build folder
 
-const content = `
+// Generate robots.txt
+const robotsContent = `
 User-agent: *
 Disallow:
 
 Sitemap: ${BASE_URL}/sitemap.xml
 `;
 
-fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), content.trim());
-
+fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), robotsContent.trim());
 console.log('robots.txt generated successfully.');
 
-
+// Generate sitemap.xml
 function getAllHtmlFiles(dir, files = []) {
   const items = fs.readdirSync(dir);
   items.forEach(item => {
@@ -37,10 +39,10 @@ function formatDate(date) {
 function generateSitemap(files) {
   const urls = files.map(file => {
     let urlPath = file.path
-      .replace(/\\/g, '/')       // Handle Windows paths
-      .replace(/^\.\//, '')      // Remove ./ at the beginning
-      .replace(/index\.html$/, '') // Remove index.html
-      .replace(/\.html$/, '');   // Remove .html from URLs
+      .replace(/\\/g, '/')                   // Handle Windows paths
+      .replace(`${OUTPUT_DIR}/`, '')         // Remove dist/ from URL
+      .replace(/index\.html$/, '')           // Remove index.html
+      .replace(/\.html$/, '');               // Remove .html from URLs
 
     return `
   <url>
@@ -57,6 +59,5 @@ ${urls.join('')}
 
 const htmlFiles = getAllHtmlFiles(ROOT_DIR);
 const sitemap = generateSitemap(htmlFiles);
-
 fs.writeFileSync(OUTPUT_FILE, sitemap);
 console.log(`Sitemap generated: ${OUTPUT_FILE}`);
