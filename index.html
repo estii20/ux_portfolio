@@ -13,9 +13,12 @@
     <meta name="description" content="Portfolio of Estelle Specht — freelance UX/UI designer & front-end developer
          specialising in Figma, Tailwind CSS, and responsive websites. Explore projects and case studies." />
 
+    <!-- ✅ Robots Tag (SEO) -->
+    <meta name="robots" content="index, follow">
 
     <!-- ✅ Canonical URL (prevents duplicate content issues) -->
-    <link rel="canonical" href="https://yourdomain.com/">
+    <link rel="canonical" href="https://www.pixelperfect-ux.store/">
+    <meta property="og:url" content="https://www.pixelperfect-ux.store">
 
     <!-- ✅ Favicon -->
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -24,15 +27,16 @@
     <meta property="og:title" content="Estelle Specht – UX/UI Designer & Front-End Developer">
     <meta property="og:description" content="See Pixel Perfect – a portfolio of creative digital 
         experiences, by Estelle Specht.">
-    <meta property="og:image" content="https://yourdomain.com/images/og-preview.jpg">
-    <meta property="og:url" content="https://yourdomain.com">
+    <meta property="og:image" content="https://www.pixelperfect-ux.store/images/og-preview.jpg">
+    <meta name="twitter:image" content="https://www.pixelperfect-ux.store/images/og-preview.jpg">
+    <meta property="og:url" content="https://www.pixelperfect-ux.store">
     <meta property="og:type" content="website">
 
     <!-- ✅ Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Estelle Specht – UX/UI Designer & Front-End Developer">
     <meta name="twitter:description" content="Pixel Perfect portfolio – thoughtful, beautiful web design and code.">
-    <meta name="twitter:image" content="https://yourdomain.com/images/og-preview.jpg">
+    <meta name="twitter:image" content="https://www.pixelperfect-ux.store/images/og-preview.jpg">
 
     <!-- ✅ CSS -->
     <link rel="stylesheet" href="css/style.css">
@@ -70,12 +74,12 @@
   "@context": "https://schema.org",
   "@type": "WebPage",
   "name": "Estelle Specht | UX/UI Designer & Front-End Developer",
-  "url": "https://yourdomain.com", 
+  "url": "https://www.pixelperfect-ux.store/", 
   "description": "Estelle Specht is a certified full-stack web developer and UX/UI designer specialising in responsive design using Figma, Tailwind CSS, and JavaScript.",
   "author": {
     "@type": "Person",
     "name": "Estelle Specht",
-    "url": "https://yourdomain.com",
+    "url": "https://www.pixelperfect-ux.store/about.html",
     "jobTitle": "UX/UI Designer and Front-End Developer",
     "image": "https://storage.googleapis.com/uxpilot-auth.appspot.com/25228ba535-80c69b460c517231750f.png",
     "description": "Freelance designer and front-end developer helping startups and small businesses build clean, user-focused digital experiences."
@@ -178,86 +182,78 @@
             </nav>
         </nav>
     
-        <main class="min-h-screen pt-24" id="home">
-            <section id="hero" class="h-[800px] bg-gradient-to-r from-[#1B4965] to-[#C3E0E5] pt-24 pt-0 lg:pt-0">
-                <div class="container mx-auto px-6 flex items-center h-full">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                        <div class="space-y-6">
-                            <h1 class="text-5xl font-bold text-white leading-tight">
-                                UX/UI Designer & Front-End Developer for Responsive Websites
-                            </h1>
-                            <p class="text-xl text-[#C3E0E5]">
-                                I'm Estelle Specht, a freelance UX/UI designer and junior front-end developer 
-                                with a passion for clean, user-centered design. Recently certified in full-stack web 
-                                development, I specialise in creating responsive websites using tools like Figma, 
-                                Tailwind CSS, and JavaScript. Whether you're a small business or a startup, 
-                                I bring creative thinking and technical precision to every project — and I’ve 
-                                already helped real clients bring their digital ideas to life.
-                            </p>
-                            <div class="flex space-x-4">
-                                <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] 
-                                    transition duration-300">
-                                    <a href="projects.html">
-                                    View My Work</a>
-                                </button>
-                                <button class="border-2 border-white text-white px-8 py-3 rounded-full 
-                                    hover:bg-white hover:text-[#1B4965] 
-                                    transition duration-300">
-                                    <a href="#contact">Contact Me</a>
-                                </button>
-                            </div>
+    <main class="min-h-screen pt-24" id="home">
+        <section id="hero" class="min-h-screen bg-gradient-to-r from-[#1B4965] to-[#C3E0E5] py-12 lg:py-0 flex items-center">
+            <div class="container mx-auto px-6 flex items-center h-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center text-center md:text-left">
+                    <div class="space-y-4 md:space-y-6">
+                        <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
+                            UX/UI Designer & Front-End Developer for Responsive Websites
+                        </h1>
+                        <p class="text-base sm:text-lg lg:text-xl text-[#C3E0E5]">
+                            I'm Estelle Specht, a freelance UX/UI designer and junior front-end developer
+                            with a passion for clean, user-centered design. Recently certified in full-stack web
+                            development, I specialise in creating responsive websites using tools like Figma,
+                            Tailwind CSS, and JavaScript. Whether you're a small business or a startup,
+                            I bring creative thinking and technical precision to every project — and I’ve
+                            already helped real clients bring their digital ideas to life.
+                        </p>
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
+                            <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C]
+                                transition duration-300 w-full sm:w-auto">
+                                <a href="projects.html" class="block">View My Work</a>
+                            </button>
+                            <button class="border-2 border-white text-white px-8 py-3 rounded-full
+                                hover:bg-white hover:text-[#1B4965]
+                                transition duration-300 w-full sm:w-auto">
+                                <a href="#contact" class="block">Contact Me</a>
+                            </button>
                         </div>
-                        <div class="relative flex justify-center items-center h-full">
-                            <div class="relative flex justify-center items-center h-full">
-                                <div class="relative flex justify-center items-center h-full">
-                                    <img class="w-full md:w-auto max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg 
-                                        xl:max-w-xl 
-                                        h-auto max-h-[250px] sm:max-h-[300px] md:max-h-[400px] lg:max-h-[500px] 
-                                            xl:max-h-[600px] 
-                                        object-contain rounded-2xl shadow-2xl" 
-                                    src="https://storage.googleapis.com/uxpilot-auth.appspot.com/25228ba535-80c69b460c517231750f.png" 
-                                    alt="modern abstract 3D design elements with geometric shapes and gradients 
-                                        in blue and coral colors, professional portfolio style">
-                                </div>          
-                            </div>          
-                        </div>          
+                    </div>
+                    <div class="flex justify-center items-center mt-8 md:mt-0">
+                        <img class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
+                            h-auto object-contain rounded-2xl shadow-2xl"
+                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/25228ba535-80c69b460c517231750f.png"
+                            alt="modern abstract 3D design elements with geometric shapes and gradients
+                            in blue and coral colors, professional portfolio style">
                     </div>
                 </div>
-            </section>
-            
-            <section id="about" class="py-20 my-3 bg-[#FDFDFD]">
-                <div class="container mx-auto px-6">
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                        <div class="relative">
-                            <img src="images/estelle_portrait.png" 
-                            alt="Profile" class="rounded-2xl shadow-lg w-full max-w-md" />
+            </div>
+        </section>
+
+    <section id="about" class="py-12 sm:py-20 my-3 bg-[#FDFDFD]">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <div class="relative flex justify-center md:justify-start">
+                    <img src="images/estelle_portrait.png"
+                    alt="Profile" class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" />
+                </div>
+                <div class="space-y-4 sm:space-y-6 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965]">About Me</h2>
+                    <p class="text-base sm:text-lg text-gray-600">
+                        As a recently certified Fullstack Developer, I bring a fresh perspective
+                        and a comprehensive skillset to web development. My training has equipped me with the
+                        ability to build and design intuitive, impactful digital experiences from the ground up,
+                        a skill I've already put into practice creating successful websites for friends.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl">
+                            <div class="text-xl sm:text-3xl font-bold text-[#1B4965] leading-tight">
+                                Foundational</div>
+                            <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
+                                Projects Completed</div>
                         </div>
-                        <div class="space-y-6">
-                            <h2 class="text-4xl font-bold text-[#1B4965]">About Me</h2>
-                            <p class="text-lg text-gray-600">
-                                As a recently certified Fullstack Developer, I bring a fresh perspective 
-                                and a comprehensive skillset to web development. My training has equipped me with the 
-                                ability to build and design intuitive, impactful digital experiences from the ground up, 
-                                a skill I've already put into practice creating successful websites for friends.
-                            </p>
-                            <div class="grid grid-cols-2 gap-4">
-                                <div class="bg-[#C3E0E5] p-6 rounded-xl">
-                                    <div class="text-lg sm:text-3xl font-bold text-[#1B4965] leading-tight">
-                                        Foundational</div>
-                                    <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
-                                        Projects Completed</div>
-                                </div>
-                                <div class="bg-[#C3E0E5] p-6 rounded-xl">
-                                    <div class="text-lg sm:text-3xl font-bold text-[#1B4965] leading-tight">
-                                        Client-Focused</div>
-                                    <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
-                                        Solutions Delivered</div>
-                                </div>
-                            </div>
+                        <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl">
+                            <div class="text-xl sm:text-3xl font-bold text-[#1B4965] leading-tight">
+                                Client-Focused</div>
+                            <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
+                                Solutions Delivered</div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </div>
+        </div>
+    </section>
             
             <section id="projects" class="py-20 bg-[#1B4965]">
                 <div class="container mx-auto px-6">
