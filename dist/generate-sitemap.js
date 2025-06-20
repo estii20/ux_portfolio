@@ -1,9 +1,20 @@
 const fs = require('fs');
 const path = require('path');
 
-const BASE_URL = 'https://www.pixelperfect-ux.store'; // ✅ live domain
-const OUTPUT_FILE = './sitemap.xml'; // ✅ explicitly root
-const ROOT_DIR = '.'; // ✅ scan from repo root
+const BASE_URL = 'https://www.pixelperfect-ux.store';
+const OUTPUT_DIR = 'dist'; // <- match your actual output folder
+
+const content = `
+User-agent: *
+Disallow:
+
+Sitemap: ${BASE_URL}/sitemap.xml
+`;
+
+fs.writeFileSync(path.join(OUTPUT_DIR, 'robots.txt'), content.trim());
+
+console.log('robots.txt generated successfully.');
+
 
 function getAllHtmlFiles(dir, files = []) {
   const items = fs.readdirSync(dir);
