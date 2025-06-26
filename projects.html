@@ -216,174 +216,215 @@
             </section>
 
             <section id="filter-section" class="py-8 bg-[#FDFDFD] border-b border-gray-200">
-                <div class="container mx-auto px-6">
-                    <div class="flex flex-wrap gap-4 justify-center">
-                        <button class="filter-button px-6 py-2 rounded-full bg-[#FF6B6B] text-white" data-filter="all">All Projects</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="ui-design">UI Design</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="ux-research">UX Research</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="mobile-app">Mobile Apps</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="web-design">Web Design</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="frontend-project">Frontend Development</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="e-commerce">E-commerce</button>
-                        <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] hover:bg-[#1B4965] hover:text-white transition duration-300" data-filter="dashboard">Dashboard</button>
-                    </div>
+            <div class="container mx-auto px-6">
+                <div class="flex flex-wrap gap-4 justify-center">
+                <!-- Primary Button  -->
+                <button class="filter-button px-8 py-3 rounded-full bg-[#FF6B6B] hover:bg-[#E9B44C] text-white shadow-md focus:outline-none focus:ring-4 focus:ring-[#C62828] transition duration-300"
+                        data-filter="all">
+                All Projects
+                </button>
+
+                <!-- Secondary Buttons (Outlined) -->
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="ui-design">
+                    UI Design
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="ux-research">
+                    UX Research
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="mobile-app">
+                    Mobile Apps
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="web-design">
+                    Web Design
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="frontend-project">
+                    Frontend Development
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="e-commerce">
+                    E-commerce
+                </button>
+
+                <button class="filter-button px-6 py-2 rounded-full border border-[#1B4965] text-[#1B4965] font-semibold hover:bg-[#1B4965] hover:text-white shadow-sm focus:outline-none focus:ring-4 focus:ring-[#1B4965] transition duration-300"
+                        data-filter="dashboard">
+                    Dashboard
+                </button>
                 </div>
+            </div>
             </section>
 
             <section id="projects-grid" class="py-20 bg-[#FDFDFD]">
-            <div class="container mx-auto px-6">
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="container mx-auto px-6">
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <!-- Project 1 -->
-                <div id="project-1" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="ui-design dashboard">
-                    <img class="w-full h-64 object-cover" src="images/finance_app_designs.webp" 
-                    alt="Modern finance dashboard UI with real-time analytics and data visualisations"
-                    aria-hidden="true"
-                    >
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UI Design</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Dashboard</span>
+                    <!-- Project 1 -->
+                    <div id="project-1" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="ui-design dashboard">
+                        <img class="w-full h-64 object-cover" src="images/finance_app_designs.webp" 
+                        alt="Modern finance dashboard UI with real-time analytics and data visualisations"
+                        aria-hidden="true"
+                        >
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UI Design</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Dashboard</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Finance Dashboard</h3>
+                        <p class="text-gray-600 mb-6">
+                            Designed a modern financial dashboard with real-time analytics and intuitive 
+                            data visualisations, empowering users to make smarter financial decisions.
+                        </p>
+                        <a href="finance_hub.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                        </div>
                     </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Finance Dashboard</h3>
-                    <p class="text-gray-600 mb-6">
-                        Designed a modern financial dashboard with real-time analytics and intuitive 
-                        data visualisations, empowering users to make smarter financial decisions.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="finance_hub.html" aria-label="View Finance Dashboard case study">Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
+
+                    <!-- Project 2 -->
+                    <div id="project-2" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="mobile-app ux-research">
+                        <img class="w-full h-64 object-cover" src="images/fitness_app_design.webp" 
+                        alt="Fitness tracking app interface showcasing personalized workout plans and activity insights"
+                        aria-hidden="true">
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UX Research</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Fitness Tracking App</h3>
+                        <p class="text-gray-600 mb-6">
+                            Created a user-centered fitness app offering tailored workout plans and activity tracking, b
+                            ased on in-depth UX research to boost user motivation and goal success.
+                        </p>
+                        <a href="fitness_app.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div id="project-3" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="web-design e-commerce">
+                        <img class="w-full h-64 object-cover" src="images/kidswap_project_designs.webp" 
+                        alt="Responsive e-commerce UI displaying advanced filters, product listings, and seamless checkout"
+                        aria-hidden="true">
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">E-commerce</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">E-commerce Platform</h3>
+                        <p class="text-gray-600 mb-6">
+                            Built a scalable e-commerce experience with advanced filters and a frictionless 
+                            checkout, designed to increase conversions and streamline the shopping journey.
+                        </p>
+                        <a href="e_commerce.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div id="project-4" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="mobile-app ux-research ui-design">
+                        <img class="w-full h-64 object-cover" src="images/healthy_habit_app_final_designs.webp" 
+                        alt="Healthy habits mobile app UI with coaching, meal planning, and progress tracking screens"
+                        aria-hidden="true">
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UX Research</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UI Design</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Healthy Habits Coach App</h3>
+                        <p class="text-gray-600 mb-6">
+                            Designed a wellness coaching app to help adults build sustainable healthy 
+                            habits through personalised guidance, meal plans, and habit tracking.
+                        </p>
+                        <a href="healthy_habits.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+
+                        </div>
+                    </div>
+
+                    <!-- Project 5 -->
+                    <div id="project-5" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="web-design e-commerce">
+                        <img class="w-full h-64 object-cover" src="images/casa_artigiana_designs.webp" 
+                        alt="E-commerce interface for Casa Artigiana highlighting artisanal Italian products 
+                        and brand storytelling"
+                        aria-hidden="true">
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">E-commerce</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Casa Artigiana E-commerce</h3>
+                        <p class="text-gray-600 mb-6">
+                            Built an immersive e-commerce platform showcasing Italian craftsmanship, 
+                            blending visual storytelling with seamless product discovery to boost engagement.
+                        </p>
+                        <a href="casa_artigiana.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                        </span>
+                        </div>
+                    </div>
+
+                    <!-- Project 6 -->
+                    <div id="project-6" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
+                    data-filter="web-design frontend-project">
+                        <img class="w-full h-64 object-cover" src="images/am_i_responsive_marinex.webp" 
+                        alt="Responsive homepage design for Marinex Consultancy with clear navigation 
+                        and ocean-inspired visuals"
+                        aria-hidden="true">
+                        <div class="p-8">
+                        <div class="flex gap-2 mb-4">
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
+                            <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Frontend Project</span>
+                        </div>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Marinex Consultancy Website</h3>
+                        <p class="text-gray-600 mb-6">
+                            Developed a sleek, responsive website for a marine consultancy, focused on clarity, 
+                            professionalism, and seamless navigation.
+                        </p>
+                        <a href="marinex.html"
+                        aria-label="View Finance Dashboard case study"
+                        class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 block text-center">
+                        Explore Case Study
+                        <i class="fa-solid fa-arrow-right ml-2 transform transition-transform duration-300 group-hover:translate-x-1"></i>
+                        </a>
+                        </div>
+                    </div>
                     </div>
                 </div>
-
-                <!-- Project 2 -->
-                <div id="project-2" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="mobile-app ux-research">
-                    <img class="w-full h-64 object-cover" src="images/fitness_app_design.webp" 
-                    alt="Fitness tracking app interface showcasing personalized workout plans and activity insights"
-                    aria-hidden="true">
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UX Research</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Fitness Tracking App</h3>
-                    <p class="text-gray-600 mb-6">
-                        Created a user-centered fitness app offering tailored workout plans and activity tracking, b
-                        ased on in-depth UX research to boost user motivation and goal success.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="fitness_app.html" aria-label="View Fitness Tracking App case study">
-                            Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <!-- Project 3 -->
-                <div id="project-3" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="web-design e-commerce">
-                    <img class="w-full h-64 object-cover" src="images/kidswap_project_designs.webp" 
-                    alt="Responsive e-commerce UI displaying advanced filters, product listings, and seamless checkout"
-                    aria-hidden="true">
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">E-commerce</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">E-commerce Platform</h3>
-                    <p class="text-gray-600 mb-6">
-                        Built a scalable e-commerce experience with advanced filters and a frictionless 
-                        checkout, designed to increase conversions and streamline the shopping journey.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="e_commerce.html" aria-label="View E-commerce Platform case study">
-                            Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <!-- Project 4 -->
-                <div id="project-4" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="mobile-app ux-research ui-design">
-                    <img class="w-full h-64 object-cover" src="images/healthy_habit_app_final_designs.webp" 
-                    alt="Healthy habits mobile app UI with coaching, meal planning, and progress tracking screens"
-                    aria-hidden="true">
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Mobile App</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UX Research</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">UI Design</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Healthy Habits Coach App</h3>
-                    <p class="text-gray-600 mb-6">
-                        Designed a wellness coaching app to help adults build sustainable healthy 
-                        habits through personalised guidance, meal plans, and habit tracking.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="healthy_habits.html" aria-label="View Healthy Habits Coach App case study">
-                            Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <!-- Project 5 -->
-                <div id="project-5" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="web-design e-commerce">
-                    <img class="w-full h-64 object-cover" src="images/casa_artigiana_designs.webp" 
-                    alt="E-commerce interface for Casa Artigiana highlighting artisanal Italian products 
-                    and brand storytelling"
-                    aria-hidden="true">
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">E-commerce</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Casa Artigiana E-commerce</h3>
-                    <p class="text-gray-600 mb-6">
-                        Built an immersive e-commerce platform showcasing Italian craftsmanship, 
-                        blending visual storytelling with seamless product discovery to boost engagement.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="casa_artigiana.html" aria-label="View Casa Artigiana e-commerce case study">
-                            Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
-                    </div>
-                </div>
-
-                <!-- Project 6 -->
-                <div id="project-6" class="project-item bg-white rounded-xl overflow-hidden shadow-lg" 
-                data-filter="web-design frontend-project">
-                    <img class="w-full h-64 object-cover" src="images/am_i_responsive_marinex.webp" 
-                    alt="Responsive homepage design for Marinex Consultancy with clear navigation 
-                    and ocean-inspired visuals"
-                    aria-hidden="true">
-                    <div class="p-8">
-                    <div class="flex gap-2 mb-4">
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Web Design</span>
-                        <span class="px-3 py-1 bg-[#C3E0E5] text-[#1B4965] rounded-full text-sm">Frontend Project</span>
-                    </div>
-                    <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Marinex Consultancy Website</h3>
-                    <p class="text-gray-600 mb-6">
-                        Developed a sleek, responsive website for a marine consultancy, focused on clarity, 
-                        professionalism, and seamless navigation.
-                    </p>
-                    <span class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] cursor-pointer">
-                        <a href="marinex.html" aria-label="View Marinex Consultancy Website case study">
-                            Explore Case Study</a>
-                        <i class="fa-solid fa-arrow-right ml-2"></i>
-                    </span>
-                    </div>
-                </div>
-                </div>
-            </div>
-        </section>
-
+            </section>
 
             <section id="cta" class="py-20 bg-[#FF6B6B]">
                 <div class="container mx-auto px-6 text-center">
@@ -393,7 +434,7 @@
                         amazing together.</p>
 
                     <a href="index#contact" class="bg-white text-[#FF6B6B] px-8 py-3 rounded-full hover:bg-[#1B4965] 
-                        hover:text-white transition duration-300">
+                        hover:text-black transition duration-300">
                         Get in Touch
                     </a>
                 </div>
