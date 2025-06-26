@@ -44,7 +44,7 @@
     <meta name="twitter:image" content="https://www.pixelperfect-ux.store/images/og-preview.jpg">
 
     <!-- ✅ CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- ✅ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap" 
@@ -150,7 +150,8 @@
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img src="images/PixelPerfectLogo.png" alt="Pixel Perfect Logo" class="h-10 w-auto">
+                        <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" class="h-10 w-auto" 
+                        aria-hidden="true">
                     </a>
                     
                 <div class="text-2xl font-bold text-[#1B4965]">
@@ -201,9 +202,10 @@
     <section id="project-hero" class="relative h-[600px] overflow-hidden">
         <img
         class="w-full h-full object-cover"
-        src="images/casa_artigiana_banner.png"
+        src="images/casa_artigiana_banner.webp"
         alt="Italian artisan home decor hero image"
         loading="lazy"
+        aria-hidden="true"
         />
         <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center">
         <div class="container mx-auto px-6">
@@ -288,9 +290,10 @@
                     transition-shadow duration-300">
                 <img
                     class="w-full h-64 object-cover"
-                    src="images/casa_artigiana_product_details.png"
+                    src="images/casa_artigiana_product_details.webp"
                     alt="Product detail page design"
                     loading="lazy"
+                    aria-hidden="true"
                 />
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Immersive Product Stories</h3>
@@ -304,9 +307,10 @@
                     transition-shadow duration-300">
                 <img
                     class="w-full h-64 object-cover"
-                    src="images/casa_artigiana_artisans.png"
+                    src="images/casa_artigiana_artisans.webp"
                     alt="Artisan profile page design"
                     loading="lazy"
+                    aria-hidden="true"
                 />
                 <div class="p-6">
                     <h3 class="text-xl font-bold mb-2">Artisan Profiles</h3>
@@ -381,8 +385,8 @@
                     <span class="inline-block cursor-pointer">
                         <div class="relative group">
                             <img class="w-[300px] h-[200px] object-cover rounded-xl" 
-                            src="images\finance_app_designs.png" 
-                            alt="Next project preview">
+                            src="images\finance_app_designs.webp" 
+                            alt="Next project preview" aria-hidden="true">
                             <div class="absolute inset-0 bg-[#1B4965] bg-opacity-75 opacity-0 
                                 group-hover:opacity-100 transition duration-300 rounded-xl flex items-center 
                                 justify-center">
@@ -449,12 +453,12 @@
         </footer>
 
 <!-- External Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
+<script src="https://cdn.tailwindcss.com" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" 
-referrerpolicy="no-referrer"></script>
+    referrerpolicy="no-referrer" async></script>
 
-<!-- Your Script -->
+<!-- Script -->
 <script src="index.js" defer></script>
 
 </body>

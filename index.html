@@ -39,7 +39,7 @@
     <meta name="twitter:image" content="https://www.pixelperfect-ux.store/images/og-preview.jpg">
 
     <!-- ✅ CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- ✅ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap" 
@@ -125,6 +125,9 @@
 </head>
 
 <body>
+    <a href="#home" class="sr-only focus:not-sr-only absolute top-2 left-2 bg-white text-[#1B4965] px-4 py-2 rounded">
+        Skip to main content
+    </a>
     
     <html class="">
     
@@ -136,7 +139,8 @@
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img src="images/PixelPerfectLogo.png" alt="Pixel Perfect Logo" class="h-10 w-auto">
+                        <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" 
+                        class="h-10 w-auto" aria-hidden="true">
                     </a>
                     
                 <div class="text-2xl font-bold text-[#1B4965]">
@@ -184,14 +188,15 @@
     
     <main class="min-h-screen pt-24" id="home">
         <section id="hero" class="relative min-h-screen bg-gradient-to-r from-[#1B4965] to-[#C3E0E5] py-12 lg:py-0 flex items-center">
-                <!-- Overlay -->
+            <h1 id="hero-heading" class="sr-only">Welcome</h1>
+            <!-- Overlay -->
             <div class="absolute inset-0 bg-gradient-to-r from-[#1B4965]/70 via-[#1B4965]/50 to-transparent z-0"></div>
                 <div class="container mx-auto px-6 flex items-center h-full relative z-10">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center text-center md:text-left">
                         <div class="space-y-4 md:space-y-6">
-                            <h1 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
+                            <h2 class="text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight">
                                 UX/UI Designer & Front-End Developer for Responsive Websites
-                            </h1>
+                            </h2>
                             <p class="text-base sm:text-lg lg:text-xl text-white sm:text-[#C3E0E5]">
                                 I'm Estelle Specht, a freelance UX/UI designer and junior front-end developer
                                 with a passion for clean, user-centered design. Recently certified in full-stack web
@@ -201,23 +206,22 @@
                                 already helped real clients bring their digital ideas to life.
                             </p>
                             <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                                <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C]
-                                    transition duration-300 w-full sm:w-auto">
-                                    <a href="projects.html" class="block">View My Work</a>
-                                </button>
-                                <button class="border-2 border-white text-white px-8 py-3 rounded-full
-                                    hover:bg-white hover:text-[#1B4965]
-                                    transition duration-300 w-full sm:w-auto">
-                                    <a href="#contact" class="block">Contact Me</a>
-                                </button>
+                            <a href="projects.html"
+                                class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 rounded-full shadow-md transition duration-300 block text-center focus:outline-none focus:ring-4 focus:ring-[#E9B44C]">
+                                View My Work
+                            </a>
+                            <a href="#contact"
+                                class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 rounded-full shadow-md transition duration-300 block text-center focus:outline-none focus:ring-4 focus:ring-[#E9B44C]">
+                                Contact Me
+                            </a>
                             </div>
+
                         </div>
                         <div class="hidden md:flex justify-center items-center mt-8 md:mt-0">
                             <img class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
                                 h-auto object-contain rounded-2xl shadow-2xl"
                                 src="https://storage.googleapis.com/uxpilot-auth.appspot.com/25228ba535-80c69b460c517231750f.png"
-                                alt="modern abstract 3D design elements with geometric shapes and gradients
-                                in blue and coral colors, professional portfolio style">
+                                alt="Portfolio hero image with 3D abstract design" aria-hidden="true">
                         </div>
                     </div>
                 </div>
@@ -227,8 +231,8 @@
         <div class="container mx-auto px-6">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                 <div class="relative flex justify-center md:justify-start">
-                    <img src="images/estelle_portrait.png"
-                    alt="Profile" class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" />
+                    <img src="images/estelle_portrait.webp"
+                    alt="Portrait of Estelle Specht" class="rounded-2xl shadow-lg w-full max-w-xs sm:max-w-sm md:max-w-md" aria-hidden="true"/>
                 </div>
                 <div class="space-y-4 sm:space-y-6 text-center md:text-left">
                     <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965]">About Me</h2>
@@ -241,15 +245,11 @@
                     <div class="grid grid-cols-2 gap-4">
                         <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl">
                             <div class="text-xl sm:text-3xl font-bold text-[#1B4965] leading-tight">
-                                Foundational</div>
-                            <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
-                                Projects Completed</div>
+                                Dynamic</div>
                         </div>
                         <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl">
                             <div class="text-xl sm:text-3xl font-bold text-[#1B4965] leading-tight">
                                 Client-Focused</div>
-                            <div class="text-[#1B4965] text-xs sm:text-base leading-tight">
-                                Solutions Delivered</div>
                         </div>
                     </div>
                 </div>
@@ -257,44 +257,54 @@
         </div>
     </section>
             
-            <section id="projects" class="py-20 bg-[#1B4965]">
+            <section id="projects" aria-labelledby="projects-heading" class="py-20 bg-[#1B4965]">
                 <div class="container mx-auto px-6">
-                    <h2 class="text-4xl font-bold text-white mb-12 text-center">Featured Projects</h2>
+                    <h2 class="text-4xl font-bold text-white mb-12 text-center" id="projects-heading">Featured Projects</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <div id="project-1" class="bg-white rounded-xl overflow-hidden">
                             <img class="w-full h-48 object-cover" 
-                            src="images/finance_app_designs.png" 
-                            alt="modern web application dashboard UI design mockup" >
+                            src="images/finance_app_designs.webp" 
+                            alt="Finance dashboard UI mockup" aria-hidden="true" >
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">Finance Dashboard</h3>
                                 <p class="text-gray-600 mb-4">A comprehensive financial management 
                                     platform with intuitive analytics.</p>
-                                <button class="text-[#FF6B6B] hover:text-[#E9B44C]"><a href="finance_hub.html">
-                                    Case Study →</a>
-                                </button>
+                                <a href="finance_hub.html" 
+                                class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
+                                rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
+                                focus:ring-4 focus:ring-[#E9B44C]">
+                                Case Study →
+                                </a>
                             </div>
                         </div>
                         <div id="project-2" class="bg-white rounded-xl overflow-hidden">
                             <img class="w-full h-48 object-cover" 
-                            src="images/fitness_app_design.png" 
-                            alt="mobile app UI design for fitness tracking application" >
+                            src="images/fitness_app_design.webp" 
+                            alt="mobile app UI design for fitness tracking application" aria-hidden="true">
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">Fitness App</h3>
                                 <p class="text-gray-600 mb-4">Mobile application for tracking workouts and nutrition.</p>
-                                <button class="text-[#FF6B6B] hover:text-[#E9B44C]"><a href="fitness_app.html">
-                                    Case Study →</a></button>
+                                <a href="fitness_app.html" 
+                                class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
+                                rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
+                                focus:ring-4 focus:ring-[#E9B44C]">
+                                Case Study →
+                                </a>
                             </div>
                         </div>
                         <div id="project-3" class="bg-white rounded-xl overflow-hidden">
                             <img class="w-full h-48 object-cover" 
-                            src="images/kidswap_project_designs.png" 
-                            alt="e-commerce website design mockup with modern UI elements" >
+                            src="images/kidswap_project_designs.webp" 
+                            alt="e-commerce website design mockup with modern UI elements" aria-hidden="true" >
                             <div class="p-6">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">E-commerce Platform</h3>
                                 <p class="text-gray-600 mb-4">Full-scale e-commerce solution with advanced filtering.</p>
-                                <button class="text-[#FF6B6B] hover:text-[#E9B44C]"><a href="e_commerce.html">
-                                    Case Study →</a>
-                                </button>
+                                <a href="e_commerce.html" 
+                                class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
+                                rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
+                                focus:ring-4 focus:ring-[#E9B44C]">
+                                Case Study →
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -336,8 +346,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         <div id="testimonial-1" class="bg-white p-8 rounded-xl">
                             <div class="flex items-center mb-4">
-                                <img src="images/marinex_testimonial.png" 
-                                alt="Client of Marinex Marine Consultancy" class="w-12 h-12 rounded-full mr-4" />
+                                <img src="images/marinex_testimonial.webp" 
+                                alt="Client of Marinex Marine Consultancy" class="w-12 h-12 rounded-full mr-4" aria-hidden="true" />
                                 <div>
                                     <h4 class="font-bold text-[#1B4965]">Filip Specht</h4>
                                     <p class="text-gray-600">Marinex Consulting</p>
@@ -350,8 +360,9 @@
                         </div>
                         <div id="testimonial-2" class="bg-white p-8 rounded-xl">
                             <div class="flex items-center mb-4">
-                                <img src="images/voltapark_testimonial.png" 
-                                alt="Client at Voltapark Solar Carport installer" class="w-12 h-12 rounded-full mr-4" />
+                                <img src="images/voltapark_testimonial.webp" 
+                                alt="Client at Voltapark Solar Carport installer" class="w-12 h-12 rounded-full mr-4" 
+                                aria-hidden="true"/>
                                 <div>
                                     <h4 class="font-bold text-[#1B4965]">Andzrej Adamski</h4>
                                     <p class="text-gray-600">Solar Panel Installation</p>
@@ -428,18 +439,19 @@
 
                     <div class="md:flex md:space-x-10">
                         <!-- Form Column -->
-                        <form action="https://formspree.io/f/mzbnqnyk" method="POST" id="contact-form" 
+                        <form action="https://formspree.io/f/mzbnqnyk" method="POST" id="contact-form" role="form"
                         class="md:flex-1 space-y-6">
-                        <input type="text" name="name" 
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" name="name"  
                         placeholder="Your Name"
                             class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
                                 focus:border-[#1B4965]" required>
-
+                        <label for="email" class="sr-only">Email</label>
                         <input type="email" name="email" 
                         placeholder="Your Email"
                             class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
                                 focus:border-[#1B4965]" required>
-
+                        <label for="message" class="sr-only">Message</label>
                         <textarea name="message" rows="5" 
                         placeholder="Tell me about your project or package you're interested in"
                             class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
@@ -531,10 +543,10 @@
     </footer>
     
 <!-- External Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
+<script src="https://cdn.tailwindcss.com" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" 
-    referrerpolicy="no-referrer"></script>
+    referrerpolicy="no-referrer" async></script>
 
 <!-- Script -->
 <script src="index.js" defer></script>

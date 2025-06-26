@@ -42,7 +42,7 @@
     <meta name="twitter:image" content="https://yourdomain.com/images/og-preview.jpg">
 
     <!-- ✅ CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.min.css">
 
     <!-- ✅ Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;500;600;700;800;900&display=swap" 
@@ -146,7 +146,8 @@
                 <!-- Logo -->
                 <div class="flex items-center space-x-3">
                     <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img src="images/PixelPerfectLogo.png" alt="Pixel Perfect Logo" class="h-10 w-auto">
+                        <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" class="h-10 w-auto"
+                        aria-hidden="true">
                     </a>
                     
                 <div class="text-2xl font-bold text-[#1B4965]">
@@ -247,9 +248,10 @@
                     
                         <div class="rounded-xl overflow-hidden shadow-lg mx-auto my-8 max-w-[90%] 
                             md:max-w-2xl lg:max-w-xl max-h-[300px] md:max-h-[400px]">
-                        <img src="images/fitness_app_homepage.png" 
+                        <img src="images/fitness_app_homepage.webp" 
                                 alt="Fitness App Interface" 
-                                class="w-full h-full object-contain" />
+                                class="w-full h-full object-contain"
+                                aria-hidden="true" />
                         </div>
                                     
                         <div class="mt-8 flex justify-center">
@@ -280,8 +282,9 @@
                                     <li>Figma (prototyping, responsive mockups)</li>
                                 </ul>
                             </div>
-                            <img src="images\research.png" 
-                                alt="User Research Process" class="rounded-xl shadow-lg">
+                            <img src="images/research.webp" 
+                                alt="User Research Process" class="rounded-xl shadow-lg"
+                                aria-hidden="true">
                         </div>
                         <div id="process-design" class="space-y-6">
                             <div class="bg-[#C3E0E5] p-8 rounded-xl">
@@ -296,9 +299,10 @@
                             </div>
                         
                             <div class="flex justify-center">
-                            <img src="images/finance_app_statistics.png" 
+                            <img src="images/finance_app_statistics.webp" 
                                     alt="Design Solutions" 
-                                    class="rounded-xl shadow-lg max-w-full h-auto">
+                                    class="rounded-xl shadow-lg max-w-full h-auto"
+                                    aria-hidden="true">
                             </div>
                         </div>
                     </div>
@@ -397,11 +401,12 @@
  
 
 <!-- External Libraries -->
-<script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
+<script src="https://cdn.tailwindcss.com" async></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" 
+    referrerpolicy="no-referrer" async></script>
 
-<!-- Your Script -->
+<!-- Script -->
 <script src="index.js" defer></script>
 
 </body>
