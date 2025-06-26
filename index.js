@@ -47,28 +47,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
-  // --- Mobile menu toggle button handling ---
-  const menuBtn = document.getElementById("menu-btn");
-  const mobileMenu = document.getElementById("mobile-menu");
+// --- Mobile menu toggle button handling ---
+const menuBtn = document.getElementById("menu-btn");
+const mobileMenu = document.getElementById("mobile-menu");
 
-  if (menuBtn && mobileMenu) {
-    menuBtn.addEventListener("click", () => {
-      if (mobileMenu.classList.contains("hidden")) {
-        // Show menu with animation classes
-        mobileMenu.classList.remove("hidden", "opacity-0", "scale-95");
-        mobileMenu.classList.add("flex", "opacity-100", "scale-100");
-      } else {
-        // Hide menu with animation classes
-        mobileMenu.classList.add("opacity-0", "scale-95");
+if (menuBtn && mobileMenu) {
+  menuBtn.addEventListener("click", () => {
+    if (mobileMenu.classList.contains("hidden")) {
+      // Show menu with animation classes
+      mobileMenu.classList.remove("hidden", "opacity-0", "scale-95");
+      mobileMenu.classList.add("flex", "opacity-100", "scale-100");
+    } else {
+      // Hide menu with animation classes
+      mobileMenu.classList.add("opacity-0", "scale-95");
 
-        // After animation delay, fully hide the menu
-        setTimeout(() => {
-          mobileMenu.classList.remove("flex", "opacity-100", "scale-100");
-          mobileMenu.classList.add("hidden");
-        }, 200);
-      }
+      // After animation delay, fully hide the menu
+      setTimeout(() => {
+        mobileMenu.classList.remove("flex", "opacity-100", "scale-100");
+        mobileMenu.classList.add("hidden");
+      }, 200);
+    }
+  });
+
+  // 🔽 New logic: Close mobile menu when a link is clicked
+  const menuLinks = mobileMenu.querySelectorAll("a");
+  menuLinks.forEach(link => {
+    link.addEventListener("click", () => {
+      mobileMenu.classList.add("opacity-0", "scale-95");
+      setTimeout(() => {
+        mobileMenu.classList.remove("flex", "opacity-100", "scale-100");
+        mobileMenu.classList.add("hidden");
+      }, 200);
     });
-  }
+  });
+}
 
   // --- Project filtering functionality ---
   const filterButtons = document.querySelectorAll(".filter-button");
