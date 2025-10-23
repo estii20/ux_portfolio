@@ -176,19 +176,17 @@
                             w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
                             opacity-0 transform scale-95 md:hidden">
             <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>
-            <a href="#skills" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Skills</a>
-            <a href="#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Testimonials</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
             <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
             <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
           </div>
           <!-- Desktop Nav (hidden on small screens) -->
           <div class="hidden md:flex space-x-6 items-center">
             <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
             <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-            <a href="#skills" class="text-[#1B4965] hover:text-[#FF6B6B]">Skills</a>
-            <a href="#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B]">Testimonials</a>
             <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
             <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
             <!-- CTA Button -->
             <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
@@ -269,169 +267,153 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about" class="py-12 sm:py-20 my-3 bg-[#FDFDFD]">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-12 xl:px-20">
-        <div class="grid grid-cols-1 md:grid-cols-[1fr_1.4fr] gap-8 md:gap-8 lg:gap-12 items-center md:items-start relative">
-            
-            <div class="hidden md:block absolute top-0 bottom-0 left-[41.6667%] w-1 
-                        bg-gradient-to-b from-[#FF6B6B] via-[#C3E0E5] to-[#1B4965] shadow-md"> 
-                
-                <div class="absolute top-1/2 -mt-2 -ml-1 h-4 w-4 rounded-full bg-[#1B4965] border-2 border-white shadow-xl"></div>
+    <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+
+    <!-- New projects Section -->
+     <section id="work" aria-labelledby="projects-heading" class="bg-gradient-to-br from-[#E0EBF0] via-[#F8E2E8] to-[#FFFFFF] py-20">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 id="projects-heading" class="text-5xl font-bold text-[#1B4965] mb-6">Featured Work</h2>
+                <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+                    A collection of projects that showcase my passion for creating meaningful user experiences.
+                </p>
             </div>
-            <div class="flex justify-center sm:justify-center md:justify-end md:pr-12 relative z-10"> 
-            <div class="bg-white p-6 rounded-3xl shadow-2xl relative 
-                        group 
-                        transform transition-transform duration-500 hover:scale-[1.01] hover:shadow-3xl 
-                        overflow-hidden 
-                        w-full max-w-sm md:max-w-md lg:max-w-lg"> 
-                
-                <img src="images/estelle_specht_ux_designer.jpg" 
-                    alt="Estelle working on design and code, sketching wireframes and coding on a laptop." 
-                    class="rounded-2xl shadow-lg w-full h-auto object-cover" />
-                
-                <div class="absolute inset-0 rounded-3xl border-4 border-transparent animate-pulse-border z-0 opacity-0 group-hover:opacity-100 transition-opacity duration-500" 
-                    style="border-image: linear-gradient(to right, #FF6B6B, #1B4965, #E9B44C) 1;">
-                </div>
-                <div class="absolute bottom-6 left-6 bg-[#FF6B6B] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-md z-20"> 
-                    The Creative Process 
-                </div>
-            </div>
-        </div>
             
-            <div class="space-y-4 sm:space-y-6 text-center md:text-left md:pt-4 relative z-10 md:pl-12">
-                <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965]">My Edge: Designer-Developer</h2>
-                <p class="text-base sm:text-lg text-gray-600 max-w-xl md:max-w-none mx-auto md:mx-0"> 
-                    My unique value is in the **seamless handoff**: I design beautiful, user-centered experiences in Figma, 
-                    and I build them to be clean and responsive in code (Tailwind CSS, JavaScript). As a UX/UI designer with a 
-                    Full-Stack developer certification, I ensure every concept is not just visionary, but technically sound 
-                    and ready for production, a skill I've successfully applied to early-stage client projects. </p>
-                <div class="grid grid-cols-2 gap-4 max-w-lg mx-auto md:mx-0">
-                    <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl shadow-lg border-b-4 border-[#FF6B6B] transition hover:shadow-2xl">
-                        <i class="fa-solid fa-users text-2xl text-[#1B4965] mb-2" aria-hidden="true"></i>
-                        <div class="text-lg sm:text-2xl font-bold text-[#1B4965] leading-tight"> User-Centric Design </div>
-                        <p class="text-xs mt-1 text-[#1B4965] opacity-80">Research, Wireframing, Figma UI</p>
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
+                <div id="project-featured" class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transform hover:scale-[1.03] transition duration-500 border-b-4 border-[#FF6B6B]">
+                    <div class="relative">
+                        <img class="w-full h-80 object-cover" 
+                          src="images/kidswap_project_designs.webp" 
+                          alt="modern fintech mobile app UI design with clean interface, gradient backgrounds, charts and financial data visualization" />
+                        <div class="absolute top-6 left-6 bg-[#FF6B6B] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                            Featured Project
+                        </div>
                     </div>
-                    <div class="bg-[#C3E0E5] p-4 sm:p-6 rounded-xl shadow-lg border-b-4 border-[#1B4965] transition hover:shadow-2xl">
-                        <i class="fa-solid fa-laptop-code text-2xl text-[#1B4965] mb-2" aria-hidden="true"></i>
-                        <div class="text-lg sm:text-2xl font-bold text-[#1B4965] leading-tight"> Code-Ready Fidelity </div>
-                        <p class="text-xs mt-1 text-[#1B4965] opacity-80">HTML, Tailwind, Responsive Build</p>
+                    <div class="p-8">
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Kidswap E-commerce</h3>
+                        <p class="text-gray-600 mb-6">Full-scale e-commerce solution with advanced filtering.</p>
+                        <div class="flex flex-wrap gap-2 mb-6">
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">UI/UX Design</span>
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">Django</span>
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">E-Commerce</span>
+                        </div>
+                        <a href="e_commerce.html" ><button class="text-[#FF6B6B] hover:text-[#E9B44C] font-semibold flex items-center">
+                            View Case Study <i class="fa-solid fa-arrow-right ml-2"></i>
+                        </button></a>
                     </div>
                 </div>
-                <a href="about.html" class="inline-block text-[#1B4965] hover:text-[#FF6B6B] font-semibold pt-2"> Read the Full Story → </a>
+                
+                <div class="space-y-8">
+                    <div id="project-1" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                        <div class="flex">
+                            <img class="w-32 h-32 object-cover" 
+                              src="images/casa_artigiana_banner.png" 
+                              alt="e-commerce website design mockup with modern UI elements" aria-hidden="true" />
+                            <div class="p-6 flex-1">
+                                <h3 class="text-xl font-bold text-[#1B4965] mb-2">Casa Artigiana</h3>
+                                <p class="text-gray-600 text-sm mb-3">Redesigned shopping experience for Italian Artisans.</p>
+                                <a href="casa_artigiana.html"><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                    View Project →
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="project-2" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                        <div class="flex">
+                            <img class="w-32 h-32 object-cover" 
+                              src="images/fitness_app_design.webp" 
+                              alt="mobile app UI design for fitness tracking application" aria-hidden="true" />  
+                            <div class="p-6 flex-1">
+                                <h3 class="text-xl font-bold text-[#1B4965] mb-2">Fitness Tracker</h3>
+                                <p class="text-gray-600 text-sm mb-3">Mobile application for tracking workouts and nutrition.</p>
+                                <a href="fitness_app.html"><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                    View Project →
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="project-3" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
+                        <div class="flex">
+                            <img class="w-32 h-32 object-cover" 
+                              src="images/finance_app_designs.webp" 
+                              alt="Finance dashboard UI mockup" aria-hidden="true" />
+                            <div class="p-6 flex-1">
+                                <h3 class="text-xl font-bold text-[#1B4965] mb-2">Finance Dashboard</h3>
+                                <p class="text-gray-600 text-sm mb-3">A comprehensive financial management platform.</p>
+                                <a href="finance_hub.html" ><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                    View Project →
+                                </button></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </div>
         </div>
     </section>
 
-      <!-- Projects Section -->
-      <section id="projects" aria-labelledby="projects-heading" class="py-20 bg-[#1B4965]">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-white mb-12 text-center" id="projects-heading">Featured Projects</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <div id="project-1" class="bg-white rounded-xl overflow-hidden">
-              <img class="w-full h-48 object-cover" src="images/finance_app_designs.webp" 
-              alt="Finance dashboard UI mockup" aria-hidden="true">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1B4965] mb-2">Finance Dashboard</h3>
-                <p class="text-gray-600 mb-4">A comprehensive financial management platform.</p>
-                <a href="finance_hub.html" 
-                    class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
-                                    rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
-                                    focus:ring-4 focus:ring-[#E9B44C]"> Case Study → </a>
-              </div>
-            </div>
-            <div id="project-2" class="bg-white rounded-xl overflow-hidden">
-              <img class="w-full h-48 object-cover" src="images/fitness_app_design.webp" 
-              alt="mobile app UI design for fitness tracking application" aria-hidden="true">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1B4965] mb-2">Fitness App</h3>
-                <p class="text-gray-600 mb-4">Mobile application for tracking workouts and nutrition.</p>
-                <a href="fitness_app.html" 
-                    class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
-                                    rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
-                                    focus:ring-4 focus:ring-[#E9B44C]"> Case Study → </a>
-              </div>
-            </div>
-            <div id="project-3" class="bg-white rounded-xl overflow-hidden">
-              <img class="w-full h-48 object-cover" src="images/kidswap_project_designs.webp" 
-              alt="e-commerce website design mockup with modern UI elements" aria-hidden="true">
-              <div class="p-6">
-                <h3 class="text-xl font-bold text-[#1B4965] mb-2">E-commerce Platform</h3>
-                <p class="text-gray-600 mb-4">Full-scale e-commerce solution with advanced filtering.</p>
-                <a href="e_commerce.html" 
-                    class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
-                                    rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
-                                    focus:ring-4 focus:ring-[#E9B44C]"> Case Study → </a>
-              </div>
-            </div>
-          </div>
+    <!-- New About Section -->
+    <section id="about" class="py-12 sm:py-20 bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] relative overflow-hidden">
+        <div class="absolute inset-0 opacity-10">
+            <div class="absolute top-10 left-10 w-20 h-20 md:w-40 md:h-40 border-4 border-white rounded-full hidden sm:block"></div>
+            <div class="absolute bottom-10 right-10 w-32 h-32 md:w-60 md:h-60 border-4 border-white rounded-full hidden sm:block"></div>
+            <div class="absolute top-1/2 left-1/4 w-10 h-10 md:w-20 md:h-20 border-4 border-white rounded-full hidden sm:block"></div>
         </div>
-      </section>
-
-      <!-- Skills & Expertise Section -->
-      <section id="skills" class="py-20 bg-[#FDFDFD]">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-[#1B4965] mb-12 text-center">Skills & Expertise</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            <div id="skill-1" class="bg-[#C3E0E5] p-6 rounded-xl">
-              <i class="fa-solid fa-pen-ruler text-3xl text-[#1B4965] mb-4"></i>
-              <h3 class="text-xl font-bold text-[#1B4965] mb-2">UI Design</h3>
-              <p class="text-[#1B4965]">Figma, Adobe XD, Sketch</p>
-            </div>
-            <div id="skill-2" class="bg-[#C3E0E5] p-6 rounded-xl">
-              <i class="fa-solid fa-users text-3xl text-[#1B4965] mb-4"></i>
-              <h3 class="text-xl font-bold text-[#1B4965] mb-2">UX Research</h3>
-              <p class="text-[#1B4965]">User Testing, Interviews</p>
-            </div>
-            <div id="skill-3" class="bg-[#C3E0E5] p-6 rounded-xl">
-              <i class="fa-solid fa-code text-3xl text-[#1B4965] mb-4"></i>
-              <h3 class="text-xl font-bold text-[#1B4965] mb-2">Development</h3>
-              <p class="text-[#1B4965]">HTML, CSS, JavaScript, Python, Bootstrap, Heroku, Django, Database Access & Management, Code Testing</p>
-            </div>
-            <div id="skill-4" class="bg-[#C3E0E5] p-6 rounded-xl">
-              <i class="fa-solid fa-rocket text-3xl text-[#1B4965] mb-4"></i>
-              <h3 class="text-xl font-bold text-[#1B4965] mb-2">Strategy</h3>
-              <p class="text-[#1B4965]">Product Strategy, Design Systems</p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Testimonials Section -->
-      <section id="testimonials" class="py-20 bg-[#FF6B6B]">
-        <div class="container mx-auto px-6">
-          <h2 class="text-4xl font-bold text-white mb-12 text-center">What My Early Clients Say</h2>
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div id="testimonial-1" class="bg-white p-8 rounded-xl">
-              <div class="flex items-center mb-4">
-                <img src="images/marinex_testimonial.webp" alt="Client of Marinex Marine Consultancy" 
-                    class="w-12 h-12 rounded-full mr-4" aria-hidden="true" />
-                <div>
-                  <h4 class="font-bold text-[#1B4965]">Filip Specht</h4>
-                  <p class="text-gray-600">Marinex Consulting</p>
+        
+        <div class="container mx-auto px-6 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
+                
+                <div class="lg:col-span-2 space-y-8 text-white">
+                    <div>
+                        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-6 text-accessible-white">My Edge: Designer-Developer</h2>
+                        
+                        <p class="text-lg sm:text-xl text-white leading-relaxed mb-6 max-w-2xl mx-auto lg:mx-0 text-accessible-white">
+                            My unique value is in the **seamless handoff**: I design beautiful, user-centered experiences in Figma, 
+                            and I build them to be clean and responsive in code (Tailwind CSS, JavaScript). As a UX/UI designer with a 
+                            Full-Stack developer certification, I ensure every concept is not just visionary, but technically sound 
+                            and ready for production, a skill I've successfully applied to early-stage client projects.
+                        </p>
+                        
+                        <p class="text-base sm:text-lg text-white leading-relaxed max-w-2xl mx-auto lg:mx-0 text-accessible-white">
+                            When I'm not designing, you'll find me exploring new coffee shops, practising yoga, 
+                            or learning about emerging design trends and technologies.
+                        </p>
+                    </div>
+                    
+                    <a href="about.html" class="inline-block bg-white hover:bg-gray-100 text-[#1B4965] font-semibold px-6 py-3 rounded-full transition duration-300 shadow-md"> Read the Full Story → </a>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                            <div class="text-2xl sm:text-3xl text-[#1B4965] font-bold mb-2">UI Design</div>
+                            <div class="text-[#1B4965] mb-2">Figma, Adobe XD, Sketch</div>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                            <div class="text-2xl sm:text-3xl text-[#1B4965] font-bold mb-2">Development</div>
+                            <div class="text-[#1B4965] mb-2">HTML, CSS, JavaScript, Python, Bootstrap, Heroku, 
+                              Django, Database Access & Management, Code Testing</div>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <p class="text-gray-600">"Estelle was fantastic to work with! She truly 
-                listened to my needs and delivered a clean, professional website for my business that 
-                was exactly what I envisioned. Highly recommend her dedicated approach!"</p>
-            </div>
-            <div id="testimonial-2" class="bg-white p-8 rounded-xl">
-              <div class="flex items-center mb-4">
-                <img src="images/voltapark_testimonial.webp" alt="Client at Voltapark Solar Carport installer" 
-                class="w-12 h-12 rounded-full mr-4" aria-hidden="true" />
-                <div>
-                  <h4 class="font-bold text-[#1B4965]">Andzrej Adamski</h4>
-                  <p class="text-gray-600">Solar Panel Installation</p>
+                
+                <div class="flex justify-center pt-8 lg:pt-0">
+                    <div class="space-y-6 w-full max-w-sm">
+                        <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                            <i class="fa-solid fa-palette text-3xl text-white mb-4"></i>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">User-Centric Design</h3>
+                            <p class="text-[#1B4965] mb-2">Research, Wireframing, Figma UI</p>
+                        </div>
+                        <div class="bg-white/20 backdrop-blur-sm p-6 rounded-2xl border border-white/30">
+                            <i class="fa-solid fa-rocket text-3xl text-white mb-4"></i>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Code-Ready Fidelity</h3>
+                            <p class="text-[#1B4965] mb-2">HTML, Tailwind, Responsive Build</p>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <p class="text-gray-600">"I needed a simple, functional business website, and Estelle handled 
-                it perfectly. She was incredibly responsive, clear in her communication, and made the whole process easy, 
-                even incorporating my specific ideas seamlessly."</p>
+                
             </div>
-          </div>
         </div>
-      </section>
+    </section>
 
         <!-- Pricing Section -->
         <section class="bg-white py-20 px-6" id="pricing">
@@ -485,6 +467,8 @@
                     </div>
             </div>
         </section>
+
+        <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
         <!-- Contact Form Card -->
         <section id="contact" class="py-20 bg-[#FDFDFD]">

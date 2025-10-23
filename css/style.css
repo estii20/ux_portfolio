@@ -315,3 +315,9 @@ img, iframe {
     animation: none; /* Disable animation for steady hover effect if preferred */
     border-image: linear-gradient(to right, #FF6B6B, #1B4965, #E9B44C) 1;
 }
+
+.text-accessible-white {
+        text-shadow: 
+            1px 1px 2px #000000, 
+            -1px -1px 2px #000000;
+    }
