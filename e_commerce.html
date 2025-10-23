@@ -144,266 +144,233 @@
 
     <body class="h-full text-base-content">
         <nav id="header" class="fixed w-full bg-[#FDFDFD] z-50 shadow-sm">
-            <nav class="bg-[#C3E0E5] p-4">
-                <div class="container mx-auto flex justify-between items-center">
-                    
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img 
-                            src="images/PixelPerfectLogo.webp" 
-                            alt="Pixel Perfect Logo" 
-                            width="300"   height="100"  class="h-10 w-auto" 
-                            aria-hidden="true"
-                        >
-                    </a>
-                    
-                <div class="text-2xl font-bold text-[#1B4965]">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        Pixel Perfect
-                    </a>                   
-                </div>
-                </div>  
-
-                    <!-- Burger Menu Button (Only visible on small screens) -->
-                    <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none">
-                        &#9776;
-                    </button>
-
-                    <!-- Mobile Menu (only shows on small screens) -->
-                    <div id="mobile-menu"
-                        class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
+      <nav class="bg-[#C3E0E5] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
+              <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" width="300" height="100" class="h-10 w-auto" aria-hidden="true">
+            </a>
+            <div class="text-2xl font-bold text-[#1B4965]">
+              <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2"> Pixel Perfect </a>
+            </div>
+          </div>
+          <!-- Burger Menu Button (Only visible on small screens) -->
+          <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none"> &#9776; </button>
+          <!-- Mobile Menu (only shows on small screens) -->
+          <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
                             w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
                             opacity-0 transform scale-95 md:hidden">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
-                    </div>
-
-                    <!-- Desktop Nav (hidden on small screens) -->
-                    <div class="hidden md:flex space-x-6 items-center">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B]">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B]">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
-
-                        <!-- CTA Button -->
-                        <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
+          </div>
+          <!-- Desktop Nav (hidden on small screens) -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
+            <!-- CTA Button -->
+            <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
                             transition duration-300">
-                            <a href="index.html#contact">Let's Talk</a>
-                        </button>
-                    </div>
-                </div>
-            </nav>
-        </nav>
+              <a href="#contact">Let's Talk</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </nav>
 
         <main class="min-h-screen pt-20 bg-[#FDFDFD]">
-        <section id="ecommerce-case-study" class="pt-32 pb-20">
-            <div class="container mx-auto px-6 max-w-6xl">
-            
-            <!-- Header -->
-            <header class="max-w-4xl mx-auto mb-16 text-center sm:text-left">
-                <h1 class="text-3xl sm:text-5xl font-bold text-[#1B4965] mb-6">
-                E-commerce Platform: Design & Development
-                </h1>
-                <div class="flex flex-wrap items-center justify-center sm:justify-start gap-6 text-gray-600 mb-8">
-                <div class="flex items-center gap-2">
-                    <i class="fa-regular fa-clock text-[#FF6B6B]"></i>
-                    <span>Duration: 4 months</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-users text-[#FF6B6B]"></i>
-                    <span>Role: UX Designer & Django Developer</span>
-                </div>
-                <div class="flex items-center gap-2">
-                    <i class="fa-solid fa-tag text-[#FF6B6B]"></i>
-                    <span>Category: E-commerce</span>
-                </div>
-                </div>
-            </header>
+            <section id="ecommerce-case-study" class="py-16 sm:py-24">
+                <div class="container mx-auto px-6 max-w-6xl">
+                    
+                    <header class="max-w-4xl mx-auto mb-16 text-center">
+                        <h1 class="text-4xl sm:text-6xl font-extrabold text-[#1B4965] mb-6">
+                        E-commerce Platform: Design & Development
+                        </h1>
+                        <div class="flex flex-wrap items-center justify-center gap-8 text-lg font-semibold text-gray-700 mb-8">
+                        <div class="flex items-center gap-2">
+                            <i class="fa-regular fa-clock text-[#FF6B6B] text-xl"></i>
+                            <span>Duration: <span class="text-[#1B4965]">4 months</span></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-users text-[#FF6B6B] text-xl"></i>
+                            <span>Role: <span class="text-[#1B4965]">UX Designer & Django Developer</span></span>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="fa-solid fa-tag text-[#FF6B6B] text-xl"></i>
+                            <span>Category: <span class="text-[#1B4965]">E-commerce</span></span>
+                        </div>
+                        </div>
+                    </header>
 
-            <!-- Hero Image -->
-            <div id="project-hero" class="mb-20">
-                <img 
-                src="images/kidswap_hifi_mobile_homepage.webp" 
-                alt="e-commerce platform main banner"
-                class="w-full h-96 md:h-[600px] object-cover rounded-2xl shadow-md hover:shadow-lg 
-                    transition-shadow duration-300"
-                loading="lazy"
-                decoding="async"
-                aria-hidden="true"
-                >
-            </div>
+                    <div id="project-hero" class="mb-20">
+                        <img 
+                        src="images/kidswap_hifi_mobile_homepage.webp" 
+                        alt="e-commerce platform main banner"
+                        class="w-full h-96 md:h-[600px] object-cover rounded-2xl shadow-xl hover:shadow-2xl 
+                            transition-shadow duration-300"
+                        loading="lazy"
+                        decoding="async"
+                        aria-hidden="true"
+                        >
+                    </div>
 
-            <!-- Project Overview -->
-            <section id="project-overview" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
-            <!-- Main Content -->
-            <div class="col-span-1 md:col-span-2">
-                <h2 class="text-3xl font-bold text-[#1B4965] mb-6">KidSwap: A Full-Stack E-commerce Solution</h2>
-                <p class="text-gray-600 mb-6">
-                This project was a personal initiative where I took on the challenge of both 
-                UX design and full-stack development using Django. 
-                The goal was to create an intuitive e-commerce platform for parents to buy and 
-                sell children's clothing. 
-                I focused on a user-centered design and a scalable architecture to ensure a 
-                seamless shopping experience across all devices.
-                </p>
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                <article class="bg-[#C3E0E5] p-6 rounded-xl">
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">Challenge</h3>
-                    <p class="text-[#1B4965]">
-                    Designing and developing an efficient product 
-                    categorisation and filtering system for a user base with limited time.
-                    </p>
-                </article>
-                <article class="bg-[#C3E0E5] p-6 rounded-xl">
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">Solution</h3>
-                    <p class="text-[#1B4965]">
-                    I implemented an intuitive navigation structure and 
-                    a smart filtering system, built with Django, to enhance the user experience.
-                    </p>
-                </article>
+                    <section id="project-overview" class="grid grid-cols-1 md:grid-cols-3 gap-12 mb-20">
+                    <div class="col-span-1 md:col-span-2">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] mb-8 relative pb-3 inline-block">
+                            KidSwap: A Full-Stack E-commerce Solution
+                            <span class="absolute left-0 bottom-0 h-1 w-12 bg-[#FF6B6B] rounded-full"></span>
+                        </h2>
+                        <p class="text-gray-600 text-lg mb-8 leading-relaxed">
+                        This project was a personal initiative where I took on the challenge of both 
+                        **UX design and full-stack development** using Django. 
+                        The goal was to create an intuitive e-commerce platform for parents to buy and 
+                        sell children's clothing. 
+                        I focused on a user-centered design and a scalable architecture to ensure a 
+                        seamless shopping experience across all devices.
+                        </p>
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <article class="bg-[#C3E0E5] p-6 rounded-2xl shadow-md">
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2 border-b border-[#1B4965]/30 pb-1">Challenge</h3>
+                            <p class="text-[#1B4965] text-lg">
+                            Designing and developing an efficient product 
+                            categorisation and filtering system for a user base with limited time.
+                            </p>
+                        </article>
+                        <article class="bg-[#C3E0E5] p-6 rounded-2xl shadow-md">
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2 border-b border-[#1B4965]/30 pb-1">Solution</h3>
+                            <p class="text-[#1B4965] text-lg">
+                            I implemented an intuitive navigation structure and 
+                            a **smart filtering system**, built with Django, to enhance the user experience.
+                            </p>
+                        </article>
+                        </div>
+                    </div>
+
+                    <aside class="bg-[#1B4965] p-8 rounded-2xl shadow-xl text-white flex flex-col justify-start 
+                                col-span-1 w-full mx-auto max-w-full mb-8 md:mb-0 md:col-span-1">
+                        <h3 class="text-2xl font-bold mb-6 border-b-2 border-[#FF6B6B] pb-3">Key Results</h3>
+                        <ul class="space-y-6 text-lg">
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-arrow-trend-up text-[#FF6B6B] text-2xl mt-1"></i>
+                            <span>Successfully designed and developed a fully functional e-commerce platform.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-clock-rotate-left text-[#FF6B6B] text-2xl mt-1"></i>
+                            <span>Implemented a robust **Django backend** ensuring efficient data management and scalability.</span>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fa-solid fa-mobile-screen text-[#FF6B6B] text-2xl mt-1"></i>
+                            <span>Achieved a highly responsive and intuitive user interface across all devices.</span>
+                        </li>
+                        </ul>
+                    </aside>
+                    </section>
+
+                    <section id="design-process" class="mb-20">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] mb-12 relative pb-3 text-center md:text-left">
+                            The Process 
+                            <span class="absolute left-0 bottom-0 h-1 w-12 bg-[#FF6B6B] rounded-full hidden md:block"></span>
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                        <article class="bg-white p-6 rounded-2xl shadow-xl text-center transform hover:-translate-y-1 transition duration-300">
+                            <div class="text-[#FF6B6B] text-5xl font-extrabold mb-4">01</div>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Research</h3>
+                            <p class="text-gray-600">Conducted user interviews and competitive analysis</p>
+                        </article>
+                        <article class="bg-white p-6 rounded-2xl shadow-xl text-center transform hover:-translate-y-1 transition duration-300">
+                            <div class="text-[#FF6B6B] text-5xl font-extrabold mb-4">02</div>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Wireframing</h3>
+                            <p class="text-gray-600">Created low and high-fidelity wireframes</p>
+                        </article>
+                        <article class="bg-white p-6 rounded-2xl shadow-xl text-center transform hover:-translate-y-1 transition duration-300">
+                            <div class="text-[#FF6B6B] text-5xl font-extrabold mb-4">03</div>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">UI Design</h3>
+                            <p class="text-gray-600">Developed visual design system and components</p>
+                        </article>
+                        <article class="bg-white p-6 rounded-2xl shadow-xl text-center transform hover:-translate-y-1 transition duration-300">
+                            <div class="text-[#FF6B6B] text-5xl font-extrabold mb-4">04</div>
+                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Development</h3>
+                            <p class="text-gray-600">Built out the full-stack solution using Django</p>
+                        </article>
+                        </div>
+                    </section>
+
+                    <section id="live-site" class="mb-20">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] mb-12 text-center relative pb-3 inline-block">
+                            Live E-commerce Website
+                            <span class="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-12 bg-[#FF6B6B] rounded-full"></span>
+                        </h2>
+                        <div class="w-full px-4 md:px-0 flex flex-col items-center">
+                        <img
+                            src="images/am_i_responsive_kidswap.webp"
+                            alt="Responsive views of the e-commerce platform on different devices"
+                            class="w-full max-w-4xl max-h-[500px] md:max-h-[600px] object-cover rounded-2xl 
+                                shadow-xl hover:shadow-2xl transition-shadow duration-300 mb-8"
+                            loading="lazy"
+                            decoding="async"
+                            aria-hidden="true"
+                        >
+                        <a href="https://kidswap-803e5962b0db.herokuapp.com/" 
+                        target="_blank" rel="noopener noreferrer" class="w-full max-w-xs block">
+                            <button class="bg-[#FF6B6B] text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:bg-[#E9B44C] 
+                                hover:scale-[1.02] hover:shadow-xl transition duration-300 w-full">
+                            Visit Live Website 🌐
+                            </button>
+                        </a>
+                        </div>
+                    </section>
+
+                    <div id="next-project" class="text-center py-12 border-t border-gray-200">
+                        <p class="text-xl font-semibold text-gray-500 mb-4">Next Project</p>
+                        <span class="text-3xl font-bold text-[#1B4965] hover:text-[#FF6B6B] transition duration-300 cursor-pointer">
+                            <a href="healthy_habits.html">Healthy Habits Tool →</a>
+                        </span>
+                    </div>
                 </div>
-            </div>
-
-            <!-- Sidebar Key Results -->
-            <aside class="bg-[#1B4965] p-8 rounded-xl text-white flex flex-col justify-center 
-                            col-span-1 w-full mx-auto max-w-full mb-8 md:mb-0 md:col-span-1">
-                <h3 class="text-xl font-bold mb-6">Key Results</h3>
-                <ul class="space-y-4">
-                <li class="flex items-center gap-4">
-                    <i class="fa-solid fa-arrow-trend-up text-[#FF6B6B] text-2xl"></i>
-                    <span>Successfully designed and developed a fully functional e-commerce platform.</span>
-                </li>
-                <li class="flex items-center gap-4">
-                    <i class="fa-solid fa-clock-rotate-left text-[#FF6B6B] text-2xl"></i>
-                    <span>Implemented a robust Django backend ensuring efficient data management and scalability.</span>
-                </li>
-                <li class="flex items-center gap-4">
-                    <i class="fa-solid fa-mobile-screen text-[#FF6B6B] text-2xl"></i>
-                    <span>Achieved a highly responsive and intuitive user interface across all devices.</span>
-                </li>
-                </ul>
-            </aside>
             </section>
+        </main>
 
+        <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
-            <!-- Design Process -->
-            <section id="design-process" class="mb-20">
-                <h2 class="text-3xl font-bold text-[#1B4965] mb-12 text-center md:text-left">Design Process</h2>
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Process Step -->
-                <article class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <div class="text-[#FF6B6B] text-4xl font-bold mb-4">01</div>
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">Research</h3>
-                    <p class="text-gray-600">Conducted user interviews and competitive analysis</p>
-                </article>
-                <article class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <div class="text-[#FF6B6B] text-4xl font-bold mb-4">02</div>
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">Wireframing</h3>
-                    <p class="text-gray-600">Created low and high-fidelity wireframes</p>
-                </article>
-                <article class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <div class="text-[#FF6B6B] text-4xl font-bold mb-4">03</div>
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">UI Design</h3>
-                    <p class="text-gray-600">Developed visual design system and components</p>
-                </article>
-                <article class="bg-white p-6 rounded-xl shadow-lg text-center">
-                    <div class="text-[#FF6B6B] text-4xl font-bold mb-4">04</div>
-                    <h3 class="text-xl font-bold text-[#1B4965] mb-2">Testing</h3>
-                    <p class="text-gray-600">Conducted usability testing and iterations</p>
-                </article>
+        <!-- New Footer Section -->
+        <footer id="footer" class="bg-[#12384B] text-white py-12">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
+
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                    </h3>
+                    <p class="text-xl text-[#C3E0E5]">
+                        Let's chat about design, development, and how we can bring your vision to life.
+                    </p>
+                    
+                    <a href="#contact" class="inline-block">
+                        <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Start the Conversation
+                        </button>
+                    </a>
                 </div>
-            </section>
 
-            <!-- Live Site -->
-            <section id="live-site" class="mb-20">
-                <h2 class="text-3xl font-bold text-[#1B4965] mb-12 text-center">Live E-commerce Website</h2>
-                <div class="w-full px-4 md:px-0 flex flex-col items-center">
-                <img
-                    src="images/am_i_responsive_kidswap.webp"
-                    alt="e-commerce platform main banner"
-                    class="w-full max-w-4xl max-h-[500px] md:max-h-[600px] object-cover rounded-2xl 
-                        shadow-md hover:shadow-lg transition-shadow duration-300 mb-8"
-                    loading="lazy"
-                    decoding="async"
-                    aria-hidden="true"
-                >
-                <a href="https://kidswap-803e5962b0db.herokuapp.com/" 
-                target="_blank" rel="noopener noreferrer" class="w-full max-w-xs">
-                    <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full shadow-md hover:bg-[#E9B44C] 
-                        hover:scale-105 hover:shadow-lg transition duration-300 w-full">
-                    Visit Live Website
-                    </button>
-                </a>
-            </div>
-        </section>
+                <div class="border-t border-[#C3E0E5]/30 mt-12 pt-8">
+                    
+                    <div class="flex justify-center space-x-6 text-sm mb-4">
+                        <a href="index.html#home" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Home</a>
+                        <a href="projects.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Projects</a>
+                        <a href="about.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">About</a>
+                        <a href="index.html#contact" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Contact</a>
+                    </div>
 
-        <div id="next-project" class="text-center mt-8">
-        <!-- reduced top margin from possibly larger value -->
-        <p class="text-gray-600 mb-4">Next Project</p>
-        <span class="text-2xl font-bold text-[#1B4965] hover:text-[#FF6B6B] transition duration-300 cursor-pointer">
-            <a href="healthy_habits.html">Healthy Habits Tool →</a>
-        </span>
-        </div>
-    </main>
-
-        <footer id="footer" class="bg-[#1B4965] text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold">Pixel Perfect</h3>
-                <p class="text-[#C3E0E5] text-sm md:text-base mt-4">Creating meaningful digital 
-                experiences through thoughtful design.</p>
-            </div>
-
-            <!-- Column 2 -->
-            <div>
-                <h4 class="font-bold">Quick Links</h4>
-                <ul class="space-y-2 mt-4">
-                <li><a href="index.html#home" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Home</a></li>
-                <li><a href="projects.html" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Projects</a></li>
-                <li><a href="index.html#skills" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Skills</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3 -->
-            <div>
-                <h4 class="font-bold"><a href="index.html#contact">Contact Form</a></h4>
-                <ul class="space-y-2 mt-4">
-                <li class="text-[#C3E0E5] break-all">estelle.pixelperfect@gmail.com</li>
-                <li class="text-[#C3E0E5]">+39 3780639042</li>
-                </ul>
-            </div>
-
-            <!-- Column 4 -->
-            <div>
-                <h4 class="font-bold">Follow Me</h4>
-                <div class="flex space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/estii20" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                    <p class="text-[#C3E0E5] text-sm">
+                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                    </p>
                 </div>
             </div>
-
-            </div>
-
-            <div class="border-t border-[#C3E0E5] mt-12 pt-8 text-center text-[#C3E0E5] text-sm">
-            <p>&copy; 2025 Pixel Perfect. All rights reserved.</p>
-            </div>
-        </div>
         </footer>
    
 

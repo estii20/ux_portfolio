@@ -141,268 +141,245 @@
 
     <body class="h-full text-base-content">
         <nav id="header" class="fixed w-full bg-[#FDFDFD] z-50 shadow-sm">
-            <nav class="bg-[#C3E0E5] p-4">
-                <div class="container mx-auto flex justify-between items-center">
-                    
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img 
-                            src="images/PixelPerfectLogo.webp" 
-                            alt="Pixel Perfect Logo" 
-                            width="300"   height="100"  class="h-10 w-auto" 
-                            aria-hidden="true"
-                        >
-                    </a>
-                    
-                <div class="text-2xl font-bold text-[#1B4965]">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        Pixel Perfect
-                    </a>                   
-                </div>
-                </div>   
-
-                    <!-- Burger Menu Button (Only visible on small screens) -->
-                    <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none">
-                        &#9776;
-                    </button>
-
-                    <!-- Mobile Menu (only shows on small screens) -->
-                    <div id="mobile-menu"
-                        class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
+      <nav class="bg-[#C3E0E5] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
+              <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" width="300" height="100" class="h-10 w-auto" aria-hidden="true">
+            </a>
+            <div class="text-2xl font-bold text-[#1B4965]">
+              <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2"> Pixel Perfect </a>
+            </div>
+          </div>
+          <!-- Burger Menu Button (Only visible on small screens) -->
+          <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none"> &#9776; </button>
+          <!-- Mobile Menu (only shows on small screens) -->
+          <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
                             w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
                             opacity-0 transform scale-95 md:hidden">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
-                    </div>
-
-                    <!-- Desktop Nav (hidden on small screens) -->
-                    <div class="hidden md:flex space-x-6 items-center">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B]">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B]">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
-                       <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
-
-                        <!-- CTA Button -->
-                        <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
+          </div>
+          <!-- Desktop Nav (hidden on small screens) -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
+            <!-- CTA Button -->
+            <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
                             transition duration-300">
-                            <a href="index.html#contact">Let's Talk</a>
-                        </button>
+              <a href="#contact">Let's Talk</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+    <main class="pt-24 bg-[#FDFDFD]">
+        <section id="project-hero" 
+                class="relative bg-cover bg-center bg-no-repeat py-28 px-6"
+                style="background-image: url('images/fitness_app_design.png');">
+            
+            <div class="absolute inset-0 bg-[#1B4965]/85 z-0"></div>
+
+            <div class="relative z-10 container mx-auto text-center max-w-4xl space-y-6">
+                <span class="text-xl text-[#C3E0E5] uppercase tracking-widest font-semibold">Personal UX Case Study</span>
+                <h1 class="text-5xl sm:text-6xl font-extrabold text-white leading-tight">
+                    FitTrack: Fitness App Redesign 🏃
+                </h1>
+                <p class="text-xl text-[#C3E0E5] leading-relaxed">
+                    FitTrack is a conceptual redesign of a fitness mobile app aimed at 
+                    improving workout tracking, nutrition logging, and user motivation. 
+                    This solo case study focused on increasing **engagement and reducing friction** in the daily use of fitness tools.
+                </p>
+            </div>
+        </section>
+            
+        <section id="project-overview" class="py-16 bg-[#FDFDFD]">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div id="overview-card-1" class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-regular fa-clock text-4xl text-[#FF6B6B] mb-3"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2 border-b border-[#1B4965]/30 pb-2 inline-block">Timeline</h3>
+                        <p class="text-3xl font-extrabold text-[#1B4965] mt-2">3 months</p>
+                        <p class="text-sm text-[#1B4965]">Jan - Mar 2025</p>
+                    </div>
+                    <div id="overview-card-2" class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-users text-4xl text-[#FF6B6B] mb-3"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2 border-b border-[#1B4965]/30 pb-2 inline-block">Role</h3>
+                        <p class="text-lg font-semibold text-[#1B4965] mt-2">Lead UI/UX Designer</p>
+                        <p class="text-lg font-semibold text-[#1B4965]">Product Strategist</p>
+                    </div>
+                    <div id="overview-card-3" class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-pen-ruler text-4xl text-[#FF6B6B] mb-3"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2 border-b border-[#1B4965]/30 pb-2 inline-block">Deliverables</h3>
+                        <p class="text-lg font-semibold text-[#1B4965] mt-2">UX Research & Design System</p>
+                        <p class="text-lg font-semibold text-[#1B4965]">Interactive Prototype</p>
                     </div>
                 </div>
-            </nav>
-        </nav>
+            </div>
+        </section>
 
-        <main class="pt-24">
-            <section id="project-hero" 
-                                class="relative bg-cover bg-center bg-no-repeat py-28 px-6"
-                                style="background-image: url('images/fitness_app_design.png');">
-                
-                <div class="absolute inset-0 bg-[#1B4965]/80 z-0"></div>
-
-                <div class="relative z-10 container mx-auto text-center max-w-4xl space-y-6">
-                    <span class="text-[#C3E0E5] uppercase tracking-wider">Personal UX Case Study</span>
-                    <h1 class="text-5xl font-bold text-white">FitTrack: Fitness App Redesign</h1>
-                    <p class="text-xl text-[#C3E0E5]">
-                        FitTrack is a conceptual redesign of a fitness mobile app aimed at 
-                        improving workout tracking, nutrition logging, and user motivation. 
-                        This solo case study focused on increasing engagement and reducing friction 
-                        in the daily use of fitness tools.
+        <section id="project-challenge" class="py-20 bg-white">
+            <div class="container mx-auto px-4 md:px-6">
+                <div class="max-w-4xl mx-auto text-center">
+                    <h2 class="text-4xl font-extrabold text-[#1B4965] mb-4 relative pb-3 inline-block">
+                        The Challenge
+                        <span class="absolute left-0 bottom-0 h-1 w-12 bg-[#FF6B6B] rounded-full"></span>
+                    </h2>
+                    <p class="text-gray-700 text-xl mb-12 leading-relaxed">
+                        The original app suffered from low user retention due to confusing workflows and 
+                        uninspiring UX. My challenge was to reimagine the interface and functionality 
+                        to make fitness tracking **seamless, rewarding, and socially shareable**.
                     </p>
-                </div>
-            </section>
-                
-            <section id="project-overview" class="py-20 bg-[#FDFDFD]">
-                <div class="container mx-auto px-6">
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div id="overview-card-1" class="bg-[#C3E0E5] p-8 rounded-xl">
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-4">Timeline</h3>
-                            <p class="text-[#1B4965]">3 months</p>
-                            <p class="text-[#1B4965]">Jan - Mar 2025</p>
-                        </div>
-                        <div id="overview-card-2" class="bg-[#C3E0E5] p-8 rounded-xl">
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-4">Role</h3>
-                            <p class="text-[#1B4965]">Lead UI/UX Designer</p>
-                            <p class="text-[#1B4965]">Product Strategy</p>
-                        </div>
-                        <div id="overview-card-3" class="bg-[#C3E0E5] p-8 rounded-xl">
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-4">Deliverables</h3>
-                            <p class="text-[#1B4965]">UX Research</p>
-                            <p class="text-[#1B4965]">UI Design System</p>
-                            <p class="text-[#1B4965]">Interactive Prototype</p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-                
-            <section id="project-challenge" class="py-20 bg-white">
-                <div class="container mx-auto px-4 md:px-6">
-                    <div class="max-w-4xl mx-auto">
-                        <h2 class="text-3xl font-bold text-[#1B4965] mb-8 text-center md:text-left">The Challenge</h2>
-                        <p class="text-gray-600 text-lg mb-8 text-center md:text-left">
-                            The original app suffered from low user retention due to confusing workflows and 
-                            uninspiring UX. My challenge was to reimagine the interface and functionality 
-                            to make fitness tracking seamless, rewarding, and socially shareable.
-                        </p>
                     
-                        <div class="rounded-xl overflow-hidden shadow-lg mx-auto my-8 max-w-[90%] 
-                            md:max-w-2xl lg:max-w-xl max-h-[300px] md:max-h-[400px]">
+                    <div class="rounded-2xl overflow-hidden shadow-2xl mx-auto my-8 max-w-[95%] 
+                        md:max-w-xl max-h-[450px]">
                         <img src="images/fitness_app_homepage.webp" 
-                                alt="Fitness App Interface" 
-                                class="w-full h-full object-contain"
-                                aria-hidden="true" />
-                        </div>
-                                    
-                        <div class="mt-8 flex justify-center">
-                            <a href="https://www.figma.com/proto/SVBntzIYhIs9mH1Wsr6fi0/Fitness-App?node-id=1-5&p=f&t=dJsEGy2ebhGDmyF4-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A5" 
-                                target="_blank" rel="noopener noreferrer">
-                                <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] 
-                                    transition duration-300">
-                                    Try Interactive Demo
-                                </button>
-                            </a>
-                        </div>
+                            alt="Fitness App Interface" 
+                            class="w-full h-full object-contain"
+                            aria-hidden="true" />
                     </div>
-                </div>
-            </section>
-                
-            <section id="project-process" class="py-20 bg-[#FDFDFD]">
-                <div class="container mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-[#1B4965] mb-12 text-center">Design Process</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                        <div id="process-research" class="space-y-6">
-                            <div class="bg-[#C3E0E5] p-8 rounded-xl">
-                                <h3 class="text-xl font-bold text-[#1B4965] mb-4">User Research</h3>
-                                <ul class="list-disc list-inside text-[#1B4965] space-y-2">
-                                    <li>UX Research (15 user interviews, persona building)</li>
-                                    <li>Created user personas</li>
-                                    <li>Analysed competitor apps</li>
-                                    <li>UI Design (design system, mobile-first approach)</li>
-                                    <li>Figma (prototyping, responsive mockups)</li>
-                                </ul>
-                            </div>
-                            <img src="images/research.webp" 
-                                alt="User Research Process" class="rounded-xl shadow-lg"
-                                aria-hidden="true">
-                        </div>
-                        <div id="process-design" class="space-y-6">
-                            <div class="bg-[#C3E0E5] p-8 rounded-xl">
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-4">Design Solutions</h3>
-                            <ul class="list-disc list-inside text-[#1B4965] space-y-4">
-                                <li>Conducted user interviews and competitive analysis to identify key pain points.</li>
-                                <li>Simplified tracking flows for workouts and nutrition with a mobile-first design 
-                                    approach.</li>
-                                <li>Integrated motivational features such as gamification, progress visuals, and 
-                                    social sharing.</li>
-                            </ul>
-                            </div>
                         
-                            <div class="flex justify-center">
+                    <div class="mt-8 flex justify-center">
+                        <a href="https://www.figma.com/proto/SVBntzIYhIs9mH1Wsr6fi0/Fitness-App?node-id=1-5&p=f&t=dJsEGy2ebhGDmyF4-1&scaling=scale-down&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=1%3A5" 
+                            target="_blank" rel="noopener noreferrer" class="w-full max-w-xs">
+                            <button class="bg-[#FF6B6B] text-white font-bold text-lg px-8 py-3 rounded-xl shadow-lg hover:bg-[#E9B44C] 
+                                hover:scale-[1.02] hover:shadow-xl transition duration-300 w-full">
+                                Try Interactive Demo
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="project-process" class="py-20 bg-[#FDFDFD]">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-[#1B4965] mb-12 text-center relative pb-3 inline-block">
+                    Design Process
+                    <span class="absolute left-1/2 transform -translate-x-1/2 bottom-0 h-1 w-12 bg-[#FF6B6B] rounded-full"></span>
+                </h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div id="process-research" class="space-y-8">
+                        <div class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl">
+                            <h3 class="text-2xl font-bold text-[#1B4965] mb-4 border-b border-[#1B4965]/30 pb-2">🔬 User Research</h3>
+                            <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
+                                <li>**15 User Interviews** and competitive analysis conducted to build accurate user personas.</li>
+                                <li>Identified a core need for simplified logging and motivational feedback.</li>
+                                <li>Created user personas to guide design decisions, focusing on "The Beginner" and "The Consistent Tracker."</li>
+                            </ul>
+                        </div>
+                        <img src="images/research.webp" 
+                            alt="User Research Process Flow" 
+                            class="rounded-2xl shadow-xl w-full h-auto object-cover transform hover:scale-[1.01] transition duration-300"
+                            aria-hidden="true">
+                    </div>
+                    <div id="process-design" class="space-y-8">
+                        <div class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl">
+                            <h3 class="text-2xl font-bold text-[#1B4965] mb-4 border-b border-[#1B4965]/30 pb-2">💡 Design Solutions</h3>
+                            <ul class="list-disc list-inside text-gray-700 text-lg space-y-3">
+                                <li>**Simplified Tracking Flows** for workouts and nutrition with a mobile-first approach to reduce daily logging time.</li>
+                                <li>Implemented **Gamification** features (badges, streaks) and clear progress visuals to maintain motivation.</li>
+                                <li>Integrated **Social Sharing** options for users to celebrate and compare achievements.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="flex justify-center">
                             <img src="images/fitness_app_homepage.webp" 
-                                    alt="Design Solutions" 
-                                    class="rounded-xl shadow-lg max-w-full h-auto"
+                                    alt="Design Solutions Mockup" 
+                                    class="rounded-2xl shadow-xl max-w-full h-auto object-cover transform hover:scale-[1.01] transition duration-300"
                                     aria-hidden="true">
-                            </div>
                         </div>
                     </div>
                 </div>
-            </section>
-                
-            <section id="project-results" class="py-20 bg-[#FF6B6B]">
-                <div class="container mx-auto px-6">
-                    <h2 class="text-3xl font-bold text-white mb-12 text-center">Key Design Outcomes</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <div id="result-1" class="bg-white p-8 rounded-xl text-center">
-                            <i class="fa-solid fa-bullseye text-4xl text-[#1B4965] mb-4"></i>
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Enhanced User Engagement</h3>
-                            <p class="text-gray-600">Clear navigation and interactive elements improved 
-                                motivation and consistency.</p>
-                        </div>
-                        <div id="result-2" class="bg-white p-8 rounded-xl text-center">
-                            <i class="fa-solid fa-face-smile text-4xl text-[#1B4965] mb-4"></i>
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Improved Usability & Experience</h3>
-                            <p class="text-gray-600">Streamlined workflows led to easier tracking of fitness goals.</p>
-                        </div>
-                        <div id="result-3" class="bg-white p-8 rounded-xl text-center">
-                            <i class="fa-solid fa-dumbbell text-4xl text-[#1B4965] mb-4"></i>
-                            <h3 class="text-xl font-bold text-[#1B4965] mb-2">Effective Goal Tracking</h3>
-                            <p class="text-gray-600">Added goal tracking and celebratory UI elements to reinforce 
-                                achievement.
+            </div>
+        </section>
+
+        <section id="project-results" class="py-20 bg-[#FF6B6B]">
+            <div class="container mx-auto px-6 max-w-6xl">
+                <h2 class="text-4xl font-extrabold text-white mb-12 text-center">Key Design Outcomes ⭐</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div id="result-1" class="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-bullseye text-4xl text-[#1B4965] mb-4"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2">Enhanced User Engagement</h3>
+                        <p class="text-gray-700">Clear navigation and interactive elements dramatically improved 
+                            user motivation and consistency in daily use.</p>
+                    </div>
+                    <div id="result-2" class="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-face-smile text-4xl text-[#1B4965] mb-4"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2">Improved Usability & Experience</h3>
+                        <p class="text-gray-700">Streamlined workflows and intuitive design led to easier and faster 
+                            tracking of all fitness goals.</p>
+                    </div>
+                    <div id="result-3" class="bg-white p-8 rounded-2xl shadow-xl text-center transform hover:scale-[1.02] transition duration-300">
+                        <i class="fa-solid fa-dumbbell text-4xl text-[#1B4965] mb-4"></i>
+                        <h3 class="text-xl font-bold text-[#1B4965] mb-2">Effective Goal Tracking</h3>
+                        <p class="text-gray-700">Implemented prominent goal tracking and celebratory UI elements to 
+                            reinforce positive achievement feedback.</p>
                     </div>
                 </div>
-            </section>
+            </div>
+        </section>
         
-            <section id="project-next" class="py-20 bg-[#FDFDFD]">
-                <div class="container mx-auto px-6 text-center">
-                    <h2 class="text-3xl font-bold text-[#1B4965] mb-8">Next Project</h2>
-                    <span class="inline-block cursor-pointer">
-                        <div class="bg-[#1B4965] p-8 rounded-xl text-white hover:bg-[#FF6B6B] transition duration-300">
-                            <h3 class="text-2xl font-bold mb-2"><a href="e_commerce.html">E-commerce Platform →</a></h3>
+        <section id="project-next" class="py-16 bg-[#FDFDFD]">
+            <div class="container mx-auto px-6 text-center max-w-md">
+                <h2 class="text-3xl font-bold text-[#1B4965] mb-8">Next Project</h2>
+                <span class="inline-block cursor-pointer w-full">
+                    <a href="e_commerce.html" class="block w-full">
+                        <div class="bg-[#1B4965] p-8 rounded-2xl shadow-xl text-white hover:bg-[#FF6B6B] 
+                            transform hover:scale-[1.02] transition duration-300 w-full">
+                            <h3 class="text-2xl font-bold mb-2">E-commerce Platform →</h3>
                             <p>Full-scale e-commerce solution with advanced filtering</p>
                         </div>
-                    </span>
+                    </a>
+                </span>
+            </div>
+        </section>
+    </main>
+
+    <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+
+    <!-- New Footer Section -->
+    <footer id="footer" class="bg-[#12384B] text-white py-12">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
+
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                    </h3>
+                    <p class="text-xl text-[#C3E0E5]">
+                        Let's chat about design, development, and how we can bring your vision to life.
+                    </p>
+                    
+                    <a href="#contact" class="inline-block">
+                        <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Start the Conversation
+                        </button>
+                    </a>
                 </div>
-            </section>
-        </main>
 
-        <footer id="footer" class="bg-[#1B4965] text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold">Pixel Perfect</h3>
-                <p class="text-[#C3E0E5] text-sm md:text-base mt-4">Creating meaningful digital 
-                experiences through thoughtful design.</p>
-            </div>
+                <div class="border-t border-[#C3E0E5]/30 mt-12 pt-8">
+                    
+                    <div class="flex justify-center space-x-6 text-sm mb-4">
+                        <a href="index.html#home" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Home</a>
+                        <a href="projects.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Projects</a>
+                        <a href="about.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">About</a>
+                        <a href="index.html#contact" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Contact</a>
+                    </div>
 
-            <!-- Column 2 -->
-            <div>
-                <h4 class="font-bold">Quick Links</h4>
-                <ul class="space-y-2 mt-4">
-                <li><a href="index.html#home" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Home</a></li>
-                <li><a href="projects.html" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Projects</a></li>
-                <li><a href="index.html#skills" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Skills</a></li>
-                </ul>
-            </div>
-
-            <!-- Column 3 -->
-            <div>
-                <h4 class="font-bold"><a href="index.html#contact">Contact Form</a></h4>
-                <ul class="space-y-2 mt-4">
-                <li class="text-[#C3E0E5] break-all">estelle.pixelperfect@gmail.com</li>
-                <li class="text-[#C3E0E5]">+39 3780639042</li>
-                </ul>
-            </div>
-
-            <!-- Column 4 -->
-            <div>
-                <h4 class="font-bold">Follow Me</h4>
-                <div class="flex space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/estii20" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                    <p class="text-[#C3E0E5] text-sm">
+                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                    </p>
                 </div>
             </div>
-
-            </div>
-
-            <div class="border-t border-[#C3E0E5] mt-12 pt-8 text-center text-[#C3E0E5] text-sm">
-            <p>&copy; 2025 Pixel Perfect. All rights reserved.</p>
-            </div>
-        </div>
-        </footer>
+    </footer>
  
 
 <!-- External Libraries -->
