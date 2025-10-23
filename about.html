@@ -124,353 +124,277 @@
     
     <body class="h-full text-base-content">
         <nav id="header" class="fixed w-full bg-[#FDFDFD] z-50 shadow-sm">
-            <nav class="bg-[#C3E0E5] p-4">
-                <div class="container mx-auto flex justify-between items-center">
-                    
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img 
-                            src="images/PixelPerfectLogo.webp" 
-                            alt="Pixel Perfect Logo" 
-                            width="300"   height="100"  class="h-10 w-auto" 
-                            aria-hidden="true"
-                        >
-                    </a>
-                    
-                <div class="text-2xl font-bold text-[#1B4965]">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        Pixel Perfect
-                    </a>                   
-                </div>
-                </div>   
-    
-                    <!-- Burger Menu Button (Only visible on small screens) -->
-                    <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none">
-                        &#9776;
-                    </button>
-
-                    <!-- Mobile Menu (only shows on small screens) -->
-                    <div id="mobile-menu"
-                        class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
+      <nav class="bg-[#C3E0E5] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
+              <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" width="300" height="100" class="h-10 w-auto" aria-hidden="true">
+            </a>
+            <div class="text-2xl font-bold text-[#1B4965]">
+              <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2"> Pixel Perfect </a>
+            </div>
+          </div>
+          <!-- Burger Menu Button (Only visible on small screens) -->
+          <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none"> &#9776; </button>
+          <!-- Mobile Menu (only shows on small screens) -->
+          <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
                             w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
                             opacity-0 transform scale-95 md:hidden">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                            Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
-                    </div>
-
-                    <!-- Desktop Nav (hidden on small screens) -->
-                    <div class="hidden md:flex space-x-6 items-center">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B]">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B]">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
-
-                        <!-- CTA Button -->
-                        <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
+          </div>
+          <!-- Desktop Nav (hidden on small screens) -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
+            <!-- CTA Button -->
+            <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
                             transition duration-300">
-                            <a href="index.html#contact">Let's Talk</a>
-                        </button>
-                    </div>
-                </div>
-            </nav>
+              <a href="#contact">Let's Talk</a>
+            </button>
+          </div>
+        </div>
+      </nav>
         </nav>
         
-        <main class="min-h-screen pt-20">
-                    <section id="about-hero" class="h-[400px] bg-[#1B4965] relative overflow-hidden">
-                        <div class="container mx-auto px-6 h-full flex items-center">
-                            <div class="text-white space-y-4 relative z-10">
-                                <h1 class="text-5xl font-bold">About Me</h1>
-                                <p class="text-lg text-[#C3E0E5]">UX/UI Designer & Full-Stack Developer 
-                                    with a background in event management</p>
-                                <p class="text-xl text-[#C3E0E5]">Passionate about creating meaningful 
-                                    digital experiences</p>
-                            </div>
-                        </div>
-                        <div class="absolute inset-0 opacity-20">
-                            <img class="w-full h-full object-cover" 
-                            src="https://storage.googleapis.com/uxpilot-auth.appspot.com/56f2cf212a-113c5517c82d3d4d64c0.png" 
-                            alt="UX/UI designer portfolio background with modern geometric pattern in coral and navy"
-                            aria-hidden="true"
- >
-                        </div>
+    <main class="min-h-screen pt-20">
+        
+        <section id="about-hero" class="h-[400px] bg-gradient-to-br from-[#1B4965] via-[#1B4965] to-[#256385] relative overflow-hidden">
+            <div class="container mx-auto px-6 h-full flex items-center">
+                <div class="text-white space-y-4 relative z-10">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold">About Me</h1>
+                    <p class="text-xl sm:text-2xl text-white">UX/UI Designer & Full-Stack Developer</p>
+                    <p class="text-lg text-[#C3E0E5] max-w-2xl">
+                        Bringing a background in event management to create **meaningful, user-centered digital experiences** where design meets code.
+                    </p>
+                </div>
+            </div>
+            <div class="absolute inset-0 opacity-20">
+                <img class="w-full h-full object-cover" 
+                src="https://storage.googleapis.com/uxpilot-auth.appspot.com/56f2cf212a-113c5517c82d3d4d64c0.png" 
+                alt="UX/UI designer portfolio background with modern geometric pattern in coral and navy"
+                aria-hidden="true"
+                >
+            </div>
+        </section>
 
-                    </section>
-                
-                    <section id="story" class="py-20 bg-[#FDFDFD]">
-                        <div class="container mx-auto px-6">
-                            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-                                <div class="space-y-6">
-                                    <h2 class="text-4xl font-bold text-[#1B4965]">My Story</h2>
-                                    <p class="text-gray-600 leading-relaxed">
-                                    With a strong foundation in both creative problem-solving 
-                                    and technical execution, I'm a freelance UX/UI designer and 
-                                    junior full-stack web developer. My background in event management 
-                                    sharpened my communication and collaboration skills — essentials 
-                                    I now bring into my work designing digital products that prioritise 
-                                    usability, accessibility, and business impact.
-                                    </p>
-
-                                    <p class="text-gray-600 leading-relaxed">
-                                    I recently earned a Diploma in Fullstack Software Development, 
-                                    gaining hands-on experience with HTML, CSS, JavaScript, Python, Django, 
-                                    and responsive design frameworks like Tailwind CSS. I specialize in crafting 
-                                    mobile-first, user-centered interfaces and building scalable front-end 
-                                    components that align with both user needs and stakeholder goals.
-                                    </p>
-
-                                    <p class="text-gray-600 leading-relaxed">
-                                    Whether collaborating with cross-functional teams or independently 
-                                    delivering pixel-perfect UI designs in Figma, I approach every project 
-                                    with attention to detail, empathy for users, and a drive for excellence. 
-                                    I’m now open to freelance or junior roles in UX/UI design, front-end development, 
-                                    or hybrid positions where design meets code.
-                                    </p>
-
-                                    <div class="flex space-x-4 pt-4">
-                                    <button class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
-                                    rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
-                                    focus:ring-4 focus:ring-[#E9B44C]">
-                                        <a href="https://github.com/estii20" 
-                                        target="_blank" rel="noopener noreferrer">View Portfolio</a>
-                                    </button>
-                                    <button class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 
-                                    rounded-full shadow-md transition duration-300 block text-center focus:outline-none 
-                                    focus:ring-4 focus:ring-[#E9B44C]">
-                                        <a href="documentation/Estelle_Specht_UX_UI_Designer_CV.pdf" 
-                                        download>Download CV</a>
-                                    </button>
-                                    </div>
-                                </div>
-                                <div class="relative">
-                                    <img src="images/figma_headshot.png" 
-                                    alt="Estelle figma headshot" class="rounded-2xl shadow-xl w-full max-w-md mx-auto" aria-hidden="true"/>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <section id="values" class="py-20 bg-[#C3E0E5]">
-                        <div class="container mx-auto px-6">
-                            <h2 class="text-4xl font-bold text-[#1B4965] text-center mb-16">My Values</h2>
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <div id="value-1" class="bg-white p-8 rounded-xl shadow-lg">
-                                    <i class="fa-solid fa-lightbulb text-4xl text-[#FF6B6B] mb-6"></i>
-                                    <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Innovation</h3>
-                                    <p class="text-gray-600">Pushing boundaries and exploring new possibilities 
-                                        in design to create unique solutions.</p>
-                                </div>
-                                <div id="value-2" class="bg-white p-8 rounded-xl shadow-lg">
-                                    <i class="fa-solid fa-users text-4xl text-[#FF6B6B] mb-6"></i>
-                                    <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Collaboration</h3>
-                                    <p class="text-gray-600">Working closely with clients and teams to 
-                                        achieve the best possible outcomes.</p>
-                                </div>
-                                <div id="value-3" class="bg-white p-8 rounded-xl shadow-lg">
-                                    <i class="fa-solid fa-bullseye text-4xl text-[#FF6B6B] mb-6"></i>
-                                    <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Excellence</h3>
-                                    <p class="text-gray-600">Maintaining the highest standards in every project 
-                                        and delivering exceptional results.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-                
-                    <section id="experience" class="py-20 bg-[#FDFDFD]">
-                        <div class="container mx-auto px-6">
-                            <h2 class="text-4xl font-bold text-[#1B4965] text-center mb-16">Experience</h2>
-                            <div class="max-w-3xl mx-auto space-y-12">
-                                <div id="exp-1" class="flex gap-8">
-                                    <div class="w-32 text-right">
-                                        <span class="text-[#FF6B6B] font-bold">2024-Current</span>
-                                    </div>
-                                    <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                                        <h3 class="text-xl font-bold text-[#1B4965]">Software Developer</h3>
-                                        <p class="text-[#FF6B6B]">Freelance work</p>
-                                        <p class="text-gray-600 mt-2">Built responsive web applications with a 
-                                            focus on UX and performance. Tech stack includes HTML, CSS (Tailwind), 
-                                            JavaScript, Python, Django, and PostgreSQL (ElephantSQL). 
-                                            Deployed full-stack projects using Heroku and AWS, and developed 
-                                            wireframes and mockups in Balsamiq. Collaborated with stakeholders 
-                                            to deliver digital products tailored to user needs and business objectives. 
-                                            <a href="https://github.com/estii20" 
-                                            class="text-[#FF6B6B] hover:underline">➡️ GitHub Portfolio</a></p>
-                                    </div>
-                                </div>
-                                <div id="exp-2" class="flex gap-8">
-                                    <div class="w-32 text-right">
-                                        <span class="text-[#FF6B6B] font-bold">2020-2022</span>
-                                    </div>
-                                    <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                                        <h3 class="text-xl font-bold text-[#1B4965]">Teacher of English to 
-                                            Speakers of Other Languages</h3>
-                                        <p class="text-[#FF6B6B]">Private Home Tutor</p>
-                                        <p class="text-gray-600 mt-2">Designed and delivered structured English 
-                                            lessons to children aged 7–14. Tailored learning plans to different 
-                                            abilities, focusing on grammar, reading comprehension, 
-                                            and conversational fluency. Applied pedagogical methods 
-                                            that emphasised engagement and retention.</p>
-                                    </div>
-                                </div>
-                                <div id="exp-3" class="flex gap-8">
-                                    <div class="w-32 text-right">
-                                        <span class="text-[#FF6B6B] font-bold">2018-2019</span>
-                                    </div>
-                                    <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                                        <h3 class="text-xl font-bold text-[#1B4965]">Teacher of English to 
-                                            Speakers of Other Languages</h3>
-                                        <p class="text-[#FF6B6B]">Phos Education</p>
-                                        <p class="text-gray-600 mt-2">Led English classes for professionals in 
-                                            tech and engineering fields at the Meyer Werft shipyard. 
-                                            Created curriculum materials from A1–C2 CEFR levels. 
-                                            Developed adaptive content for mixed-ability teams to 
-                                            support language goals in workplace communication, 
-                                            client meetings, and technical documentation.</p>
-                                    </div>
-                                </div>
-                                <div id="exp-4" class="flex gap-8">
-                                    <div class="w-32 text-right">
-                                        <span class="text-[#FF6B6B] font-bold">2010-2011</span>
-                                    </div>
-                                    <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                                        <h3 class="text-xl font-bold text-[#1B4965]">Event Organiser</h3>
-                                        <p class="text-[#FF6B6B]">Yoga Life Studio</p>
-                                        <p class="text-gray-600 mt-2">Oversaw studio events, exhibitions, 
-                                            and wellness retreats. Maintained the WordPress site and social 
-                                            media channels, and led a business networking group. Wrote and 
-                                            distributed press releases, growing local visibility 
-                                            through earned media.</p>
-                                    </div>
-                                </div>
-                                <div id="exp-5" class="flex gap-8">
-                                    <div class="w-32 text-right">
-                                        <span class="text-[#FF6B6B] font-bold">2005-2009</span>
-                                    </div>
-                                    <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                                        <h3 class="text-xl font-bold text-[#1B4965]">Conference and Event Planner</h3>
-                                        <p class="text-[#FF6B6B]">The Conference People</p>
-                                        <p class="text-gray-600 mt-2">Delivered end-to-end event management for 
-                                            global brands including Penguin Books, Random House, eBay, PwC, and 
-                                            Novo Nordisk. 
-                                            Responsibilities included event logistics, client liaison, venue coordination, 
-                                            vendor management, and onsite support. Developed post-event reports and 
-                                            contributed to business development efforts.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-        </main>
-
-        <section id="education" class="py-20 bg-[#FDFDFD]">
+        <section id="story" class="py-16 sm:py-24 bg-[#FDFDFD]">
             <div class="container mx-auto px-6">
-                <h2 class="text-4xl font-bold text-[#1B4965] text-center mb-16">Education & Training</h2>
-                <div class="max-w-3xl mx-auto space-y-12">
-                    <div id="edu-1" class="flex gap-8">
-                        <div class="w-32 text-right">
-                            <span class="text-[#FF6B6B] font-bold">2023-2024</span>
-                        </div>
-                        <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                            <h3 class="text-xl font-bold text-[#1B4965]">Diploma in Fullstack Software Development</h3>
-                            <p class="text-[#FF6B6B]">Code Institute</p>
-                            <p class="text-gray-600 mt-2">Accredited by the University West of Scotland.</p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 sm:gap-16 items-center">
+                    <div class="space-y-6">
+                        <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] mb-4">My Story</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                        With a strong foundation in both creative problem-solving and technical execution, 
+                        I'm a freelance **UX/UI designer** and **junior full-stack web developer**. My background in event 
+                        management sharpened my communication and collaboration skills — essentials I now bring into my work 
+                        designing digital products that prioritise usability, accessibility, and business impact.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed">
+                        I have a **Diploma in Fullstack Software Development**, with hands-on experience with HTML, 
+                        CSS, JavaScript, Python, Django, and responsive design frameworks like Tailwind CSS. 
+                        I specialise in crafting mobile-first, user-centered interfaces and building scalable front-end 
+                        components that align with both user needs and stakeholder goals.
+                        </p>
+
+                        <p class="text-gray-700 leading-relaxed">
+                        Whether collaborating with cross-functional teams or independently delivering pixel-perfect UI 
+                        designs in Figma, I approach every project with attention to detail, empathy for users, and a drive for 
+                        excellence. I’m now open to freelance or junior roles in UX/UI design, front-end development, or hybrid 
+                        positions where design meets code.
+                        </p>
+
+                        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-6">
+                            <a href="https://github.com/estii20" target="_blank" rel="noopener noreferrer" 
+                            class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-bold px-8 py-3 rounded-full 
+                            shadow-lg transition duration-300 block text-center">
+                                View GitHub Portfolio
+                            </a>
+                            <a href="documentation/Estelle_Specht_UX_UI_Designer_CV.pdf" download
+                            class="bg-[#1B4965] hover:bg-[#E9B44C] text-white font-bold px-8 py-3 rounded-full 
+                            shadow-lg transition duration-300 block text-center">
+                                Download CV
+                            </a>
                         </div>
                     </div>
-                    <div id="edu-2" class="flex gap-8">
-                        <div class="w-32 text-right">
-                            <span class="text-[#FF6B6B] font-bold">2025</span>
-                        </div>
-                        <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                            <h3 class="text-xl font-bold text-[#1B4965]">UX Design Certificate</h3>
-                            <p class="text-[#FF6B6B]">Google</p>
-                            <p class="text-gray-600 mt-2">Completed the UX Design Certificate from Google.</p>
-                        </div>
+                    
+                    <div class="relative order-first md:order-last">
+                        <img src="images/figma_headshot.png" 
+                        alt="Estelle figma headshot" class="rounded-3xl shadow-2xl w-full max-w-md mx-auto" />
                     </div>
-                    <div id="edu-3" class="flex gap-8">
-                        <div class="w-32 text-right">
-                            <span class="text-[#FF6B6B] font-bold">2003-2005</span>
-                        </div>
-                        <div class="flex-1 bg-white p-6 rounded-xl shadow-lg">
-                            <h3 class="text-xl font-bold text-[#1B4965]">First Class Bachelor of Arts - 
-                                Tourism Management</h3>
-                            <p class="text-[#FF6B6B]">University of Brighton</p>
-                        </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="values" class="py-16 sm:py-24 bg-[#C3E0E5]">
+            <div class="container mx-auto px-6">
+                <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] text-center mb-12 sm:mb-16">My Values</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <div id="value-1" class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-lightbulb text-5xl text-[#FF6B6B] mb-6"></i>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Innovation</h3>
+                        <p class="text-gray-700">Pushing boundaries and exploring new possibilities in design to create unique, high-impact solutions.</p>
+                    </div>
+                    
+                    <div id="value-2" class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-users text-5xl text-[#E9B44C] mb-6"></i>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Collaboration</h3>
+                        <p class="text-gray-700">Working closely with clients and teams to align design vision with technical feasibility for the best outcomes.</p>
+                    </div>
+                    
+                    <div id="value-3" class="bg-white p-8 rounded-2xl shadow-xl hover:shadow-2xl transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-bullseye text-5xl text-[#1B4965] mb-6"></i>
+                        <h3 class="text-2xl font-bold text-[#1B4965] mb-4">Excellence</h3>
+                        <p class="text-gray-700">Maintaining the highest standards in every project and delivering exceptional, pixel-perfect results.</p>
                     </div>
                 </div>
             </div>
         </section>
         
-            <section id="cta" class="py-20 bg-[#FF6B6B]">
-                <div class="container mx-auto px-6 text-center">
-                    <h2 class="text-4xl font-bold text-white mb-6">Ready to Start Your Project?</h2>
-                    <p class="text-white text-xl mb-8">Let's create something amazing together</p>
-                    <button class="bg-white text-[#FF6B6B] px-8 py-3 rounded-full hover:bg-[#E9B44C] 
-                        hover:text-white transition duration-300">
-                        <a href="index.html#contact">Get in touch</a>
-                    </button>
+        <section id="experience-education" class="py-16 sm:py-24 bg-[#FDFDFD]">
+            <div class="container mx-auto px-6">
+                
+                <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] text-center mb-12">Experience & Education Timeline</h2>
+                
+                <div class="max-w-4xl mx-auto">
+                    <div class="relative">
+                        <div class="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-gray-200 hidden sm:block"></div>
+
+                        <div class="space-y-12">
+                            
+                            <div id="exp-1" class="flex flex-col sm:flex-row gap-6 items-start">
+                                <div class="w-full sm:w-1/2 text-left sm:text-right pt-2 order-1 sm:order-1 sm:pr-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2024–Current</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#FF6B6B] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pl-8">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">Software Developer</h3>
+                                    <p class="text-[#1B4965] italic">Freelance Work</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Built responsive web applications with a focus on UX and performance. Tech stack includes HTML, CSS (Tailwind), JavaScript, Python, Django, and PostgreSQL (ElephantSQL). Deployed full-stack projects using Heroku and AWS.
+                                    <a href="https://github.com/estii20" class="text-[#FF6B6B] hover:underline font-semibold block mt-1">➡️ GitHub Portfolio</a></p>
+                                </div>
+                            </div>
+
+                            <div id="edu-1" class="flex flex-col sm:flex-row gap-6 items-start sm:flex-row-reverse">
+                                <div class="w-full sm:w-1/2 text-left sm:text-left pt-2 order-1 sm:order-1 sm:pl-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2023–2024</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#E9B44C] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pr-8 sm:text-right">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">Diploma in Fullstack Software Development</h3>
+                                    <p class="text-[#1B4965] italic">Code Institute</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Accredited by the University West of Scotland.</p>
+                                </div>
+                            </div>
+
+                            <div id="edu-2" class="flex flex-col sm:flex-row gap-6 items-start">
+                                <div class="w-full sm:w-1/2 text-left sm:text-right pt-2 order-1 sm:order-1 sm:pr-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2025</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#E9B44C] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pl-8">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">UX Design Certificate</h3>
+                                    <p class="text-[#1B4965] italic">Google</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Completed the Google UX Design Certificate.</p>
+                                </div>
+                            </div>
+
+                            <div id="exp-2" class="flex flex-col sm:flex-row gap-6 items-start sm:flex-row-reverse">
+                                <div class="w-full sm:w-1/2 text-left sm:text-left pt-2 order-1 sm:order-1 sm:pl-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2020–2022</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#FF6B6B] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pr-8 sm:text-right">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">Teacher of English</h3>
+                                    <p class="text-[#1B4965] italic">Private Home Tutor</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Designed and delivered structured English lessons to children aged 7–14.</p>
+                                </div>
+                            </div>
+                            
+                            <div id="exp-5" class="flex flex-col sm:flex-row gap-6 items-start">
+                                <div class="w-full sm:w-1/2 text-left sm:text-right pt-2 order-1 sm:order-1 sm:pr-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2005–2009</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#FF6B6B] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pl-8">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">Conference and Event Planner</h3>
+                                    <p class="text-[#1B4965] italic">The Conference People</p>
+                                    <p class="text-gray-700 mt-2 text-sm">Delivered end-to-end event management for global brands including Penguin Books, Random House, eBay, PwC, and Novo Nordisk. </p>
+                                </div>
+                            </div>
+
+                            <div id="edu-3" class="flex flex-col sm:flex-row gap-6 items-start sm:flex-row-reverse">
+                                <div class="w-full sm:w-1/2 text-left sm:text-left pt-2 order-1 sm:order-1 sm:pl-8">
+                                    <span class="text-lg text-[#FF6B6B] font-bold">2003–2005</span>
+                                </div>
+                                <div class="hidden sm:flex flex-col items-center order-2">
+                                    <div class="w-4 h-4 bg-[#E9B44C] rounded-full shadow-md z-10"></div>
+                                </div>
+                                <div class="w-full sm:w-1/2 flex-1 bg-white p-6 rounded-2xl shadow-xl order-3 sm:pr-8 sm:text-right">
+                                    <h3 class="text-xl font-bold text-[#1B4965]">First Class BA - Tourism Management</h3>
+                                    <p class="text-[#1B4965] italic">University of Brighton</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
                 </div>
-            </section>
-        </main>                 
+            </div>
+        </section>
+    </main>               
     
-        <footer id="footer" class="bg-[#1B4965] text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold">Pixel Perfect</h3>
-                <p class="text-[#C3E0E5] text-sm md:text-base mt-4">Creating meaningful digital 
-                experiences through thoughtful design.</p>
-            </div>
+    <!-- New Footer Section -->
+    <footer id="footer" class="bg-[#12384B] text-white py-12">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
 
-            <!-- Column 2 -->
-            <div>
-                <h4 class="font-bold">Quick Links</h4>
-                <ul class="space-y-2 mt-4">
-                <li><a href="index.html#home" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Home</a></li>
-                <li><a href="projects.html" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Projects</a></li>
-                <li><a href="index.html#skills" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Skills</a></li>
-                </ul>
-            </div>
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                    </h3>
+                    <p class="text-xl text-[#C3E0E5]">
+                        Let's chat about design, development, and how we can bring your vision to life.
+                    </p>
+                    
+                    <a href="#contact" class="inline-block">
+                        <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Start the Conversation
+                        </button>
+                    </a>
+                </div>
 
-            <!-- Column 3 -->
-            <div>
-                <h4 class="font-bold"><a href="index.html#contact">Contact Form</a></h4>
-                <ul class="space-y-2 mt-4">
-                <li class="text-[#C3E0E5] break-all">estelle.pixelperfect@gmail.com</li>
-                <li class="text-[#C3E0E5]">+39 3780639042</li>
-                </ul>
-            </div>
+                <div class="border-t border-[#C3E0E5]/30 mt-12 pt-8">
+                    
+                    <div class="flex justify-center space-x-6 text-sm mb-4">
+                        <a href="index.html#home" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Home</a>
+                        <a href="projects.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Projects</a>
+                        <a href="about.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">About</a>
+                        <a href="index.html#contact" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Contact</a>
+                    </div>
 
-            <!-- Column 4 -->
-            <div>
-                <h4 class="font-bold">Follow Me</h4>
-                <div class="flex space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/estii20" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                    <p class="text-[#C3E0E5] text-sm">
+                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                    </p>
                 </div>
             </div>
-
-            </div>
-
-            <div class="border-t border-[#C3E0E5] mt-12 pt-8 text-center text-[#C3E0E5] text-sm">
-            <p>&copy; 2025 Pixel Perfect. All rights reserved.</p>
-            </div>
-        </div>
-        </footer>
+    </footer>
 
 <!-- External Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
