@@ -147,299 +147,272 @@
 
     <body class="h-full text-base-content">
         <nav id="header" class="fixed w-full bg-[#FDFDFD] z-50 shadow-sm">
-            <nav class="bg-[#C3E0E5] p-4">
-                <div class="container mx-auto flex justify-between items-center">
-                    
-                <!-- Logo -->
-                <div class="flex items-center space-x-3">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        <img 
-                            src="images/PixelPerfectLogo.webp" 
-                            alt="Pixel Perfect Logo" 
-                            width="300"   height="100"  class="h-10 w-auto" 
-                            aria-hidden="true"
-                        >
-                    </a>
-                    
-                <div class="text-2xl font-bold text-[#1B4965]">
-                    <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-                        Pixel Perfect
-                    </a>                   
-                </div>
-                </div>
-
-                    <!-- Burger Menu Button (Only visible on small screens) -->
-                    <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none">
-                        &#9776;
-                    </button>
-
-                    <!-- Mobile Menu (only shows on small screens) -->
-                    <div id="mobile-menu"
-                        class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
+      <nav class="bg-[#C3E0E5] p-4">
+        <div class="container mx-auto flex justify-between items-center">
+          <!-- Logo -->
+          <div class="flex items-center space-x-3">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
+              <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" width="300" height="100" class="h-10 w-auto" aria-hidden="true">
+            </a>
+            <div class="text-2xl font-bold text-[#1B4965]">
+              <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2"> Pixel Perfect </a>
+            </div>
+          </div>
+          <!-- Burger Menu Button (Only visible on small screens) -->
+          <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none"> &#9776; </button>
+          <!-- Mobile Menu (only shows on small screens) -->
+          <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
                             w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
                             opacity-0 transform scale-95 md:hidden">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
-                        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
-                    </div>
-
-                    <!-- Desktop Nav (hidden on small screens) -->
-                    <div class="hidden md:flex space-x-6 items-center">
-                        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
-                        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-                        <a href="index.html#skills" class="text-[#1B4965] hover:text-[#FF6B6B]">Skills</a>
-                        <a href="index.html#testimonials" class="text-[#1B4965] hover:text-[#FF6B6B]">Testimonials</a>
-                        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
-                        <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
-
-                        <!-- CTA Button -->
-                        <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
+          </div>
+          <!-- Desktop Nav (hidden on small screens) -->
+          <div class="hidden md:flex space-x-6 items-center">
+            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+            <a href="#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+            <a href="#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
+            <!-- CTA Button -->
+            <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
                             transition duration-300">
-                            <a href="index.html#contact">Let's Talk</a>
-                        </button>
+              <a href="#contact">Let's Talk</a>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </nav>
+
+        <main class="pt-20 bg-[#FDFDFD] text-[#1B4965]">
+            
+            <section id="project-hero" class="relative h-[600px] overflow-hidden">
+                <img
+                class="w-full h-full object-cover"
+                src="images/casa_artigiana_banner.webp"
+                alt="Italian artisan home decor hero image"
+                loading="lazy"
+                aria-hidden="true"
+                />
+                <div class="absolute inset-0 bg-gradient-to-r from-[#1B4965]/70 to-transparent flex items-center">
+                    <div class="container mx-auto px-6">
+                        <div class="max-w-2xl text-white">
+                            <h1 class="text-5xl sm:text-6xl font-extrabold mb-4 drop-shadow-lg">Casa Artigiana: Italian Artisan Home Decor</h1>
+                            <p class="text-xl leading-relaxed drop-shadow-md">
+                                A personal UX design project exploring an e-commerce platform celebrating Italian
+                                craftsmanship and heritage.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </nav>
-        </nav>
+            </section>
 
-<main class="pt-20 bg-[#FDFDFD] text-[#1B4965]">
-    <section id="project-hero" class="relative h-[600px] overflow-hidden">
-        <img
-        class="w-full h-full object-cover"
-        src="images/casa_artigiana_banner.webp"
-        alt="Italian artisan home decor hero image"
-        loading="lazy"
-        aria-hidden="true"
-        />
-        <div class="absolute inset-0 bg-[rgba(0,0,0,0.6)] flex items-center">
-        <div class="container mx-auto px-6">
-                <div class="max-w-2xl text-white">
-                <h1 class="text-5xl font-extrabold mb-4 drop-shadow-lg">Casa Artigiana: Italian Artisan Home Decor</h1>
-                <p class="text-xl leading-relaxed drop-shadow-md">
-                    A personal UX design project exploring an e-commerce platform celebrating Italian
-                    craftsmanship and heritage.
-                </p>
+            <section id="project-overview" class="py-16 sm:py-24">
+                <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 sm:gap-12">
+                    <div class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-[#1B4965] border-b-2 border-[#1B4965]/20 pb-2">Role</h3>
+                        <ul class="space-y-3 list-disc list-inside text-lg text-gray-700">
+                            <li><span class="font-semibold">Lead UI/UX Designer</span></li>
+                            <li>User Research</li>
+                            <li>Visual Design</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-[#1B4965] border-b-2 border-[#1B4965]/20 pb-2">Timeline</h3>
+                        <ul class="space-y-3 list-disc list-inside text-lg text-gray-700">
+                            <li>3 months</li>
+                            <li>2025 Q1</li>
+                        </ul>
+                    </div>
+                    <div class="bg-[#C3E0E5] p-8 rounded-2xl shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                        <h3 class="text-2xl font-bold mb-4 text-[#1B4965] border-b-2 border-[#1B4965]/20 pb-2">Tools</h3>
+                        <ul class="space-y-3 list-disc list-inside text-lg text-gray-700">
+                            <li><span class="font-semibold">Figma</span></li>
+                            <li>Protopie</li>
+                            <li>Miro</li>
+                        </ul>
+                    </div>
                 </div>
-            </div>
-        </div>
-    </section>
+                </div>
+            </section>
 
-        <!-- Overview Section -->
-        <section id="project-overview" class="py-20">
-            <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
-                <div class="bg-[#C3E0E5] p-8 rounded-xl shadow-md">
-                <h3 class="text-xl font-bold mb-4">Role</h3>
-                <ul class="space-y-2 list-disc list-inside">
-                    <li>Lead UI/UX Designer</li>
-                    <li>User Research</li>
-                    <li>Visual Design</li>
-                </ul>
-                </div>
-                <div class="bg-[#C3E0E5] p-8 rounded-xl shadow-md">
-                <h3 class="text-xl font-bold mb-4">Timeline</h3>
-                <ul class="space-y-2 list-disc list-inside">
-                    <li>3 months</li>
-                    <li>2025 Q1</li>
-                </ul>
-                </div>
-                <div class="bg-[#C3E0E5] p-8 rounded-xl shadow-md">
-                <h3 class="text-xl font-bold mb-4">Tools</h3>
-                <ul class="space-y-2 list-disc list-inside">
-                    <li>Figma</li>
-                    <li>Protopie</li>
-                    <li>Miro</li>
-                </ul>
-                </div>
-            </div>
-            </div>
-        </section>
+            ---
 
-        <!-- Challenge Section -->
-        <section id="project-challenge" class="py-20 bg-[#1B4965]">
-            <div class="container mx-auto px-6">
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                <article class="space-y-6 text-white">
-                <h2 class="text-4xl font-extrabold leading-tight">The Challenge</h2>
-                <p class="text-lg leading-relaxed">
-                    My design challenge was to create an immersive e-commerce experience 
-                    that showcases the craftsmanship of Italian artisans while making their unique products 
-                    feel accessible to a global audience. The platform needed to tell compelling stories about 
-                    the artisans and their regions, all while maintaining a luxurious and intuitive shopping experience.
-                </p>
-                </article>
-                <aside class="space-y-6">
-                <div class="bg-[#C3E0E5] p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl font-extrabold text-[#1B4965]">75%</div>
-                    <p class="mt-2 text-[#1B4965] font-semibold">User feedback indicated desire for artisan stories</p>
+            <section id="project-challenge" class="py-16 sm:py-24 bg-[#1B4965]">
+                <div class="container mx-auto px-6">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                    <article class="space-y-6 text-white">
+                        <h2 class="text-4xl sm:text-5xl font-extrabold leading-tight border-b-4 border-[#FF6B6B] pb-3 inline-block">The Challenge 💡</h2>
+                        <p class="text-lg leading-relaxed text-[#C3E0E5]">
+                            My design challenge was to create an immersive e-commerce experience 
+                            that showcases the **craftsmanship of Italian artisans** while making their unique products 
+                            feel accessible to a global audience. The platform needed to tell compelling stories about 
+                            the artisans and their regions, all while maintaining a luxurious and intuitive shopping experience.
+                        </p>
+                    </article>
+                    <aside class="space-y-6">
+                        <div class="bg-[#FF6B6B] p-8 rounded-2xl shadow-xl text-center text-white">
+                            <div class="text-5xl font-extrabold mb-1">75%</div>
+                            <p class="mt-2 text-xl font-semibold">User feedback indicated desire for artisan stories</p>
+                        </div>
+                        <div class="bg-[#FF6B6B] p-8 rounded-2xl shadow-xl text-center text-white">
+                            <div class="text-5xl font-extrabold mb-1">89%</div>
+                            <p class="mt-2 text-xl font-semibold">User feedback highlighted value of product authenticity</p>
+                        </div>
+                    </aside>
                 </div>
-                <div class="bg-[#C3E0E5] p-6 rounded-xl shadow-md text-center">
-                    <div class="text-4xl font-extrabold text-[#1B4965]">89%</div>
-                    <p class="mt-2 text-[#1B4965] font-semibold">User feedback highlighted value of 
-                        product authenticity</p>
                 </div>
-                </aside>
-            </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- Solution Section -->
-        <section id="project-solution" class="py-20">
-            <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-extrabold text-[#1B4965] mb-12 text-center md:text-left">
-                The Solution</h2>
+            ---
 
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl 
-                    transition-shadow duration-300">
-                <img
-                    class="w-full h-64 object-cover"
-                    src="images/casa_artigiana_product_details.webp"
-                    alt="Product detail page design"
-                    loading="lazy"
-                    aria-hidden="true"
-                />
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Immersive Product Stories</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Each product page was designed to feature rich storytelling elements about 
-                    the artisan, their craft, and regional influence.
-                    </p>
-                </div>
-                </div>
-                <div class="bg-white rounded-xl overflow-hidden shadow-lg hover:shadow-2xl 
-                    transition-shadow duration-300">
-                <img
-                    class="w-full h-64 object-cover"
-                    src="images/casa_artigiana_artisans.webp"
-                    alt="Artisan profile page design"
-                    loading="lazy"
-                    aria-hidden="true"
-                />
-                <div class="p-6">
-                    <h3 class="text-xl font-bold mb-2">Artisan Profiles</h3>
-                    <p class="text-gray-700 leading-relaxed">
-                    Dedicated spaces were designed for artisans to showcase their workshop, 
-                    process, and heritage, building trust and connection.
-                    </p>
-                </div>
-                </div>
-            </div>
-            </div>
-        </section>
+            <section id="project-solution" class="py-16 sm:py-24">
+                <div class="container mx-auto px-6">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-[#1B4965] mb-12 relative pb-3 text-center md:text-left">
+                    The Solution 
+                    <span class="absolute left-0 bottom-0 h-1 w-24 bg-[#FF6B6B] rounded-full hidden md:block"></span>
+                </h2>
 
-        <!-- Results Section -->
-        <section id="project-results" class="py-20 bg-[#FF6B6B]">
-            <div class="container mx-auto px-6">
-            <h2 class="text-4xl font-extrabold text-white mb-12 text-center">Impact &amp; Learnings</h2>
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div class="bg-white p-8 rounded-xl text-center shadow-md hover:shadow-lg 
-                    transition-shadow duration-300">
-                <i class="fa-solid fa-lightbulb text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
-                <h3 class="text-xl font-bold mb-2">Engaging User Experience</h3>
-                <p class="text-gray-700">
-                    Successfully created an immersive and visually rich platform that effectively tells artisan stories.
-                </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl 
+                        transform hover:-translate-y-0.5 transition duration-300">
+                        <img
+                            class="w-full h-64 object-cover"
+                            src="images/casa_artigiana_product_details.webp"
+                            alt="Product detail page design"
+                            loading="lazy"
+                            aria-hidden="true"
+                        />
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#1B4965]">Immersive Product Stories</h3>
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                            Each product page was designed to feature rich storytelling elements about 
+                            the artisan, their craft, and regional influence to drive emotional connection and trust.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl 
+                        transform hover:-translate-y-0.5 transition duration-300">
+                        <img
+                            class="w-full h-64 object-cover"
+                            src="images/casa_artigiana_artisans.webp"
+                            alt="Artisan profile page design"
+                            loading="lazy"
+                            aria-hidden="true"
+                        />
+                        <div class="p-8">
+                            <h3 class="text-2xl font-bold mb-3 text-[#1B4965]">Artisan Profiles</h3>
+                            <p class="text-gray-700 leading-relaxed text-lg">
+                            Dedicated spaces were designed for artisans to showcase their workshop, 
+                            process, and heritage, validating authenticity and building strong customer connections.
+                            </p>
+                        </div>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-xl text-center shadow-md hover:shadow-lg 
-                    transition-shadow duration-300">
-                <i class="fa-solid fa-compass-drafting text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
-                <h3 class="text-xl font-bold mb-2">Intuitive Navigation</h3>
-                <p class="text-gray-700">
-                    Designed seamless user flows and a clean interface for an effortless 
-                    browsing and shopping experience.
-                </p>
                 </div>
-                <div class="bg-white p-8 rounded-xl text-center shadow-md hover:shadow-lg 
-                    transition-shadow duration-300">
-                <i class="fa-solid fa-gem text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
-                <h3 class="text-xl font-bold mb-2">Brand Storytelling</h3>
-                <p class="text-gray-700">
-                    Effectively balanced luxury aesthetics with practical e-commerce 
-                    functionality to highlight product authenticity.
-                </p>
-                </div>
-            </div>
-            </div>
-        </section>
-        </main>
+            </section>
 
-        
-        <section id="project-next" class="py-20">
+            ---
+
+            <section id="project-results" class="py-16 sm:py-24 bg-[#FF6B6B]">
+                <div class="container mx-auto px-6">
+                <h2 class="text-4xl sm:text-5xl font-extrabold text-white mb-12 text-center">Impact &amp; Learnings 🚀</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="bg-white p-8 rounded-2xl text-center shadow-xl hover:shadow-2xl 
+                        transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-lightbulb text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2 text-[#1B4965]">Engaging User Experience</h3>
+                        <p class="text-gray-700">
+                            Successfully created an immersive and visually rich platform that effectively tells artisan stories.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl text-center shadow-xl hover:shadow-2xl 
+                        transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-compass-drafting text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2 text-[#1B4965]">Intuitive Navigation</h3>
+                        <p class="text-gray-700">
+                            Designed seamless user flows and a clean interface for an effortless 
+                            browsing and shopping experience.
+                        </p>
+                    </div>
+                    <div class="bg-white p-8 rounded-2xl text-center shadow-xl hover:shadow-2xl 
+                        transform transition duration-300 hover:-translate-y-1">
+                        <i class="fa-solid fa-gem text-[#1B4965] text-5xl mb-4" aria-hidden="true"></i>
+                        <h3 class="text-xl font-bold mb-2 text-[#1B4965]">Brand Storytelling</h3>
+                        <p class="text-gray-700">
+                            Effectively balanced luxury aesthetics with practical e-commerce 
+                            functionality to highlight product authenticity.
+                        </p>
+                    </div>
+                </div>
+                </div>
+            </section>
+
+            ---
+
+            <section id="project-next" class="py-16 sm:py-24">
                 <div class="container mx-auto px-6 text-center">
-                    <h2 class="text-4xl font-bold text-[#1B4965] mb-8">
-                        <a href="finance_hub.html">Finance App Project →</a></h2>
-                    <span class="inline-block cursor-pointer">
-                        <div class="relative group">
-                            <img class="w-[300px] h-[200px] object-cover rounded-xl" 
+                    <h2 class="text-3xl sm:text-4xl font-bold text-[#1B4965] mb-8">
+                        Next Project
+                    </h2>
+                    <a href="finance_hub.html" class="inline-block cursor-pointer group">
+                        <div class="relative rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-shadow duration-300">
+                            <img class="w-[300px] h-[200px] object-cover" 
                             src="images\finance_app_designs.webp" 
-                            alt="Next project preview" aria-hidden="true">
+                            alt="Finance App Project Preview" aria-hidden="true">
                             <div class="absolute inset-0 bg-[#1B4965] bg-opacity-75 opacity-0 
-                                group-hover:opacity-100 transition duration-300 rounded-xl flex items-center 
+                                group-hover:opacity-100 transition duration-300 flex items-center 
                                 justify-center">
                                 <span class="text-white text-2xl font-bold">
-                                    Finance Dashboard →</span>
+                                    Finance Dashboard →
+                                </span>
                             </div>
                         </div>
-                    </span>
+                    </a>
+                    <p class="mt-4 text-xl font-bold text-[#1B4965]">
+                        <a href="finance_hub.html" class="hover:text-[#FF6B6B] transition duration-300">Finance App Project →</a>
+                    </p>
                 </div>
-        </section>
+            </section>
         </main>
 
-        <footer id="footer" class="bg-[#1B4965] text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold">Pixel Perfect</h3>
-                <p class="text-[#C3E0E5] text-sm md:text-base mt-4">Creating meaningful digital 
-                experiences through thoughtful design.</p>
-            </div>
+        <!-- New Footer Section -->
+        <footer id="footer" class="bg-[#12384B] text-white py-12">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
 
-            <!-- Column 2 -->
-            <div>
-                <h4 class="font-bold">Quick Links</h4>
-                <ul class="space-y-2 mt-4">
-                <li><a href="index.html#home" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Home</a></li>
-                <li><a href="projects.html" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Projects</a></li>
-                <li><a href="index.html#skills" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Skills</a></li>
-                </ul>
-            </div>
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                    </h3>
+                    <p class="text-xl text-[#C3E0E5]">
+                        Let's chat about design, development, and how we can bring your vision to life.
+                    </p>
+                    
+                    <a href="#contact" class="inline-block">
+                        <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Start the Conversation
+                        </button>
+                    </a>
+                </div>
 
-            <!-- Column 3 -->
-            <div>
-                <h4 class="font-bold"><a href="index.html#contact">Contact Form</a></h4>
-                <ul class="space-y-2 mt-4">
-                <li class="text-[#C3E0E5] break-all">estelle.pixelperfect@gmail.com</li>
-                <li class="text-[#C3E0E5]">+39 3780639042</li>
-                </ul>
-            </div>
+                <div class="border-t border-[#C3E0E5]/30 mt-12 pt-8">
+                    
+                    <div class="flex justify-center space-x-6 text-sm mb-4">
+                        <a href="index.html#home" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Home</a>
+                        <a href="projects.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Projects</a>
+                        <a href="about.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">About</a>
+                        <a href="index.html#contact" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Contact</a>
+                    </div>
 
-            <!-- Column 4 -->
-            <div>
-                <h4 class="font-bold">Follow Me</h4>
-                <div class="flex space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/estii20" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                    <p class="text-[#C3E0E5] text-sm">
+                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                    </p>
                 </div>
             </div>
-
-            </div>
-
-            <div class="border-t border-[#C3E0E5] mt-12 pt-8 text-center text-[#C3E0E5] text-sm">
-            <p>&copy; 2025 Pixel Perfect. All rights reserved.</p>
-            </div>
-        </div>
         </footer>
 
 <!-- External Libraries -->
