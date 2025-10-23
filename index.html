@@ -67,6 +67,33 @@
         };
     </script>
 
+     <style>
+        ::-webkit-scrollbar { display: none;}
+        body { font-family: 'Poppins', sans-serif; }
+        .blob-animation {
+            animation: blob 7s infinite;
+        }
+        @keyframes blob {
+            0% { transform: translate(0px, 0px) scale(1); }
+            33% { transform: translate(30px, -50px) scale(1.1); }
+            66% { transform: translate(-20px, 20px) scale(0.9); }
+            100% { transform: translate(0px, 0px) scale(1); }
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0% { transform: translate(0, 0px); }
+            50% { transform: translate(0, -20px); }
+            100% { transform: translate(0, -0px); }
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #FF6B6B, #E9B44C);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    </style>
+
 <!-- ✅ Strucutred Data -->
 <script type="application/ld+json">
 {
@@ -176,33 +203,69 @@
     <main class="min-h-screen pt-24" id="home">
 
     <!-- Hero Section -->
-    <section id="hero" class="relative min-h-[85vh] lg:min-h-[75vh] bg-gradient-to-r from-[#1B4965] to-[#C3E0E5] py-12 lg:py-0 flex items-center">
-        <div class="absolute inset-0 bg-gradient-to-r from-[#1B4965]/70 via-[#1B4965]/50 to-transparent z-0"></div>
-        <div class="container mx-auto px-6 flex items-center h-full relative z-10">
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center text-center md:text-left">
-            <div class="space-y-4 md:space-y-6">
-              <h1 id="hero-heading" class="text-4xl sm:text-5xl lg:text-5xl font-bold text-white leading-tight"> 
-                UX/UI Designer & Front-End Developer for Responsive Websites </h1>
-              <p class="text-base sm:text-lg lg:text-xl text-white sm:text-[#C3E0E5] max-w-full"> 
-                I'm Estelle Specht, a freelance **UX/UI designer** and **front-end developer** with a passion for clean, user-centered design. 
-                I specialize in building truly responsive websites using Figma, Tailwind CSS, and JavaScript. 
-                I bring creative thinking and technical precision to every project. </p>
-              <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 pt-4">
-                <a href="projects.html" class="bg-[#FF6B6B] hover:bg-[#E9B44C] text-white font-semibold px-8 py-3 rounded-full shadow-md transition duration-300 block text-center focus:outline-none focus:ring-4 focus:ring-[#E9B44C]"> View My Work </a>
-                <a href="#contact" 
-                    class="border-2 border-white hover:border-[#FF6B6B] text-white hover:text-[#FF6B6B] font-semibold px-8 py-3 
-                                rounded-full shadow-md transition duration-300 block text-center focus:outline-none focus:ring-4 focus:ring-white"> 
-                                Contact Me </a>
-              </div>
+    <section id="hero" 
+      class="h-auto min-h-[calc(100vh-6rem)] lg:min-h-screen bg-gradient-to-br from-[#1B4965] via-[#1B4965] to-[#C3E0E5] pt-16 md:pt-24 relative overflow-hidden flex items-center">
+        <div class="absolute inset-0">
+            <div class="blob-animation absolute top-10 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#FF6B6B]/20 rounded-full mix-blend-multiply filter blur-xl"></div>
+            <div class="blob-animation absolute top-20 right-10 w-40 h-40 md:w-72 md:h-72 bg-[#E9B44C]/20 rounded-full mix-blend-multiply filter blur-xl animation-delay-2000"></div>
+            <div class="blob-animation absolute bottom-0 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#C3E0E5]/30 rounded-full mix-blend-multiply filter blur-xl animation-delay-4000"></div>
+        </div>
+        
+        <div class="container mx-auto px-6 flex items-center w-full relative z-10 py-12 lg:py-0">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full text-center lg:text-left">
+                
+                <div class="space-y-8 lg:text-left">
+    <div class="space-y-4">
+        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+            Hi, I'm <span class="text-gradient">Estelle</span>
+        </h1>
+        <h2 class="text-xl sm:text-2xl lg:text-left lg:text-3xl font-light text-[#C3E0E5]">
+            UX/UI Designer & Front-End Developer for Responsive Websites
+        </h2>
+    </div>
+    <p class="text-base sm:text-lg lg:text-xl lg:text-left text-[#C3E0E5] leading-relaxed max-w-2xl mx-auto lg:mx-0">
+        A freelance **UX/UI designer** and **front-end developer** with a passion for clean, user-centered design. 
+        I specialise in building truly responsive websites using Figma, Tailwind CSS, and JavaScript. 
+        I bring creative thinking and technical precision to every project.
+    </p>
+    
+    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-6 justify-center lg:justify-start">
+        <a href="projects.html" class="w-full sm:w-auto"><button class="w-full sm:w-auto bg-[#FF6B6B] text-white px-8 py-4 rounded-full hover:bg-[#E9B44C] transition duration-300 shadow-xl transform hover:scale-105">
+            <i class="fa-solid fa-eye mr-2"></i>View My Work
+        </button></a>
+        <a href="documentation/Estelle_Specht_UX_UI_Designer_CV.pdf" class="w-full sm:w-auto"><button class="w-full sm:w-auto border-2 border-[#C3E0E5] text-[#C3E0E5] px-8 py-4 rounded-full hover:bg-[#C3E0E5] hover:text-[#1B4965] transition duration-300">
+            <i class="fa-solid fa-download mr-2"></i>Download CV
+        </button></a>
+    </div>
+    
+    <div class="flex space-x-6 justify-center lg:justify-start pt-4">
+        <span class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300 transform hover:scale-110 cursor-pointer"><i class="fa-brands fa-dribbble text-2xl"></i></span>
+        <span class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300 transform hover:scale-110 cursor-pointer"><i class="fa-brands fa-behance text-2xl"></i></span>
+        <span class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300 transform hover:scale-110 cursor-pointer"><i class="fa-brands fa-linkedin text-2xl"></i></span>
+        <span class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300 transform hover:scale-110 cursor-pointer"><i class="fa-brands fa-instagram text-2xl"></i></span>
+    </div>
+</div>
+                
+                <div class="relative flex justify-center pt-8 lg:pt-0">
+                    <div class="relative">
+                        <div class="floating absolute -inset-4 bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] rounded-full blur-lg opacity-30 w-full h-full"></div>
+                        <div class="relative bg-white p-2 rounded-full shadow-2xl">
+                            <img src="images/estelle.1.JPG" alt="Estelle - UX/UI Designer" class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover" />
+                        </div>
+                        
+                        <div class="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-[#E9B44C] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block">
+                            <i class="fa-brands fa-figma text-xl md:text-2xl"></i>
+                        </div>
+                        <div class="absolute -bottom-4 -left-4 md:-bottom-4 md:-left-8 bg-[#FF6B6B] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -2s;">
+                            <i class="fa-brands fa-sketch text-xl md:text-2xl"></i>
+                        </div>
+                        <div class="absolute top-1/2 -right-8 md:-right-12 bg-[#C3E0E5] text-[#1B4965] p-3 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -4s;">
+                            <i class="fa-solid fa-spray-can text-xl md:text-2xl"></i>
+                        </div>
+                    </div>
+                </div>
+                
             </div>
-            <div class="hidden md:flex justify-center items-center mt-8 md:mt-0">
-                <img class="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg
-                            h-auto object-contain rounded-3xl shadow-2xl
-                            max-h-[50vh] lg:max-h-[60vh] overflow-hidden mt-8 md:mt-0 py-3" 
-                    src="images/ux_hero.jpg" 
-                    alt="Portfolio hero image with 3D abstract design">
-            </div>
-          </div>
         </div>
     </section>
 
