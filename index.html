@@ -270,88 +270,112 @@
     <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
     <!-- New projects Section -->
-     <section id="work" aria-labelledby="projects-heading" class="bg-gradient-to-br from-[#E0EBF0] via-[#F8E2E8] to-[#FFFFFF] py-20">
+    <section id="work" aria-labelledby="projects-heading" class="bg-gradient-to-br from-[#FDFDFD] via-[#F5F5F5] to-[#FFEDED] py-16 sm:py-20">
         <div class="container mx-auto px-6">
-            <div class="text-center mb-16">
-                <h2 id="projects-heading" class="text-5xl font-bold text-[#1B4965] mb-6">Featured Work</h2>
-                <p class="text-xl text-gray-700 max-w-2xl mx-auto">
+            <div class="text-center mb-12 sm:mb-16">
+                <h2 id="projects-heading" class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-[#1B4965] mb-4">
+                    Featured <span class="text-gradient">Work</span>
+                </h2>
+                <p class="text-lg text-gray-700 max-w-2xl mx-auto">
                     A collection of projects that showcase my passion for creating meaningful user experiences.
                 </p>
             </div>
             
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
-                <div id="project-featured" class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transform hover:scale-[1.03] transition duration-500 border-b-4 border-[#FF6B6B]">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-12 mb-12">
+                
+                <div id="project-featured" 
+                    class="bg-white rounded-3xl overflow-hidden shadow-2xl hover:shadow-3xl transform hover:scale-[1.01] transition duration-500 border-b-4 border-[#FF6B6B]">
+                    
                     <div class="relative">
-                        <img class="w-full h-80 object-cover" 
-                          src="images/kidswap_project_designs.webp" 
-                          alt="modern fintech mobile app UI design with clean interface, gradient backgrounds, charts and financial data visualization" />
-                        <div class="absolute top-6 left-6 bg-[#FF6B6B] text-white px-4 py-2 rounded-full text-sm font-semibold">
+                        <img class="w-full h-72 sm:h-80 object-cover" 
+                            src="images/kidswap_project_designs.webp" 
+                            alt="E-commerce mobile app UI design" />
+                        <div class="absolute top-6 left-6 bg-[#FF6B6B] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
                             Featured Project
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3 class="text-2xl font-bold text-[#1B4965] mb-3">Kidswap E-commerce</h3>
-                        <p class="text-gray-600 mb-6">Full-scale e-commerce solution with advanced filtering.</p>
+                    
+                    <div class="p-6 sm:p-8">
+                        <h3 class="text-2xl sm:text-3xl font-bold text-[#1B4965] mb-3">Kidswap E-commerce</h3>
+                        <p class="text-gray-600 mb-5">Full-scale e-commerce solution with advanced filtering.</p>
+                        
                         <div class="flex flex-wrap gap-2 mb-6">
-                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">UI/UX Design</span>
-                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">Django</span>
-                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm">E-Commerce</span>
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm font-medium">UI/UX Design</span>
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm font-medium">Django</span>
+                            <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm font-medium">E-Commerce</span>
                         </div>
-                        <a href="e_commerce.html" ><button class="text-[#FF6B6B] hover:text-[#E9B44C] font-semibold flex items-center">
-                            View Case Study <i class="fa-solid fa-arrow-right ml-2"></i>
-                        </button></a>
+                        
+                        <a href="e_commerce.html" class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] font-bold text-lg transition duration-300">
+                            View Case Study <i class="fa-solid fa-arrow-right ml-2 text-xl"></i>
+                        </a>
                     </div>
                 </div>
                 
-                <div class="space-y-8">
-                    <div id="project-1" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
-                        <div class="flex">
-                            <img class="w-32 h-32 object-cover" 
-                              src="images/casa_artigiana_banner.png" 
-                              alt="e-commerce website design mockup with modern UI elements" aria-hidden="true" />
-                            <div class="p-6 flex-1">
+                <div class="space-y-6 sm:space-y-8">
+                    
+                    <div id="project-1" 
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:translate-y-[-4px] border-b-4 border-[#FF6B6B]">
+                        <a href="casa_artigiana.html" class="flex items-center hover:bg-[#F9F9F9]">
+                            <img class="w-24 h-24 sm:w-32 sm:h-32 object-cover" 
+                                src="images/casa_artigiana_banner.png" 
+                                alt="E-commerce website design mockup" aria-hidden="true" />
+                            <div class="p-4 sm:p-6 flex-1">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">Casa Artigiana</h3>
                                 <p class="text-gray-600 text-sm mb-3">Redesigned shopping experience for Italian Artisans.</p>
-                                <a href="casa_artigiana.html"><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                <span class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
                                     View Project →
-                                </button></a>
+                                </span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     
-                    <div id="project-2" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
-                        <div class="flex">
-                            <img class="w-32 h-32 object-cover" 
-                              src="images/fitness_app_design.webp" 
-                              alt="mobile app UI design for fitness tracking application" aria-hidden="true" />  
-                            <div class="p-6 flex-1">
+                    <div id="project-2" 
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:translate-y-[-4px] border-b-4 border-[#FF6B6B]">
+                        <a href="fitness_app.html" class="flex items-center hover:bg-[#F9F9F9]">
+                            <img class="w-24 h-24 sm:w-32 sm:h-32 object-cover" 
+                                src="images/fitness_app_design.webp" 
+                                alt="Mobile app UI design for fitness tracking" aria-hidden="true" /> 
+                            <div class="p-4 sm:p-6 flex-1">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">Fitness Tracker</h3>
                                 <p class="text-gray-600 text-sm mb-3">Mobile application for tracking workouts and nutrition.</p>
-                                <a href="fitness_app.html"><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                <span class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
                                     View Project →
-                                </button></a>
+                                </span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                     
-                    <div id="project-3" class="bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:translate-y-[-2px]">
-                        <div class="flex">
-                            <img class="w-32 h-32 object-cover" 
-                              src="images/finance_app_designs.webp" 
-                              alt="Finance dashboard UI mockup" aria-hidden="true" />
-                            <div class="p-6 flex-1">
+                    <div id="project-3" 
+                        class="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition duration-300 transform hover:translate-y-[-4px] border-b-4 border-[#FF6B6B]">
+                        <a href="finance_hub.html" class="flex items-center hover:bg-[#F9F9F9]">
+                            <img class="w-24 h-24 sm:w-32 sm:h-32 object-cover" 
+                                src="images/finance_app_designs.webp" 
+                                alt="Finance dashboard UI mockup" aria-hidden="true" />
+                            <div class="p-4 sm:p-6 flex-1">
                                 <h3 class="text-xl font-bold text-[#1B4965] mb-2">Finance Dashboard</h3>
                                 <p class="text-gray-600 text-sm mb-3">A comprehensive financial management platform.</p>
-                                <a href="finance_hub.html" ><button class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
+                                <span class="text-[#FF6B6B] hover:text-[#E9B44C] text-sm font-semibold">
                                     View Project →
-                                </button></a>
+                                </span>
                             </div>
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
+            
+            <div class="text-center pt-8">
+                <p class="text-lg text-gray-700 mb-6 max-w-2xl mx-auto">
+                    See the full range of my design and development capabilities.
+                </p>
+                <a href="projects.html" class="inline-block bg-[#1B4965] text-white px-8 py-4 rounded-full 
+                    hover:bg-[#FF6B6B] transition duration-300 font-bold shadow-lg">
+                    <i class="fa-solid fa-folder-open mr-2"></i>View All Projects
+                </a>
+            </div>
         </div>
     </section>
+
+    <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
     <!-- New About Section -->
     <section id="about" class="py-12 sm:py-20 bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] relative overflow-hidden">
@@ -415,175 +439,234 @@
         </div>
     </section>
 
+    <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+
         <!-- Pricing Section -->
-        <section class="bg-white py-20 px-6" id="pricing">
+        <section class="bg-gradient-to-br from-[#FDFDFD] via-[#F5F5F5] to-[#FFEDED] py-16 sm:py-20 px-6" id="pricing">
             <div class="max-w-5xl mx-auto text-center">
-                    <h2 class="text-4xl font-bold text-[#1B4965] mb-4">Design & Build Packages</h2>
-                    <p class="text-gray-600 mb-12">Choose the option that suits your needs 
-                        — and I’ll take care of the rest.</p>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mb-4 text-[#1B4965]">
+                    Design & Build <span class="text-gradient">Packages</span>
+                </h2>
+                <p class="text-gray-700 mb-10 sm:mb-12 text-lg max-w-2xl mx-auto">
+                    Choose the option that suits your needs — and I’ll take care of the rest.
+                </p>
 
-                    <div class="grid md:grid-cols-3 gap-8">
-                    <!-- Starter -->
-                    <div class="border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-                        <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">🌿 Starter</h3>
-                        <p class="text-3xl font-bold mb-2">€450</p>
-                        <p class="text-gray-500 mb-6">Ideal for a single-page concept or early MVP.</p>
-                        <ul class="text-left text-sm space-y-2 mb-6">
-                        <li>✅ 1 Figma page (mobile + desktop)</li>
-                        <li>✅ 1 round of revisions</li>
-                        <li>✅ Delivery in 3–5 days</li>
-                        </ul>
-                        <a href="#contact-form" class="inline-block bg-[#FF6B6B] text-white px-6 py-3 rounded-full 
-                            hover:bg-[#E9B44C] transition">Contact to Book</a>
-                    </div>
-
-                    <!-- Pro -->
-                    <div class="border border-gray-300 p-8 rounded-2xl shadow-lg bg-[#f9f9f9] scale-105">
-                        <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">✨ Pro</h3>
-                        <p class="text-3xl font-bold mb-2">€900</p>
-                        <p class="text-gray-500 mb-6">Great for full-page UX design with branding alignment.</p>
-                        <ul class="text-left text-sm space-y-2 mb-6">
-                        <li>✅ 3 pages or screens</li>
-                        <li>✅ UX structure & style guide</li>
-                        <li>✅ 2 rounds of revisions</li>
-                        </ul>
-                        <a href="#contact-form" class="inline-block bg-[#FF6B6B] text-white px-6 py-3 rounded-full 
-                            hover:bg-[#E9B44C] transition">Contact to Book</a>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                    
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-500 transform hover:scale-[1.02] border-t-4 border-[#C3E0E5] flex flex-col">
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">🌿 Starter</h3>
+                            <p class="text-5xl font-extrabold text-[#1B4965] mb-2">€499</p>
+                            <p class="text-gray-500 mb-6 text-base italic">Ideal for rapid concept validation.</p>
+                            
+                            <div class="h-px w-full bg-gray-200 my-6"></div> <ul class="text-left text-base space-y-3 mb-8 text-[#1B4965] flex-grow">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#FF6B6B]"></i><span>1 Figma page (mobile + desktop)</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#FF6B6B]"></i><span>1 round of revisions</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#FF6B6B]"></i><span>Delivery in 3–5 days</span></li>
+                                <li class="flex items-center space-x-3 text-gray-400"><i class="fa-solid fa-minus"></i><span>No front-end code</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact-form" class="inline-block w-full bg-[#FF6B6B] text-white px-6 py-4 rounded-full 
+                            hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-md mt-auto">Contact to Book</a>
                     </div>
 
-                    <!-- Dev-Ready -->
-                    <div class="border border-gray-300 p-8 rounded-2xl shadow-sm hover:shadow-md transition">
-                        <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">🚀 Dev-Ready</h3>
-                        <p class="text-3xl font-bold mb-2">€1,200+</p>
-                        <p class="text-gray-500 mb-6">Design + front-end code (HTML/CSS/Tailwind).</p>
-                        <ul class="text-left text-sm space-y-2 mb-6">
-                        <li>✅ All from Pro package</li>
-                        <li>✅ Clean responsive front-end code</li>
-                        <li>✅ Optional animations</li>
-                        </ul>
-                        <a href="#contact-form" class="inline-block bg-[#FF6B6B] text-white px-6 py-3 rounded-full 
-                            hover:bg-[#E9B44C] transition">Contact to Book</a>
+                    <div class="relative bg-white p-8 rounded-3xl shadow-2xl transition duration-500 transform scale-[1.05] border-t-4 border-[#E9B44C] z-10 flex flex-col">
+                        <div class="absolute top-0 right-0 bg-[#FF6B6B] text-white text-xs font-bold uppercase py-1 px-4 rounded-bl-xl rounded-tr-3xl">Most Popular</div>
+                        
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">✨ Pro</h3>
+                            <p class="text-5xl font-extrabold text-[#1B4965] mb-2">€900</p>
+                            <p class="text-gray-500 mb-6 text-base italic">Perfect for launching a polished V1.</p>
+                            
+                            <div class="h-px w-full bg-gray-200 my-6"></div> <ul class="text-left text-base space-y-3 mb-8 text-[#1B4965] flex-grow">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#E9B44C]"></i><span>3 pages or screens</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#E9B44C]"></i><span>**Design System** & style guide</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#E9B44C]"></i><span>2 rounds of revisions</span></li>
+                                <li class="flex items-center space-x-3 text-gray-400"><i class="fa-solid fa-minus"></i><span>No front-end code</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact-form" class="inline-block w-full bg-[#E9B44C] text-white px-6 py-4 rounded-full 
+                            hover:bg-[#FF6B6B] transition duration-300 font-semibold shadow-md mt-auto">Contact to Book</a>
                     </div>
+
+                    <div class="bg-white p-8 rounded-3xl shadow-xl hover:shadow-2xl transition duration-500 transform hover:scale-[1.02] border-t-4 border-[#1B4965] flex flex-col">
+                        
+                        <div class="flex flex-col flex-grow">
+                            <h3 class="text-2xl font-semibold text-[#1B4965] mb-4">🚀 Dev-Ready</h3>
+                            <p class="text-5xl font-extrabold text-[#1B4965] mb-2">€1,200+</p>
+                            <p class="text-gray-500 mb-6 text-base italic">The seamless design-to-code solution.</p>
+                            
+                            <div class="h-px w-full bg-gray-200 my-6"></div> <ul class="text-left text-base space-y-3 mb-8 text-[#1B4965] flex-grow">
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#1B4965]"></i><span>All features from Pro package</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#1B4965]"></i><span>Clean responsive front-end code</span></li>
+                                <li class="flex items-center space-x-3"><i class="fa-solid fa-check text-[#1B4965]"></i><span>Optional animations</span></li>
+                                <li class="flex items-center space-x-3 text-gray-400"><i class="fa-solid fa-minus"></i><span>*Price is dependent on scope, **starting at €1,200**</span></li>
+                            </ul>
+                        </div>
+                        <a href="#contact-form" class="inline-block w-full bg-[#1B4965] text-white px-6 py-4 rounded-full 
+                            hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-md mt-auto">Contact to Book</a>
                     </div>
+                    
+                </div>
             </div>
         </section>
 
         <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
-        <!-- Contact Form Card -->
-        <section id="contact" class="py-20 bg-[#FDFDFD]">
-                    <div class="max-w-4xl mx-auto bg-white rounded-xl p-8 shadow-sm">
-                        <h2 class="text-3xl font-bold text-[#1B4965] mb-6 text-center">Let's Collaborate</h2>
-                        <p class="text-gray-600 mb-8 text-center">
-                            Send me a message to start your project. I’ll get back to you with next steps.
-                        </p>
-
-                        <div class="md:flex md:space-x-10">
-                            <!-- Form Column -->
-                            <form action="https://formspree.io/f/mzbnqnyk" method="POST" id="contact-form" role="form"
-                            class="md:flex-1 space-y-6">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" name="name"  
-                            placeholder="Your Name"
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
-                                    focus:border-[#1B4965]" required>
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" 
-                            placeholder="Your Email"
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
-                                    focus:border-[#1B4965]" required>
-                            <label for="message" class="sr-only">Message</label>
-                            <textarea name="message" rows="5" 
-                            placeholder="Tell me about your project or package you're interested in"
-                                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none 
-                                    focus:border-[#1B4965]" required></textarea>
-
+        <!-- New Contact Section -->
+        <section id="contact" class="py-16 sm:py-20 bg-[#1B4965] relative overflow-hidden">
+            <div class="absolute inset-0">
+                <div class="absolute top-10 right-10 w-64 h-64 md:w-96 md:h-96 bg-[#FF6B6B]/10 rounded-full blur-3xl"></div>
+                <div class="absolute bottom-10 left-10 w-64 h-64 md:w-96 md:h-96 bg-[#E9B44C]/10 rounded-full blur-3xl"></div>
+            </div>
+            
+            <div class="container mx-auto px-6 relative z-10">
+                <div class="text-center mb-12 lg:mb-16">
+                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Let's Create Together</h2>
+                    <p class="text-base sm:text-xl text-[#C3E0E5] max-w-2xl mx-auto">
+                        Ready to bring your ideas to life? I'd love to hear about your project and explore how we can work together.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+                    
+                    <div class="space-y-8 order-2 lg:order-1">
+                        <div class="space-y-6">
+                            <a href="mailto:hello@sarah.design" class="flex items-center space-x-4 group">
+                                <div class="bg-[#FF6B6B] p-4 rounded-full group-hover:bg-[#E9B44C] transition duration-300">
+                                    <i class="fa-solid fa-envelope text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white group-hover:text-[#FF6B6B] transition duration-300">Email</h3>
+                                    <p class="text-[#C3E0E5] group-hover:text-white/90 transition duration-300">estelle.pixelperfect@gmail.com</p>
+                                </div>
+                            </a>
+                            <a href="tel:+15551234567" class="flex items-center space-x-4 group">
+                                <div class="bg-[#E9B44C] p-4 rounded-full group-hover:bg-[#FF6B6B] transition duration-300">
+                                    <i class="fa-solid fa-phone text-white text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white group-hover:text-[#E9B44C] transition duration-300">Phone</h3>
+                                    <p class="text-[#C3E0E5] group-hover:text-white/90 transition duration-300">+39 3780639042</p>
+                                </div>
+                            </a>
+                            <div class="flex items-center space-x-4">
+                                <div class="bg-[#C3E0E5] p-4 rounded-full">
+                                    <i class="fa-solid fa-location-dot text-[#1B4965] text-xl"></i>
+                                </div>
+                                <div>
+                                    <h3 class="text-xl font-bold text-white">Location</h3>
+                                    <p class="text-[#C3E0E5]">Trieste, Italy</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="flex space-x-4 sm:space-x-6 pt-6">
+                            <a href="https://github.com/estii20" 
+                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                              <i class="fa-brands fa-github"></i></a>
+                            <a href="#" 
+                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                              <i class="fa-brands fa-behance text-xl"></i></a>
+                            <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
+                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                              <i class="fa-brands fa-linkedin text-xl"></i></a>
+                            <a href="#" 
+                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                              <i class="fa-brands fa-instagram text-xl"></i></a>
+                        </div>
+                    </div>
+                    
+                    <div class="order-1 lg:order-2 space-y-8">
+                        
+                        <form action="https://formspree.io/f/mzbnqnyk" method="POST" id="contact-form" role="form"
+                            class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-3xl space-y-6">
+                            
+                            <label for="name" class="sr-only">Your Name</label>
+                            <input type="text" name="name" id="name" required
+                                placeholder="Your Name" 
+                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
+                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300" />
+                                      
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input type="email" name="email" id="email" required
+                                placeholder="Email Address" 
+                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
+                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300" />
+                                      
+                            <label for="message" class="sr-only">Project Details</label>
+                            <textarea name="message" id="message" rows="5" required
+                                placeholder="Tell me about your project..." 
+                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
+                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300 resize-none"></textarea>
+                                      
                             <button type="submit"
-                                class="w-full bg-[#1B4965] text-white px-8 py-3 rounded-full hover:bg-[#FF6B6B] 
-                                    transition duration-300">
-                                Send Message
+                                class="w-full bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] text-white px-8 py-4 rounded-xl hover:shadow-lg transform hover:scale-[1.01] transition duration-300 font-semibold">
+                                <i class="fa-solid fa-paper-plane mr-2"></i>Send Message
                             </button>
-                            </form>
-
-                            <!-- Upload Column -->
-                            <div class="md:flex-1 mt-10 md:mt-0 text-center flex flex-col justify-center border 
-                                border-gray-200 rounded-lg p-6">
-                            <h3 class="text-2xl font-semibold text-[#1B4965] mb-3">Optional: Upload Your Brief</h3>
-                            <p class="text-gray-600 mb-5 text-sm">
+                        </form>
+                        
+                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-3xl text-center border border-white/30">
+                            <h3 class="text-xl font-semibold text-white mb-2">Optional: Upload Your Brief</h3>
+                            <p class="text-[#C3E0E5] mb-5 text-sm">
                                 If you already have a wireframe, PDF, or design notes — feel free to upload them here.
                             </p>
                             <a href="https://docs.google.com/forms/d/1uZAp0PNzzlb3aax_Di0JlWJNu2jmk2lV4epniStuijE/viewform"
-                                target="_blank" rel="noopener noreferrer" class="mx-auto">
+                                target="_blank" rel="noopener noreferrer" class="inline-block">
                                 <button
-                                class="flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-6 py-3 
-                                    rounded-full hover:bg-[#E9B44C] transition duration-300">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                    stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                    d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4-4m0 0l-4 4m4-4v12" />
-                                </svg>
-                                Upload Your Brief
+                                    class="flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-6 py-3 
+                                        rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4-4m0 0l-4 4m4-4v12" />
+                                    </svg>
+                                    Upload Your Brief
                                 </button>
                             </a>
                         </div>
                     </div>
                 </div>
+            </div>
         </section>
 
-        <footer id="footer" class="bg-[#1B4965] text-white py-12">
-        <div class="max-w-screen-xl mx-auto px-6 md:px-12">
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
-            
-            <!-- Column 1 -->
-            <div>
-                <h3 class="text-xl md:text-2xl font-bold">Pixel Perfect</h3>
-                <p class="text-[#C3E0E5] text-sm md:text-base mt-4">Creating meaningful digital 
-                experiences through thoughtful design.</p>
-            </div>
+        <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+        </main>
 
-            <!-- Column 2 -->
-            <div>
-                <h4 class="font-bold">Quick Links</h4>
-                <ul class="space-y-2 mt-4">
-                <li><a href="index.html#home" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Home</a></li>
-                <li><a href="projects.html" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Projects</a></li>
-                <li><a href="index.html#skills" class="text-[#C3E0E5] hover:text-white text-sm md:text-base">Skills</a></li>
-                </ul>
-            </div>
+        <!-- New Footer Section -->
+        <footer id="footer" class="bg-[#12384B] text-white py-12">
+            <div class="max-w-screen-xl mx-auto px-6 md:px-12 text-center">
 
-            <!-- Column 3 -->
-            <div>
-                <h4 class="font-bold"><a href="index.html#contact">Contact Form</a></h4>
-                <ul class="space-y-2 mt-4">
-                <li class="text-[#C3E0E5] break-all">estelle.pixelperfect@gmail.com</li>
-                <li class="text-[#C3E0E5]">+39 3780639042</li>
-                </ul>
-            </div>
+                <div class="space-y-6 max-w-3xl mx-auto">
+                    <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
+                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                    </h3>
+                    <p class="text-xl text-[#C3E0E5]">
+                        Let's chat about design, development, and how we can bring your vision to life.
+                    </p>
+                    
+                    <a href="#contact" class="inline-block">
+                        <button class="bg-[#FF6B6B] text-white px-8 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold shadow-lg">
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Start the Conversation
+                        </button>
+                    </a>
+                </div>
 
-            <!-- Column 4 -->
-            <div>
-                <h4 class="font-bold">Follow Me</h4>
-                <div class="flex space-x-6 mt-4">
-                <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-linkedin"></i>
-                </a>
-                <a href="https://github.com/estii20" 
-                    target="_blank" class="text-[#C3E0E5] hover:text-white text-2xl">
-                    <i class="fa-brands fa-github"></i>
-                </a>
+                <div class="border-t border-[#C3E0E5]/30 mt-12 pt-8">
+                    
+                    <div class="flex justify-center space-x-6 text-sm mb-4">
+                        <a href="index.html#home" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Home</a>
+                        <a href="projects.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Projects</a>
+                        <a href="about.html" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">About</a>
+                        <a href="index.html#contact" class="text-[#C3E0E5] hover:text-[#FF6B6B] transition duration-300">Contact</a>
+                    </div>
+
+                    <p class="text-[#C3E0E5] text-sm">
+                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                    </p>
                 </div>
             </div>
-
-            </div>
-
-            <div class="border-t border-[#C3E0E5] mt-12 pt-8 text-center text-[#C3E0E5] text-sm">
-            <p>&copy; 2025 Pixel Perfect. All rights reserved.</p>
-            </div>
-        </div>
         </footer>
-
-</main>
     
 <!-- External Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
