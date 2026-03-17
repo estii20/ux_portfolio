@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- ✅ Page Title (SEO Keyword-Rich) -->
-    <title>Estelle Specht | UX/UI Designer & Front-End Developer Portfolio</title>
+    <title>Freelance UX Designer & Web Developer for Small Businesses | Estelle Specht</title>
 
     <!-- ✅ Meta Description (for Search Snippets) -->
     <meta name="description" content="Portfolio of Estelle Specht — freelance UX/UI designer & front-end developer
@@ -69,7 +69,7 @@
 
      <style>
         ::-webkit-scrollbar { display: none;}
-        body { font-family: 'Poppins', sans-serif; }
+        body { font-family: 'Inter', sans-serif; }
         .blob-animation {
             animation: blob 7s infinite;
         }
@@ -150,181 +150,201 @@
 
 </head>
 
-<body>
+<body class="h-full text-base-content">
     <a href="#home" class="sr-only focus:not-sr-only absolute top-2 left-2 bg-white text-[#1B4965] px-4 py-2 rounded">
         Skip to main content
     </a>
-    
-<html class="">
-  <body class="h-full text-base-content">
-    <nav id="header" class="fixed w-full bg-[#FDFDFD] z-50 shadow-sm">
-      <nav class="bg-[#C3E0E5] p-4">
-        <div class="container mx-auto flex justify-between items-center">
-          <!-- Logo -->
-          <div class="flex items-center space-x-3">
-            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">
-              <img src="images/PixelPerfectLogo.webp" alt="Pixel Perfect Logo" width="300" height="100" class="h-10 w-auto" aria-hidden="true">
-            </a>
-            <div class="text-2xl font-bold text-[#1B4965]">
-              <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2"> Pixel Perfect </a>
-            </div>
-          </div>
-          <!-- Burger Menu Button (Only visible on small screens) -->
-          <button id="menu-btn" class="md:hidden text-3xl text-[#1B4965] focus:outline-none"> &#9776; </button>
-          <!-- Mobile Menu (only shows on small screens) -->
-          <div id="mobile-menu" class="hidden flex-col space-y-4 bg-[#C3E0E5] p-1 sm:p-4 mt-2 rounded-lg max-h-[80vh]
-                            w-[95vw] overflow-y-auto shadow-lg z-50 transition-all duration-300 ease-in-out
-                            opacity-0 transform scale-95 md:hidden">
-            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Home</a>
-            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Projects</a>            
-            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">About</a>
-            <a href="index.html#pricing" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Pricing</a>
-            <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B] p-2">Contact</a>
-          </div>
-          <!-- Desktop Nav (hidden on small screens) -->
-          <div class="hidden md:flex space-x-6 items-center">
-            <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
-            <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
-            <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
-            <a href="index.html#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
-            <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>    
-            <!-- CTA Button -->
-            <button class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] 
-                            transition duration-300">
-              <a href="#contact">Let's Talk</a>
-            </button>
-          </div>
-        </div>
-      </nav>
-    </nav>
+<!-- Navigation -->
+<nav id="header" class="fixed top-0 w-full bg-[#C3E0E5] z-50 shadow-sm">
+<div class="container mx-auto flex justify-between items-center px-6 py-4 relative">
 
-    <main class="min-h-screen pt-24" id="home">
+    <!-- Logo -->
+    <div class="flex items-center space-x-3">
+        <a href="index.html" class="flex items-center space-x-3">
+            <img src="images/PixelPerfectLogo.webp"
+                alt="Pixel Perfect Logo"
+                width="300"
+                height="100"
+                class="h-10 w-auto" />
 
-    <!-- Hero Section -->
-    <section id="hero" 
-        class="h-auto min-h-[calc(100vh-6rem)] lg:min-h-screen bg-gradient-to-br from-[#1B4965] via-[#1B4965] to-[#C3E0E5] pt-16 md:pt-24 relative overflow-hidden flex items-center">
+            <span class="text-2xl font-bold text-[#1B4965] hover:text-[#FF6B6B] transition duration-300">
+                Pixel Perfect
+            </span>
+        </a>
+    </div>
 
-        <!-- Background Blobs -->
-        <div class="absolute inset-0">
-            <div class="blob-animation absolute top-10 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#FF6B6B]/20 rounded-full mix-blend-multiply filter blur-xl"></div>
-            <div class="blob-animation absolute top-20 right-10 w-40 h-40 md:w-72 md:h-72 bg-[#E9B44C]/20 rounded-full mix-blend-multiply filter blur-xl animation-delay-2000"></div>
-            <div class="blob-animation absolute bottom-0 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#C3E0E5]/30 rounded-full mix-blend-multiply filter blur-xl animation-delay-4000"></div>
-        </div>
+    <!-- Mobile Burger -->
+    <button id="menu-btn"
+        class="md:hidden text-3xl text-[#1B4965] focus:outline-none"
+        aria-label="Toggle navigation menu">
+        &#9776;
+    </button>
 
-        <div class="container mx-auto px-6 flex items-center w-full relative z-10 py-12 lg:py-0">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center w-full text-center lg:text-left">
+    <!-- Mobile Menu -->
+    <div id="mobile-menu"
+        class="hidden absolute top-full left-4 right-4 mt-2 bg-white rounded-2xl shadow-xl p-6 flex-col space-y-4 opacity-0 scale-95 transition-all duration-300 md:hidden">
 
-                <!-- Left Content -->
-                <div class="space-y-6 lg:space-y-8">
+        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+        <a href="index.html#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
 
-                    <div class="space-y-3">
+        <a href="mailto:estelle.pixelperfect@gmail.com"
+            class="inline-block bg-[#FF6B6B] text-white px-4 py-3 rounded-full text-center hover:bg-[#E9B44C] transition duration-300">
+            Book Intro Call
+        </a>
+    </div>
 
-                        <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
-                            Hi, I’m <span class="text-gradient">Estelle</span> —
-                            <span class="block text-2xl sm:text-3xl lg:text-4xl font-light text-[#C3E0E5] mt-2">
-                                Freelance UX Designer & Web Developer
-                            </span>
-                        </h1>
+    <!-- Desktop Menu -->
+    <div class="hidden md:flex space-x-6 items-center">
 
-                        <h2 class="text-xl sm:text-2xl lg:text-3xl font-light text-[#C3E0E5] leading-relaxed max-w-xl mx-auto lg:mx-0">
-                            I design clear, trustworthy websites for small businesses that want to grow online.
-                        </h2>
+        <a href="index.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Home</a>
+        <a href="projects.html" class="text-[#1B4965] hover:text-[#FF6B6B]">Projects</a>
+        <a href="about.html" class="text-[#1B4965] hover:text-[#FF6B6B]">About</a>
+        <a href="index.html#pricing" class="text-[#1B4965] hover:text-[#FF6B6B]">Pricing</a>
+        <a href="index.html#contact" class="text-[#1B4965] hover:text-[#FF6B6B]">Contact</a>
 
-                    </div>
+        <a href="mailto:estelle.pixelperfect@gmail.com"
+            class="bg-[#1B4965] text-white px-4 py-2 rounded-full hover:bg-[#FF6B6B] transition duration-300">
+            Let's Talk
+        </a>
 
-                    <p class="text-base sm:text-lg lg:text-xl font-light text-[#C3E0E5] leading-relaxed max-w-xl mx-auto lg:mx-0">
-                        Freelance UX/UI designer and front-end developer specialising in responsive websites built with clarity, usability, and thoughtful design.
-                    </p>
+    </div>
 
-                    <!-- CTA Buttons -->
-                    <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
+</div>
 
-                        <a href="mailto:estelle.pixelperfect@gmail.com" class="w-full sm:w-auto">
-                            <button class="w-full sm:w-auto bg-[#FF6B6B] text-white px-8 py-4 rounded-full hover:bg-[#E9B44C] transition duration-300 shadow-xl transform hover:scale-105">
-                                <i class="fa-solid fa-calendar-check mr-2"></i>Book a Free Intro Call
-                            </button>
-                        </a>
+</nav>
 
-                        <a href="projects.html" class="w-full sm:w-auto">
-                            <button class="w-full sm:w-auto border-2 border-[#C3E0E5] text-[#C3E0E5] px-8 py-4 rounded-full hover:bg-[#C3E0E5] hover:text-[#1B4965] transition duration-300">
-                                <i class="fa-solid fa-eye mr-2"></i>View My Work
-                            </button>
-                        </a>
+<!-- Top Divider -->
+<div class="h-[2px] w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
-                    </div>
+<main class="min-h-screen pt-[73px]" id="home">
 
-                    <!-- Trust Line -->
-                    <p class="text-sm sm:text-base text-[#C3E0E5] pt-2">
-                        📍 Based in Trieste, Italy — working remotely with small businesses across the UK and Europe
-                    </p>
+<!-- Hero Section -->
 
-                </div>
+<section id="hero"
+    class="h-auto min-h-[calc(100vh-6rem)] lg:min-h-screen bg-gradient-to-br from-[#1B4965] via-[#1B4965] to-[#C3E0E5] pt-16 md:pt-24 relative overflow-hidden flex items-center">
 
-                <!-- Right Image -->
-                <div class="relative flex justify-center pt-8 lg:pt-0">
-                    <div class="relative">
+<!-- Background Blobs -->
+<div class="absolute inset-0">
+    <div class="blob-animation absolute top-10 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#FF6B6B]/20 rounded-full mix-blend-multiply filter blur-xl"></div>
+    <div class="blob-animation absolute top-20 right-10 w-40 h-40 md:w-72 md:h-72 bg-[#E9B44C]/20 rounded-full mix-blend-multiply filter blur-xl animation-delay-2000"></div>
+    <div class="blob-animation absolute bottom-0 left-10 w-40 h-40 md:w-72 md:h-72 bg-[#C3E0E5]/30 rounded-full mix-blend-multiply filter blur-xl animation-delay-4000"></div>
+</div>
 
-                        <div class="floating absolute -inset-4 bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] rounded-full blur-lg opacity-30 w-full h-full"></div>
+<div class="container mx-auto px-6 flex items-center w-full relative z-10 py-16 lg:py-0">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-center w-full text-center lg:text-left">
 
-                        <div class="relative bg-white p-2 rounded-full shadow-2xl hidden lg:block">
-                            <img src="images/estelle.1.JPG" alt="Estelle - UX/UI Designer"
-                                class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover hidden lg:block" />
-                        </div>
+        <!-- Left Content -->
+        <div class="space-y-6 lg:space-y-8">
 
-                        <div class="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-[#E9B44C] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block">
-                            <i class="fa-brands fa-figma text-xl md:text-2xl"></i>
-                        </div>
+            <div class="space-y-3">
 
-                        <div class="absolute -bottom-4 -left-4 md:-bottom-4 md:-left-8 bg-[#FF6B6B] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -2s;">
-                            <i class="fa-brands fa-sketch text-xl md:text-2xl"></i>
-                        </div>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-tight">
+                    Hi, I’m <span class="text-gradient">Estelle</span> —
+                    <span class="block text-2xl sm:text-3xl lg:text-4xl font-light text-[#C3E0E5] mt-2">
+                        Freelance UX Designer & Web Developer
+                    </span>
+                </h1>
 
-                        <div class="absolute top-1/2 -right-8 md:-right-12 bg-[#C3E0E5] text-[#1B4965] p-3 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -4s;">
-                            <i class="fa-solid fa-code text-xl md:text-2xl"></i>
-                        </div>
-
-                    </div>
-                </div>
+                <h2 class="text-xl sm:text-2xl lg:text-3xl font-light text-[#C3E0E5] leading-relaxed max-w-xl mx-auto lg:mx-0">
+                    Clear, trustworthy websites for small businesses ready to grow online.
+                </h2>
 
             </div>
-        </div>
-    </section>
 
-    <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+            <p class="text-base sm:text-lg lg:text-xl font-light text-[#C3E0E5] leading-relaxed max-w-xl mx-auto lg:mx-0">
+                UX/UI design and front-end development focused on clarity, usability, and responsive design.
+            </p>
 
-    <!-- Trust + Testimonial Section -->
-    <section class="bg-white py-16 sm:py-20 px-6">
+            <!-- CTA Buttons -->
+            <div class="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center lg:justify-start">
 
-        <div class="max-w-5xl mx-auto text-center">
+                <a href="mailto:estelle.pixelperfect@gmail.com"
+                    class="inline-block bg-[#FF6B6B] text-white px-8 py-4 rounded-full hover:bg-[#E9B44C] transition duration-300 shadow-xl transform hover:scale-105">
+                    <i class="fa-solid fa-calendar-check mr-2"></i>Book a Free Intro Call
+                </a>
+
+                <a href="projects.html"
+                    class="inline-block border-2 border-[#C3E0E5] text-[#C3E0E5] px-8 py-4 rounded-full hover:bg-[#C3E0E5] hover:text-[#1B4965] transition duration-300">
+                    <i class="fa-solid fa-eye mr-2"></i>View My Work
+                </a>
+
+            </div>
 
             <!-- Trust Line -->
-            <p class="text-sm sm:text-base text-[#1B4965] mb-8 font-medium">
-                📍 Based in Trieste, Italy — working remotely with small businesses across the UK and Europe
+            <p class="text-sm sm:text-base text-[#C3E0E5] pt-2">
+                Recent work includes wellness, consultancy, and small business websites.
             </p>
-
-            <!-- Section Heading -->
-            <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1B4965] mb-6">
-                Trusted by Early-Stage Businesses
-            </h2>
-
-            <!-- Placeholder Testimonial -->
-            <blockquote class="text-lg sm:text-xl text-gray-700 italic leading-relaxed max-w-3xl mx-auto">
-                “A thoughtful and collaborative design process that helped bring my business online with clarity and confidence.”
-            </blockquote>
-
-            <p class="mt-6 text-[#1B4965] font-semibold text-base">
-                — Client testimonial coming soon
-            </p>
-
-            <!-- Optional Small Supporting Text -->
-            <p class="mt-8 text-gray-600 max-w-2xl mx-auto leading-relaxed">
-                Recent work includes designing a wellness-focused content platform for a nutrition educator, 
-                built to support blog publishing, trust-building, and future course sales.
-            </p>
-
         </div>
 
+        <!-- Right Image -->
+        <div class="relative flex justify-center pt-8 lg:pt-0">
+            <div class="relative">
+
+                <div class="floating absolute -inset-4 bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] rounded-full blur-lg opacity-30 w-full h-full"></div>
+
+                <div class="relative bg-white p-2 rounded-full shadow-2xl hidden lg:block">
+                    <img src="images/estelle.1.webp"
+                        alt="Estelle - UX/UI Designer"
+                        class="w-64 h-64 sm:w-80 sm:h-80 lg:w-96 lg:h-96 rounded-full object-cover hidden lg:block" />
+                </div>
+
+                <div class="absolute -top-4 -right-4 md:-top-8 md:-right-8 bg-[#E9B44C] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block">
+                    <i class="fa-brands fa-figma text-xl md:text-2xl"></i>
+                </div>
+
+                <div class="absolute -bottom-4 -left-4 md:-bottom-4 md:-left-8 bg-[#FF6B6B] text-white p-3 md:p-4 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -2s;">
+                    <i class="fa-brands fa-sketch text-xl md:text-2xl"></i>
+                </div>
+
+                <div class="absolute top-1/2 -right-8 md:-right-12 bg-[#C3E0E5] text-[#1B4965] p-3 rounded-full shadow-lg floating hidden sm:block" style="animation-delay: -4s;">
+                    <i class="fa-solid fa-code text-xl md:text-2xl"></i>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</section>
+
+<!-- Bottom Divider -->
+
+<div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
+
+
+    <!-- Trust + Testimonial Section -->
+    <section class="bg-[#F8FBFC] py-12 sm:py-14 px-6">
+
+    <div class="max-w-4xl mx-auto text-center">
+
+        <p class="text-sm sm:text-base text-[#1B4965] mb-6 font-medium">
+            📍 Based in Trieste, Italy — working remotely with small businesses across the UK and Europe
+        </p>
+
+        <h2 class="text-3xl sm:text-4xl lg:text-[42px] font-bold text-[#1B4965] mb-5">
+            Trusted by Early-Stage Businesses
+        </h2>
+
+        <blockquote class="text-xl sm:text-2xl text-[#1B4965] italic leading-relaxed max-w-3xl mx-auto">
+            “A thoughtful and collaborative design process that helped bring my business online with clarity and confidence.”
+        </blockquote>
+
+        <p class="mt-5 text-[#1B4965] font-semibold text-base">
+            — Early client feedback currently being collected
+        </p>
+
+        <p class="mt-6 text-gray-600 max-w-xl mx-auto leading-relaxed">
+            Recent work includes a wellness-focused content platform designed for trust, clarity, and future growth.
+        </p>
+
+    </div>
     </section>
+
+    <div class="h-[2px] w-full bg-gradient-to-r from-transparent via-[#C3E0E5] to-transparent"></div>
 
     <!-- 🎨 Projects Section -->
     <section id="work" aria-labelledby="projects-heading"
@@ -352,7 +372,7 @@
 
                     <div class="relative">
                         <img loading="lazy" itemprop="image" class="w-full h-72 sm:h-80 object-cover"
-                            src="images/food_over_medicine_mockup.webp"
+                            src="images/food-over-medicine.png"
                             alt="Food Over Medicine website preview" />
 
                         <div class="absolute top-6 left-6 bg-[#FF6B6B] text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
@@ -375,7 +395,7 @@
                             <span class="bg-[#C3E0E5] text-[#1B4965] px-3 py-1 rounded-full text-sm font-medium">Client Website</span>
                         </div>
 
-                        <a href="food_over_medicine.html"
+                        <a href="food-over-medicine.html"
                             class="inline-flex items-center text-[#FF6B6B] hover:text-[#E9B44C] font-bold text-lg transition-colors duration-300 ease-in-out">
                             View Case Study
                             <i class="fa-solid fa-arrow-right ml-2 text-xl"></i>
@@ -681,123 +701,158 @@
 
         <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
 
-        <!-- New Contact Section -->
+        <!-- Contact Section -->
+
         <section id="contact" class="py-16 sm:py-20 bg-[#1B4965] relative overflow-hidden">
+
+            <!-- Background Glow -->
             <div class="absolute inset-0">
                 <div class="absolute top-10 right-10 w-64 h-64 md:w-96 md:h-96 bg-[#FF6B6B]/10 rounded-full blur-3xl"></div>
                 <div class="absolute bottom-10 left-10 w-64 h-64 md:w-96 md:h-96 bg-[#E9B44C]/10 rounded-full blur-3xl"></div>
             </div>
-            
-            <div class="container mx-auto px-6 relative z-10">
-                <div class="text-center mb-12 lg:mb-16">
-                    <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">Let's Create Together</h2>
-                    <p class="text-base sm:text-xl text-[#C3E0E5] max-w-2xl mx-auto">
-                        Ready to bring your ideas to life? I'd love to hear about your project and explore how we can work together.
-                    </p>
-                </div>
-                
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
-                    
-                    <div class="space-y-8 order-2 lg:order-1">
-                        <div class="space-y-6">
-                            <a href="mailto:estelle.pixelperfect@gmail.com" class="flex items-center space-x-4 group">
-                                <div class="bg-[#FF6B6B] p-4 rounded-full group-hover:bg-[#E9B44C] transition duration-300">
-                                    <i class="fa-solid fa-envelope text-white text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white group-hover:text-[#FF6B6B] transition duration-300">Email</h3>
-                                    <p class="text-[#C3E0E5] group-hover:text-white/90 transition duration-300">estelle.pixelperfect@gmail.com</p>
-                                </div>
-                            </a>
-                            <a href="tel:+15551234567" class="flex items-center space-x-4 group">
-                                <div class="bg-[#E9B44C] p-4 rounded-full group-hover:bg-[#FF6B6B] transition duration-300">
-                                    <i class="fa-solid fa-phone text-white text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white group-hover:text-[#E9B44C] transition duration-300">Phone</h3>
-                                    <p class="text-[#C3E0E5] group-hover:text-white/90 transition duration-300">+44 7748833631</p>
-                                </div>
-                            </a>
-                            <div class="flex items-center space-x-4">
-                                <div class="bg-[#C3E0E5] p-4 rounded-full">
-                                    <i class="fa-solid fa-location-dot text-[#1B4965] text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-xl font-bold text-white">Location</h3>
-                                    <p class="text-[#C3E0E5]">Based in Italy — working remotely with clients across Europe and the UK</p>
-                                </div>
+
+        <div class="container mx-auto px-6 relative z-10">
+
+            <!-- Heading -->
+            <div class="text-center mb-12 lg:mb-16">
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold text-white mb-4">
+                    Let's Create Together
+                </h2>
+                <p class="text-base sm:text-xl text-[#C3E0E5] max-w-2xl mx-auto">
+                    Ready to bring your ideas to life? I'd love to hear what you're building.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-start">
+
+                <!-- LEFT SIDE -->
+                <div class="space-y-8 order-2 lg:order-1">
+
+                    <div class="space-y-6">
+
+                        <a href="mailto:estelle.pixelperfect@gmail.com" class="flex items-center space-x-4 group">
+                            <div class="bg-[#FF6B6B] p-4 rounded-full group-hover:bg-[#E9B44C] transition duration-300">
+                                <i class="fa-solid fa-envelope text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Email</h3>
+                                <p class="text-[#C3E0E5]">estelle.pixelperfect@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="tel:+447748833631" class="flex items-center space-x-4 group">
+                            <div class="bg-[#E9B44C] p-4 rounded-full group-hover:bg-[#FF6B6B] transition duration-300">
+                                <i class="fa-solid fa-phone text-white text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Phone</h3>
+                                <p class="text-[#C3E0E5]">+44 7748 833631</p>
+                            </div>
+                        </a>
+
+                        <div class="flex items-center space-x-4">
+                            <div class="bg-[#C3E0E5] p-4 rounded-full">
+                                <i class="fa-solid fa-location-dot text-[#1B4965] text-xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-xl font-bold text-white">Location</h3>
+                                <p class="text-[#C3E0E5]">Based in Italy — working remotely across Europe & UK</p>
                             </div>
                         </div>
-                        
-                        <div class="flex space-x-4 sm:space-x-6 pt-6">
-                            <a href="https://github.com/estii20" 
-                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
-                              <i class="fa-brands fa-github"></i></a>
-                            <a href="https://www.behance.net/estellespecht" 
-                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
-                              <i class="fa-brands fa-behance text-xl"></i></a>
-                            <a href="https://www.linkedin.com/in/estelle-specht-947ba526/" 
-                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
-                              <i class="fa-brands fa-linkedin text-xl"></i></a>
-                            <a href="https://www.instagram.com/estelle.specht/" 
-                              class="bg-white/10 p-3 sm:p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
-                              <i class="fa-brands fa-instagram text-xl"></i></a>
-                        </div>
+
                     </div>
-                    
-                    <div class="order-1 lg:order-2 space-y-8">
-                        
-                        <form action="https://formspree.io/f/mzbnqnyk" method="POST" id="contact-form" role="form"
-                            class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-3xl space-y-6">
-                            
-                            <label for="name" class="sr-only">Your Name</label>
-                            <input type="text" name="name" id="name" required
-                                placeholder="Your Name" 
-                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
-                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300" />
-                                      
-                            <label for="email" class="sr-only">Email Address</label>
-                            <input type="email" name="email" id="email" required
-                                placeholder="Email Address" 
-                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
-                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300" />
-                                      
-                            <label for="message" class="sr-only">Project Details</label>
-                            <textarea name="message" id="message" rows="5" required
-                                placeholder="Tell me about your project..." 
-                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 
-                                      focus:outline-none focus:border-[#FF6B6B] transition duration-300 resize-none"></textarea>
-                                      
-                            <button type="submit"
+
+                    <p class="text-[#C3E0E5] text-sm max-w-md">
+                        Small business websites, UX improvements, and responsive front-end builds.
+                    </p>
+
+                    <!-- Social Links -->
+                    <div class="flex space-x-4 sm:space-x-6 pt-4">
+                        <a href="https://github.com/estii20"
+                        class="bg-white/10 p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+
+                        <a href="https://www.behance.net/estellespecht"
+                        class="bg-white/10 p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-behance"></i>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/estelle-specht-947ba526/"
+                        class="bg-white/10 p-4 rounded-full text-[#C3E0E5] hover:bg-[#FF6B6B] hover:text-white transition duration-300">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE -->
+                <div class="order-1 lg:order-2 space-y-8">
+
+                    <!-- Contact Form -->
+                    <form action="https://formspree.io/f/mzbnqnyk"
+                        method="POST"
+                        id="contact-form"
+                        class="bg-white/10 backdrop-blur-sm p-6 sm:p-8 rounded-3xl space-y-6 border border-white/20 shadow-xl">
+
+                        <h3 class="text-2xl font-bold text-white text-center">
+                            Tell me about your project
+                        </h3>
+
+                        <p class="text-[#C3E0E5] text-center text-sm">
+                            No pressure — just a short message to start the conversation.
+                        </p>
+
+                        <input type="text"
+                            name="name"
+                            required
+                            placeholder="Your Name"
+                            class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 focus:outline-none focus:border-[#FF6B6B]" />
+
+                        <input type="email"
+                            name="email"
+                            required
+                            placeholder="Email Address"
+                            class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 focus:outline-none focus:border-[#FF6B6B]" />
+
+                        <textarea name="message"
+                                rows="5"
+                                required
+                                placeholder="Tell me what you're building, improving, or planning..."
+                                class="w-full bg-white/20 text-white placeholder-white/70 p-4 rounded-xl border border-white/30 focus:outline-none focus:border-[#FF6B6B] resize-none"></textarea>
+
+                        <button type="submit"
                                 class="w-full bg-gradient-to-r from-[#FF6B6B] to-[#E9B44C] text-white px-8 py-4 rounded-xl hover:shadow-lg transform hover:scale-[1.01] transition duration-300 font-semibold">
-                                <i class="fa-solid fa-paper-plane mr-2"></i>Send Message
-                            </button>
-                        </form>
-                        
-                        <div class="bg-white/10 backdrop-blur-sm p-6 rounded-3xl text-center border border-white/30">
-                            <h3 class="text-xl font-semibold text-white mb-2">Optional: Upload Your Brief</h3>
-                            <p class="text-[#C3E0E5] mb-5 text-sm">
-                                If you already have a wireframe, PDF, or design notes — feel free to upload them here.
-                            </p>
-                            <a href="https://docs.google.com/forms/d/1uZAp0PNzzlb3aax_Di0JlWJNu2jmk2lV4epniStuijE/viewform"
-                                target="_blank" rel="noopener noreferrer" class="inline-block">
-                                <button
-                                    class="flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-6 py-3 
-                                        rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                                        stroke="currentColor">
-                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                                        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M16 12l-4-4m0 0l-4 4m4-4v12" />
-                                    </svg>
-                                    Upload Your Brief
-                                </button>
-                            </a>
-                        </div>
+                            <i class="fa-solid fa-paper-plane mr-2"></i>Send Message
+                        </button>
+
+                        <p class="text-sm text-[#C3E0E5] text-center">
+                            I usually reply within 24 hours.
+                        </p>
+
+                    </form>
+
+                    <!-- Notes Box -->
+                    <div class="bg-white/10 backdrop-blur-sm p-6 rounded-3xl text-center border border-white/30">
+
+                        <h3 class="text-xl font-semibold text-white mb-2">
+                            Have notes already?
+                        </h3>
+
+                        <p class="text-[#C3E0E5] mb-5 text-sm">
+                            Send any brief, PDF, screenshots, or rough ideas directly by email.
+                        </p>
+
+                        <a href="mailto:estelle.pixelperfect@gmail.com?subject=Project Notes"
+                        class="inline-flex items-center justify-center gap-2 bg-[#FF6B6B] text-white px-6 py-3 rounded-full hover:bg-[#E9B44C] transition duration-300 font-semibold">
+                            <i class="fa-solid fa-envelope"></i>
+                            Send Project Notes
+                        </a>
+
                     </div>
                 </div>
             </div>
+        </div>
         </section>
-
         <div class="h-1 w-full bg-gradient-to-r from-[#E9B44C] via-[#FF6B6B] to-[#4C7691]"></div>
         </main>
 
@@ -807,7 +862,7 @@
 
                 <div class="space-y-6 max-w-3xl mx-auto">
                     <h3 class="text-3xl sm:text-4xl font-extrabold leading-tight">
-                        Ready to make your next project <span class="text-[#FF6B6B]">pixel perfect</span>? ✨
+                        Ready for a website that feels clear, credible <span class="text-[#FF6B6B]">and easy to use</span>? ✨
                     </h3>
                     <p class="text-xl text-[#C3E0E5]">
                         Let's chat about design, development, and how we can bring your vision to life.
@@ -830,7 +885,7 @@
                     </div>
 
                     <p class="text-[#C3E0E5] text-sm">
-                        &copy; 2025 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
+                        &copy; 2026 Estelle Specht | Built with ❤️ and lots of Tailwind CSS.
                     </p>
                 </div>
             </div>
@@ -838,7 +893,6 @@
     
 <!-- External Libraries -->
 <script src="https://cdn.jsdelivr.net/npm/apexcharts" async></script>
-<script src="https://cdn.tailwindcss.com" async></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/js/all.min.js" crossorigin="anonymous" 
     referrerpolicy="no-referrer" async></script>
 
