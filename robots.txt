@@ -1,4 +1,4 @@
 User-agent: *
-Disallow:
+Allow: /
 
-Sitemap: https://www.pixelperfect-ux.store/sitemap.xml
+Sitemap: https://pixelperfectux.com/sitemap.xml
